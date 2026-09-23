@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AddAlbumDialog } from '@/components/AddAlbumDialog'
 import { GridCard } from '@/components/GridCard'
+import { Shelf } from '@/components/Shelf'
 import { SpineRow } from '@/components/SpineRow'
 import { ToggleItem, TopBar } from '@/components/TopBar'
 import { Button } from '@/components/ui/button'
@@ -28,6 +29,9 @@ export function Library() {
             </ToggleItem>
             <ToggleItem active={view === 'list'} onClick={() => setView('list')}>
               List
+            </ToggleItem>
+            <ToggleItem active={view === 'shelf'} onClick={() => setView('shelf')}>
+              Shelf
             </ToggleItem>
           </>
         }
@@ -101,6 +105,12 @@ export function Library() {
                 <SpineRow album={album} />
               </div>
             ))}
+          </div>
+        )}
+
+        {albums && albums.length > 0 && view === 'shelf' && (
+          <div className="-mx-6 sm:-mx-10 xl:-mx-16">
+            <Shelf key={`shelf-${sort}-${desc}`} albums={albums} />
           </div>
         )}
       </main>

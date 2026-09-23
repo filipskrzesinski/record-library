@@ -10,7 +10,7 @@
   body {
     margin: 0;
     min-height: 100vh;
-    background-color: var(--color-paper);
+    background-color: var(--color-paper-high);
     color: var(--color-ink);
     @apply font-body text-body;
     -webkit-font-smoothing: antialiased;
@@ -40,9 +40,9 @@
     color: var(--color-ink-faint);
   }
 
+  :focus,
   :focus-visible {
-    outline: 1px solid var(--color-focus);
-    outline-offset: 2px;
+    outline: none;
   }
 
   input[type="date"]::-webkit-calendar-picker-indicator {
@@ -113,6 +113,108 @@
   .record-list:has(.record-spine:hover) .record-spine:not(:hover) {
     opacity: 0.6;
   }
+}
+
+/* Shelf (cover flow). The scroller only supplies position; the sticky stage draws.
+   --pos is the fractional record index at the centre, set from JS on scroll. */
+.shelf {
+  --cover: clamp(200px, min(34vw, 46vh), 400px);
+  --shelf-top: 24px;
+  --shelf-reflection: calc(var(--cover) * 0.3);
+}
+
+.shelf-scroller {
+  container-type: inline-size;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.shelf-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.shelf-track {
+  position: relative;
+  height: calc(var(--shelf-top) + var(--cover) + var(--shelf-reflection) + 96px);
+}
+
+.shelf-snap {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  scroll-snap-align: start;
+}
+
+.shelf-stage {
+  position: sticky;
+  left: 0;
+  width: 100cqw;
+  height: 100%;
+  overflow: hidden;
+  perspective: calc(var(--cover) * 3);
+  perspective-origin: 50% calc(var(--shelf-top) + var(--cover) / 2);
+}
+
+.shelf-floor {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.shelf-item {
+  /* d: signed distance from centre; side: d clamped to ±1; near: |d| capped at 1. */
+  --d: calc(var(--i) - var(--pos, 0));
+  --dist: max(var(--d), -1 * var(--d));
+  --side: clamp(-1, var(--d), 1);
+  --near: min(var(--dist), 1);
+
+  position: absolute;
+  top: var(--shelf-top);
+  left: calc(50% - var(--cover) / 2);
+  display: block;
+  width: var(--cover);
+  transform:
+    translateX(calc(var(--side) * var(--cover) * 0.68 + (var(--d) - var(--side)) * var(--cover) * 0.17))
+    translateZ(calc(var(--near) * var(--cover) * -0.6))
+    rotateY(calc(var(--side) * -64deg));
+  opacity: clamp(0, calc(13 - var(--dist)), 1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Distant sleeves recede into the paper rather than into black. */
+.shelf-haze {
+  position: absolute;
+  inset: 0 0 auto;
+  aspect-ratio: 1;
+  background: var(--color-paper-high);
+  opacity: calc(var(--near) * 0.1 + min(var(--dist), 8) * 0.05);
+  pointer-events: none;
+}
+
+.shelf-reflection {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  height: var(--shelf-reflection);
+  overflow: hidden;
+  opacity: 0.2;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  pointer-events: none;
+}
+
+.shelf-reflection-art {
+  transform: scaleY(-1);
+}
+
+.shelf-caption {
+  position: absolute;
+  inset: calc(var(--shelf-top) + var(--cover) + var(--shelf-reflection) - 8px) 0 auto;
+  pointer-events: none;
 }
 
 @keyframes overlay-in {

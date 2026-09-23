@@ -12,7 +12,7 @@ export function TopBar({
   right?: ReactNode
 }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <header className="sticky top-0 z-40 bg-paper">
       <div className="grid h-11 grid-cols-[1fr_auto_1fr] items-center gap-6 px-6 sm:px-10 xl:px-16">
         <div className="flex items-center justify-self-start">
           {left ?? (
