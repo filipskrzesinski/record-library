@@ -72,7 +72,7 @@ export function AlbumDetail() {
   return (
     <>
       <TopBar
-        center={
+        left={
           <Link
             to="/"
             className="text-[11px] text-ink-faint transition-colors duration-150 hover:text-ink"
@@ -94,7 +94,7 @@ export function AlbumDetail() {
         }
       />
 
-      <div className="border-b border-line px-4 pb-5 pt-12 sm:px-6 sm:pt-16">
+      <div className="border-b border-line px-6 pb-5 pt-12 sm:px-10 sm:pt-16 xl:px-16">
         <Editable
           value={album.title}
           onSave={(value) => value && updateAlbum(album.id, { title: value })}
@@ -115,7 +115,7 @@ export function AlbumDetail() {
         </div>
       </div>
 
-      <div className="grid gap-10 px-4 pt-10 sm:px-6 lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)] lg:gap-16">
+      <div className="grid gap-10 px-6 pt-10 sm:px-10 xl:px-16 lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)] lg:gap-16">
         <div className="animate-rise self-start lg:sticky lg:top-20">
           <Cover
             art={album.art}
@@ -130,7 +130,6 @@ export function AlbumDetail() {
               value={album.rating}
               onChange={(rating) => updateAlbum(album.id, { rating: rating || undefined })}
             />
-            <span className="label-xs">{listens.length ? `${listens.length}×` : 'Unplayed'}</span>
           </div>
         </div>
 
@@ -203,7 +202,7 @@ export function AlbumDetail() {
         </div>
       </div>
 
-      <section className="mt-16 px-4 pb-32 sm:px-6">
+      <section className="mt-16 px-6 pb-32 sm:px-10 xl:px-16">
         <div className="flex items-center justify-between gap-6 border-b border-ink/25 pb-2.5">
           <h2 className="label-xs">Sessions · {listens.length}</h2>
           <Button variant="outline" size="sm" onClick={() => setAdding(true)}>

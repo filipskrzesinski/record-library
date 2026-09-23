@@ -1,0 +1,12 @@
+{
+  "name": "test-record-library",
+  "type": "react",
+  "port": 5173,
+  "runCommand": "npm run dev",
+  "routes": [
+    {
+      "path": "/",
+      "label": "Home"
+    }
+  ]
+}

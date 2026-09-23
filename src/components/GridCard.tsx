@@ -12,10 +12,10 @@ export function GridCard({ album }: { album: AlbumWithStats }) {
         className="rounded-[3px] shadow-cover transition-[transform,box-shadow] duration-300 ease-[var(--ease-out-soft)] group-hover:-translate-y-1.5 group-hover:shadow-cover-hover group-focus-visible:-translate-y-1.5 group-focus-visible:shadow-cover-hover"
       />
       <div className="mt-3">
-        <div className="truncate font-serif text-[15px] font-light leading-snug tracking-[-0.01em] text-ink">
+        <div className="truncate font-serif text-[20px] font-light leading-[24px] tracking-[-0.01em] text-ink">
           {album.title}
         </div>
-        <div className="mt-1 truncate text-[11px] leading-snug text-ink-muted">
+        <div className="mt-1 truncate text-[11px] leading-[15px] text-ink-muted">
           {album.artist}
           {album.year ? ` · ${album.year}` : ''}
         </div>

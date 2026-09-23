@@ -56,14 +56,14 @@ export function Library() {
         }
       />
 
-      <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-3 border-b border-line px-4 pb-5 pt-12 sm:px-6 sm:pt-16">
-        <h1 className="display text-[clamp(38px,7.5vw,80px)]">Collection</h1>
-        <div className="label-xs pb-1.5">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 px-6 pb-6 pt-12 sm:px-10 xl:px-16">
+        <h1 className="heading text-[40px] leading-[40px]">Collection</h1>
+        <div className="text-[11px] tabular-nums text-ink-muted">
           {albums ? `${albums.length} records · ${plays} plays` : ' '}
         </div>
       </div>
 
-      <main className="px-4 pb-32 pt-8 sm:px-6 sm:pt-10">
+      <main className="px-6 pb-32 pt-6 sm:px-10 xl:px-16">
         {albums && albums.length === 0 && (
           <div className="flex flex-col items-center gap-5 py-32">
             <span className="font-serif text-[40px] font-light text-ink-faint">—</span>
@@ -76,13 +76,13 @@ export function Library() {
         {albums && albums.length > 0 && view === 'grid' && (
           <div
             key={`grid-${sort}-${desc}`}
-            className="grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+            className="grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5"
           >
             {albums.map((album, i) => (
               <div
                 key={album.id}
-                className="animate-rise"
-                style={{ animationDelay: `${Math.min(i, 14) * 20}ms` }}
+                className="animate-card-fade-in motion-reduce:animate-none"
+                style={{ animationDelay: `${Math.min(i, 6) * 30}ms` }}
               >
                 <GridCard album={album} />
               </div>

@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Geist Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
-  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: "Jura", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
   --font-serif: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
 
-  /* Warm paper-and-ink surface scale. Nothing is pure white or pure black. */
-  --color-paper: #f2f0ea;
-  --color-paper-high: #f9f7f2;
-  --color-raised: #fcfaf6;
-  --color-well: #eae7df;
-  --color-line: #dcd8d0;
-  --color-line-soft: #e8e4dc;
+  /* Neutral gray surfaces under warm ink. Nothing is pure white or pure black. */
+  --color-paper: #ededed;
+  --color-paper-high: #f4f4f4;
+  --color-raised: #f9f9f9;
+  --color-well: #e4e4e4;
+  --color-line: #d8d8d8;
+  --color-line-soft: #e2e2e2;
+  --color-ink-strong: #171717;
   --color-ink: #322e29;
   --color-ink-muted: #676159;
   --color-ink-faint: #9d968c;
@@ -51,6 +53,7 @@
   --animate-dialog-out: dialog-out 0.15s ease-in;
   --animate-pop-in: pop-in 0.14s var(--ease-out-soft);
   --animate-rise: rise 0.4s var(--ease-out-soft) both;
+  --animate-card-fade-in: card-fade-in 0.3s var(--ease-out-soft) backwards;
 }
 
 @layer base {
@@ -61,14 +64,12 @@
   body {
     margin: 0;
     min-height: 100vh;
-    background-color: #f2f0ea;
-    background-image: radial-gradient(120% 80% at 50% -10%, #fbf9f5 0%, #f2f0ea 55%, #eae7e0 100%);
-    background-attachment: fixed;
-    color: #322e29;
-    font-family: var(--font-mono);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
     font-size: 13px;
     line-height: 1.55;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.006em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-variant-numeric: tabular-nums;
@@ -138,6 +139,15 @@
   line-height: 1.05;
 }
 
+/* Page and dialog headings: Jura, compact, near-black. */
+@utility heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-ink-strong);
+}
+
 @keyframes overlay-in {
   from {
     opacity: 0;
@@ -168,6 +178,15 @@
   from {
     opacity: 0;
     transform: translateY(-2px) scale(0.98);
+  }
+}
+
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

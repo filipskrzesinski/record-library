@@ -1,0 +1,34 @@
+{
+  "project": "test-record-library",
+  "flows": [
+    {
+      "id": "home",
+      "name": "Home"
+    }
+  ],
+  "tests": [
+    {
+      "name": "Home loads",
+      "flowId": "home",
+      "flow": "Home",
+      "type": "web",
+      "steps": [
+        {
+          "action": "navigate",
+          "url": "http://localhost:5173/",
+          "wait": 1200,
+          "name": "Open Home"
+        },
+        {
+          "action": "assertPath",
+          "expectedPath": "/",
+          "name": "Confirm Home route"
+        },
+        {
+          "action": "screenshot",
+          "name": "Home checkpoint"
+        }
+      ]
+    }
+  ]
+}
