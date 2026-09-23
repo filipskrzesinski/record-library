@@ -76,7 +76,7 @@ export function Library() {
         {albums && albums.length > 0 && view === 'grid' && (
           <div
             key={`grid-${sort}-${desc}`}
-            className="grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5"
+            className="record-grid grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5"
           >
             {albums.map((album, i) => (
               <div
@@ -91,11 +91,11 @@ export function Library() {
         )}
 
         {albums && albums.length > 0 && view === 'list' && (
-          <div key={`list-${sort}-${desc}`} className="flex flex-col gap-[5px]">
+          <div key={`list-${sort}-${desc}`} className="record-list isolate flex flex-col gap-[5px] overflow-visible">
             {albums.map((album, i) => (
               <div
                 key={album.id}
-                className="animate-rise"
+                className="record-list-item relative animate-rise overflow-visible"
                 style={{ animationDelay: `${Math.min(i, 18) * 16}ms` }}
               >
                 <SpineRow album={album} />

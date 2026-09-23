@@ -12,10 +12,10 @@ function spineHeight(format?: string) {
 
 export function SpineRow({ album }: { album: AlbumWithStats }) {
   return (
-    <Link to={`/album/${album.id}`} className="group block outline-none">
+    <Link to={`/album/${album.id}`} className="record-spine block overflow-visible rounded-[2px] shadow-spine">
       <div
         style={{ ...spineStyle(album.palette), height: spineHeight(album.format) }}
-        className="flex items-center gap-4 overflow-hidden rounded-[2px] px-4 shadow-spine ring-1 ring-inset ring-[rgba(0,0,0,0.16)] transition-[transform,box-shadow] duration-200 ease-[var(--ease-out-soft)] group-hover:translate-x-1 group-hover:shadow-spine-hover group-focus-visible:translate-x-1"
+        className="flex items-center gap-4 overflow-hidden rounded-[2px] px-4 ring-1 ring-inset ring-[rgba(0,0,0,0.16)]"
       >
         <div className="flex min-w-0 flex-1 items-baseline gap-3.5">
           <span className="truncate font-serif text-[15px] font-light tracking-[-0.01em]">

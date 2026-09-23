@@ -148,6 +148,54 @@
   color: var(--color-ink-strong);
 }
 
+/* Keep the hit area and labels stationary while the sleeve tilts in place. */
+.record-card-surface {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform 220ms var(--ease-out-soft);
+}
+
+.record-card-art {
+  opacity: 1;
+  transition: opacity 240ms ease, box-shadow 240ms var(--ease-out-soft);
+}
+
+.record-spine {
+  opacity: 1;
+  transition: opacity 240ms ease, box-shadow 240ms var(--ease-out-soft);
+}
+
+/* Raise the entire animated wrapper so neighboring rows cannot cover its shadow.
+   Only the inner sleeve clips its contents; the shadow lives on the outer link. */
+.record-list-item:focus-within {
+  z-index: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .record-card:hover .record-card-surface {
+    transform: perspective(1000px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  }
+
+  .record-card:hover .record-card-art {
+    box-shadow: var(--shadow-cover-hover);
+  }
+
+  .record-grid:has(.record-card:hover) .record-card:not(:hover) .record-card-art {
+    opacity: 0.6;
+  }
+
+  .record-list-item:hover {
+    z-index: 2;
+  }
+
+  .record-spine:hover {
+    box-shadow: var(--shadow-cover-hover);
+  }
+
+  .record-list:has(.record-spine:hover) .record-spine:not(:hover) {
+    opacity: 0.6;
+  }
+}
+
 @keyframes overlay-in {
   from {
     opacity: 0;
