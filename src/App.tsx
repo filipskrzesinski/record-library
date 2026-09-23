@@ -14,10 +14,21 @@ function ScrollToTop() {
 
 export default function App() {
   const [ready, setReady] = useState(false)
+  const [failed, setFailed] = useState(false)
 
   useEffect(() => {
-    ensureSeed().finally(() => setReady(true))
+    ensureSeed().then(() => setReady(true)).catch((error) => {
+      console.error('Could not initialize the record library', error)
+      setFailed(true)
+    })
   }, [])
+
+  if (failed) return (
+    <div role="alert" className="px-6 py-16 text-ink">
+      <p>The collection could not be loaded. Reload to try again.</p>
+      <button className="mt-4 underline underline-offset-4" onClick={() => window.location.reload()}>Reload</button>
+    </div>
+  )
 
   if (!ready) return null
 

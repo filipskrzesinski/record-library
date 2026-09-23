@@ -28,6 +28,15 @@ export interface Album {
   condition?: string
   rating?: number
   notes?: string
+  coverUrl?: string
+  source?: {
+    rank: number
+    votes: number
+    reviewUrl?: string
+    metadataUrl: string
+    coverSourceUrl: string
+    coverReleaseUrl?: string
+  }
   art: ArtStyle
   palette: Palette
   addedAt: number
@@ -44,10 +53,11 @@ export interface Listen {
   createdAt: number
 }
 
-export type SortKey = 'added' | 'released' | 'artist' | 'title' | 'listens' | 'played'
+export type SortKey = 'rank' | 'added' | 'released' | 'artist' | 'title' | 'listens' | 'played'
 export type ViewMode = 'grid' | 'list'
 
 export const SORTS: { key: SortKey; label: string }[] = [
+  { key: 'rank', label: 'Pitchfork rank' },
   { key: 'added', label: 'Date added' },
   { key: 'released', label: 'Release date' },
   { key: 'artist', label: 'Artist' },

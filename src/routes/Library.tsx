@@ -10,8 +10,8 @@ import { usePersisted } from '@/lib/usePersisted'
 import { SORTS, type SortKey, type ViewMode } from '@/lib/types'
 
 export function Library() {
-  const [sort, setSort] = usePersisted<SortKey>('sort', 'added')
-  const [desc, setDesc] = usePersisted('desc', true)
+  const [sort, setSort] = usePersisted<SortKey>('sort', 'rank')
+  const [desc, setDesc] = usePersisted('desc', false)
   const [view, setView] = usePersisted<ViewMode>('view', 'grid')
   const [adding, setAdding] = useState(false)
   const albums = useLibrary(sort, desc)

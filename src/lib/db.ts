@@ -1,12 +1,12 @@
 import Dexie, { type Table } from 'dexie'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { Album, Listen, SortKey } from './types'
-import { SEED_ALBUMS, SEED_LISTENS } from './seed'
 import { uid } from './utils'
 
 class LibraryDB extends Dexie {
   albums!: Table<Album, string>
   listens!: Table<Listen, string>
+  migrations!: Table<{ id: string }, string>
 
   constructor() {
     super('record-library')
@@ -14,16 +14,29 @@ class LibraryDB extends Dexie {
       albums: 'id, artist, title, year, addedAt',
       listens: 'id, albumId, date, createdAt',
     })
+    this.version(2).stores({ migrations: 'id' })
   }
 }
 
 export const db = new LibraryDB()
 
 export async function ensureSeed() {
-  if ((await db.albums.count()) > 0) return
-  await db.transaction('rw', db.albums, db.listens, async () => {
-    await db.albums.bulkPut(SEED_ALBUMS)
-    await db.listens.bulkPut(SEED_LISTENS)
+  const migrationId = 'pitchfork-readers-200-v1'
+  if (await db.migrations.get(migrationId)) return
+  const [{ SEED_ALBUMS }, { untouchedDemoIds }] = await Promise.all([
+    import('./seed'),
+    import('./seed-migration'),
+  ])
+  await db.transaction('rw', db.albums, db.listens, db.migrations, async () => {
+    // Recheck under the write lock: another tab may have finished importing.
+    if (await db.migrations.get(migrationId)) return
+    const [albums, listens] = await Promise.all([db.albums.toArray(), db.listens.toArray()])
+    const demoIds = untouchedDemoIds(albums, listens)
+    await db.listens.where('albumId').anyOf(demoIds).delete()
+    await db.albums.bulkDelete(demoIds)
+    const existing = new Set(albums.map((album) => album.id))
+    await db.albums.bulkAdd(SEED_ALBUMS.filter((album) => !existing.has(album.id)))
+    await db.migrations.add({ id: migrationId })
   })
 }
 
@@ -93,6 +106,12 @@ export function sortAlbums(albums: AlbumWithStats[], sort: SortKey, desc: boolea
   const dir = desc ? -1 : 1
   const sorted = [...albums].sort((a, b) => {
     switch (sort) {
+      case 'rank': {
+        if (!a.source && !b.source) return collator.compare(a.title, b.title)
+        if (!a.source) return 1
+        if (!b.source) return -1
+        return (a.source.rank - b.source.rank) * dir
+      }
       case 'added':
         return (a.addedAt - b.addedAt) * dir
       case 'released':

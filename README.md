@@ -5,7 +5,7 @@ technical detail on each pressing, and log every listening session.
 
 - **Vite + React + TypeScript**, Tailwind 4, a few heavily customised shadcn/Radix primitives
 - **Dexie (IndexedDB)** as the client database — no server, no accounts
-- Seeded on first run with ten audiophile pressings and a set of listening notes
+- Seeded with all 200 entries from Pitchfork's 2021 readers' poll, with local cover art
 
 ```bash
 npm install
@@ -17,14 +17,56 @@ npm run dev
 | Path | |
 | --- | --- |
 | `src/lib/db.ts` | Dexie schema, CRUD, sorting, live-query hooks |
-| `src/lib/seed.ts` | The ten seed records and their sessions |
+| `src/data/pitchfork-200.json` | Ranked collection, album metadata, and per-album source URLs |
+| `public/covers/` | 200 optimized WebP album covers |
+| `scripts/import-pitchfork.mjs` | Repeatable source import and artwork download |
+| `src/lib/seed.ts` | Convert the imported collection to app records |
+| `src/lib/seed-migration.ts` | Preserve user changes while replacing untouched demos |
+| `src/lib/legacy-seed.ts` | Old sample data, retained only to recognize untouched demos |
 | `src/lib/art.ts` | Generated sleeve artwork and spine treatments |
 | `src/routes/Library.tsx` | Grid and list views, sorting |
 | `src/routes/AlbumDetail.tsx` | Metadata, inline editing, sessions |
 | `src/components/ui/` | Button, input, field, dialog, select |
 
-Covers are generated from each record's palette and art style rather than stored as
-images. Sleeve colours also drive the spines in list view.
+## Collection sources
+
+The collection follows [Pitchfork's 25th-anniversary readers' list](https://pitchfork.com/features/lists-and-guides/peoples-list-25th-anniversary/),
+published in 2021. Rank, vote count, artist, title, release year, and genre come from
+the list's embedded dataset. Release years follow that list's regional release
+conventions. Labels come from the linked album reviews; some reviews cover reissues,
+so these labels do not identify a particular original vinyl pressing.
+
+Missing review links and retired or low-resolution image URLs are supplemented
+with manually matched Apple Music releases. Each entry records its metadata and
+artwork sources. Janelle Monáe's name is repaired from the source's broken encoding.
+The paired Bright Eyes (#140) and Deerhunter (#192) entries remain paired, matching
+the source's 200 ranks. Their covers represent the first album in each pair.
+
+Covers are bundled locally as WebP files, up to 600px, with a minimum of 400px.
+The app does not call external metadata or image services at runtime. Cover colors
+drive the shelf spines; generated sleeves remain the fallback for manually added
+records or failed image loads. Artwork remains the property of its respective
+rights holders; source attribution does not grant an artwork license.
+
+Personal ratings, listening sessions, condition, catalog numbers, pressing,
+mastering, speed, weight, format, and pressing country are deliberately unseeded:
+the poll does not establish which physical edition the user owns.
+
+Existing libraries receive the collection once. Only unchanged old demo records
+and their unchanged demo sessions are replaced; edited demos, user records, and
+user sessions survive. After import, deleting or editing albums is persistent,
+including an intentionally empty collection.
+
+```bash
+npm run import:albums  # Refresh metadata and local covers; caches source responses in .context/
+npm test              # Data, artwork integrity, migration, and sorting checks
+npm run build
+npm run lint
+```
+
+The importer reuses `.context/pitchfork-import/` on subsequent runs. Remove that
+cache to retrieve fresh source responses. Updating the bundled JSON does not
+overwrite an already imported user's collection.
 
 To reset the library, delete the `record-library` IndexedDB database in devtools; it
 reseeds on next load.

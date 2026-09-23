@@ -1,4 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react'
+import { PITCHFORK_SOURCE_URL } from '@/lib/sources'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { AddListenDialog } from '@/components/AddListenDialog'
 import { Cover } from '@/components/Cover'
@@ -116,7 +117,14 @@ export function AlbumDetail() {
 
       <div className="grid gap-10 px-4 pt-10 sm:px-6 lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)] lg:gap-16">
         <div className="animate-rise self-start lg:sticky lg:top-20">
-          <Cover art={album.art} palette={album.palette} className="rounded-[3px] shadow-cover" />
+          <Cover
+            art={album.art}
+            palette={album.palette}
+            src={album.coverUrl}
+            alt={`${album.title} by ${album.artist} album cover`}
+            loading="eager"
+            className="rounded-[3px] shadow-cover"
+          />
           <div className="mt-6 flex items-center justify-between gap-4">
             <Rating
               value={album.rating}
@@ -128,6 +136,17 @@ export function AlbumDetail() {
 
         <div className="min-w-0 animate-rise" style={{ animationDelay: '60ms' }}>
           <dl className="border-b border-line">
+            {album.source && (
+              <Row label="Pitchfork">
+                <a className="underline underline-offset-4" href={PITCHFORK_SOURCE_URL} target="_blank" rel="noreferrer">
+                  #{album.source.rank} · 2021 readers’ list
+                </a>
+                <span className="text-ink-faint"> · {album.source.votes.toLocaleString()} votes · </span>
+                <a className="underline underline-offset-4" href={album.source.metadataUrl} target="_blank" rel="noreferrer">
+                  {album.source.reviewUrl ? 'Review' : 'Release'}
+                </a>
+              </Row>
+            )}
             <Row label="Released">
               <Editable value={album.year ? String(album.year) : ''} onSave={saveYear} />
             </Row>

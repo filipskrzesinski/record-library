@@ -1,0 +1,4422 @@
+{
+  "title": "Pitchfork Readers' 200 Best Albums of the Last 25 Years",
+  "publishedYear": 2021,
+  "sourceUrl": "https://pitchfork.com/features/lists-and-guides/peoples-list-25th-anniversary/",
+  "bundleUrl": "https://pitchfork.com/projects/peoples-list/static/js/main.eed61000.chunk.js",
+  "retrievedAt": "2026-09-23",
+  "albums": [
+    {
+      "id": "pitchfork-001",
+      "title": "Kid A",
+      "artist": "Radiohead",
+      "year": 2000,
+      "genre": "Rock",
+      "label": "Capitol",
+      "coverUrl": "/covers/pitchfork-001.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 1,
+        "votes": 2586,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/6656-kid-a",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/6656-kid-a",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a1ebb1335d7bf1698393/1:1/w_600,c_limit/dddaf5bb.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-002",
+      "title": "OK Computer",
+      "artist": "Radiohead",
+      "year": 1997,
+      "genre": "Rock",
+      "label": "XL",
+      "coverUrl": "/covers/pitchfork-002.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 2,
+        "votes": 2475,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/radiohead-ok-computer-oknotok-1997-2017",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/radiohead-ok-computer-oknotok-1997-2017",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/ok-computer/1097861387?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-003",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "year": 2010,
+      "genre": "Rap",
+      "label": "Def Jam",
+      "coverUrl": "/covers/pitchfork-003.webp",
+      "palette": {
+        "base": "#c81838",
+        "accent": "#a0132d",
+        "deep": "#821024",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 3,
+        "votes": 2334,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14880-my-beautiful-dark-twisted-fantasy",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14880-my-beautiful-dark-twisted-fantasy",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5d890641d118d20008aff3dd/1:1/w_600,c_limit/Kanye-West-MBDTF.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-004",
+      "title": "In Rainbows",
+      "artist": "Radiohead",
+      "year": 2007,
+      "genre": "Rock",
+      "label": "self-released",
+      "coverUrl": "/covers/pitchfork-004.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 4,
+        "votes": 2259,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10785-in-rainbows",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10785-in-rainbows",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b2fe9d034d5c69bf4c59/1:1/w_600,c_limit/7055fb4d.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-005",
+      "title": "To Pimp a Butterfly",
+      "artist": "Kendrick Lamar",
+      "year": 2015,
+      "genre": "Rap",
+      "label": "Top Dawg Entertainment",
+      "coverUrl": "/covers/pitchfork-005.webp",
+      "palette": {
+        "base": "#b8b8b8",
+        "accent": "#939393",
+        "deep": "#787878",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 5,
+        "votes": 2047,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6616994dee648e2629d84122/1:1/w_600,c_limit/Kendrick-Lamar-To-Pimp-a-Butterfly.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-006",
+      "title": "Blonde",
+      "artist": "Frank Ocean",
+      "year": 2016,
+      "genre": "Pop/R&B",
+      "label": "self-released",
+      "coverUrl": "/covers/pitchfork-006.webp",
+      "palette": {
+        "base": "#e8e8e8",
+        "accent": "#bababa",
+        "deep": "#979797",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 6,
+        "votes": 1860,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22295-blonde-endless/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22295-blonde-endless/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bcb55e6ef95969322eda/1:1/w_600,c_limit/5f06f7f6.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-007",
+      "title": "Funeral",
+      "artist": "Arcade Fire",
+      "year": 2004,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-007.webp",
+      "palette": {
+        "base": "#c89868",
+        "accent": "#a07a53",
+        "deep": "#826344",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 7,
+        "votes": 1779,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/452-funeral/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/452-funeral/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a1a8c0084474cd0bfe6a/1:1/w_600,c_limit/2099047d.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-008",
+      "title": "Is This It",
+      "artist": "The Strokes",
+      "year": 2001,
+      "genre": "Rock",
+      "label": "RCA",
+      "coverUrl": "/covers/pitchfork-008.webp",
+      "palette": {
+        "base": "#e8b848",
+        "accent": "#ba933a",
+        "deep": "#97782f",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 8,
+        "votes": 1684,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/7537-is-this-it",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/7537-is-this-it",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a58b13d1975652138f9b/1:1/w_600,c_limit/c1b895b7.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-009",
+      "title": "good kid, m.A.A.d city",
+      "artist": "Kendrick Lamar",
+      "year": 2012,
+      "genre": "Rap",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-009.webp",
+      "palette": {
+        "base": "#b8b898",
+        "accent": "#93937a",
+        "deep": "#787863",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 9,
+        "votes": 1430,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/17253-good-kid-maad-city",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/17253-good-kid-maad-city",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c04fea9e61561daa7bc5/1:1/w_600,c_limit/25b1edda.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-010",
+      "title": "Yankee Hotel Foxtrot",
+      "artist": "Wilco",
+      "year": 2002,
+      "genre": "Rock",
+      "label": "Nonesuch",
+      "coverUrl": "/covers/pitchfork-010.webp",
+      "palette": {
+        "base": "#c8b898",
+        "accent": "#a0937a",
+        "deep": "#827863",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 10,
+        "votes": 1408,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8676-yankee-hotel-foxtrot",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8676-yankee-hotel-foxtrot",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aa31b1335d7bf1699612/1:1/w_600,c_limit/7aa808cd.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-011",
+      "title": "In the Aeroplane Over the Sea",
+      "artist": "Neutral Milk Hotel",
+      "year": 1998,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-011.webp",
+      "palette": {
+        "base": "#d8d8b8",
+        "accent": "#adad93",
+        "deep": "#8c8c78",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 11,
+        "votes": 1393,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/5758-in-the-aeroplane-over-the-sea",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/5758-in-the-aeroplane-over-the-sea",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c3d65e6ef95969323906/1:1/w_600,c_limit/5cb0f110.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-012",
+      "title": "Illinois",
+      "artist": "Sufjan Stevens",
+      "year": 2005,
+      "genre": "Folk/Country",
+      "label": "Asthmatic Kitty",
+      "coverUrl": "/covers/pitchfork-012.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 12,
+        "votes": 1194,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/7514-illinois",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/7514-illinois",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a5755e6ef95969320ae3/1:1/w_600,c_limit/48a46623.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-013",
+      "title": "Yeezus",
+      "artist": "Kanye West",
+      "year": 2013,
+      "genre": "Rap",
+      "label": "Def Jam",
+      "coverUrl": "/covers/pitchfork-013.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 13,
+        "votes": 1174,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18172-kanye-west-yeezus",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18172-kanye-west-yeezus",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a1899d034d5c69bf29ab/1:1/w_600,c_limit/a2fb43da.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-014",
+      "title": "Channel Orange",
+      "artist": "Frank Ocean",
+      "year": 2012,
+      "genre": "Pop/R&B",
+      "label": "Def Jam",
+      "coverUrl": "/covers/pitchfork-014.webp",
+      "palette": {
+        "base": "#f87808",
+        "accent": "#c66006",
+        "deep": "#a14e05",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 14,
+        "votes": 1154,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16859-channel-orange",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16859-channel-orange",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929be57c0084474cd0c2e8c/1:1/w_600,c_limit/45e3c196.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-015",
+      "title": "Sound of Silver",
+      "artist": "LCD Soundsystem",
+      "year": 2007,
+      "genre": "Electronic",
+      "label": "EMI",
+      "coverUrl": "/covers/pitchfork-015.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 15,
+        "votes": 1122,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10017-sound-of-silver",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10017-sound-of-silver",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929afa1ea9e61561daa64ac/1:1/w_600,c_limit/85537afc.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-016",
+      "title": "Madvillainy",
+      "artist": "Madvillain",
+      "year": 2004,
+      "genre": "Rap",
+      "label": "Stones Throw",
+      "coverUrl": "/covers/pitchfork-016.webp",
+      "palette": {
+        "base": "#e8e8e8",
+        "accent": "#bababa",
+        "deep": "#979797",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 16,
+        "votes": 1043,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/5579-madvillainy",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/5579-madvillainy",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/65fb322409c7048f78ef661c/1:1/w_600,c_limit/Madvillainy.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-017",
+      "title": "Norman Fucking Rockwell!",
+      "artist": "Lana Del Rey",
+      "year": 2019,
+      "genre": "Pop/R&B",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-017.webp",
+      "palette": {
+        "base": "#281818",
+        "accent": "#201313",
+        "deep": "#1a1010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 17,
+        "votes": 1022,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/lana-del-rey-norman-fucking-rockwell",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/lana-del-rey-norman-fucking-rockwell",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/66c39ee10ab267188fe4d0b3/1:1/w_600,c_limit/Lana-Del-Rey.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-018",
+      "title": "Carrie & Lowell",
+      "artist": "Sufjan Stevens",
+      "year": 2015,
+      "genre": "Folk/Country",
+      "label": "Asthmatic Kitty",
+      "coverUrl": "/covers/pitchfork-018.webp",
+      "palette": {
+        "base": "#383838",
+        "accent": "#2d2d2d",
+        "deep": "#242424",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 18,
+        "votes": 1020,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20218-carrie-lowell",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20218-carrie-lowell",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5d8902230480b10008ffa25c/1:1/w_600,c_limit/Sufjan-Stevens-Carrie-and-Lowell.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-019",
+      "title": "Merriweather Post Pavilion",
+      "artist": "Animal Collective",
+      "year": 2009,
+      "genre": "Experimental",
+      "label": "Domino",
+      "coverUrl": "/covers/pitchfork-019.webp",
+      "palette": {
+        "base": "#4848a8",
+        "accent": "#3a3a86",
+        "deep": "#2f2f6d",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 19,
+        "votes": 991,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/12518-merriweather-post-pavilion",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/12518-merriweather-post-pavilion",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929be525e6ef95969323225/1:1/w_600,c_limit/d8848c55.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-020",
+      "title": "Melodrama",
+      "artist": "Lorde",
+      "year": 2017,
+      "genre": "Pop/R&B",
+      "label": "Republic",
+      "coverUrl": "/covers/pitchfork-020.webp",
+      "palette": {
+        "base": "#0878d8",
+        "accent": "#0660ad",
+        "deep": "#054e8c",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 20,
+        "votes": 951,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/lorde-melodrama",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/lorde-melodrama",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c45413d197565213bf23/1:1/w_600,c_limit/454bf282.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-021",
+      "title": "Modern Vampires of the City",
+      "artist": "Vampire Weekend",
+      "year": 2013,
+      "genre": "Rock",
+      "label": "XL",
+      "coverUrl": "/covers/pitchfork-021.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 21,
+        "votes": 945,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/17963-vampire-weekend-modern-vampires-of-the-city",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/17963-vampire-weekend-modern-vampires-of-the-city",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/645d3c70ebb81029e4bad2f6/1:1/w_600,c_limit/Vampire-Weekend.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-022",
+      "title": "Turn On the Bright Lights",
+      "artist": "Interpol",
+      "year": 2002,
+      "genre": "Rock",
+      "label": "Matador",
+      "coverUrl": "/covers/pitchfork-022.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 22,
+        "votes": 904,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/4113-turn-on-the-bright-lights",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/4113-turn-on-the-bright-lights",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b97913d197565213ae72/1:1/w_600,c_limit/59424c77.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-023",
+      "title": "The Suburbs",
+      "artist": "Arcade Fire",
+      "year": 2010,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-023.webp",
+      "palette": {
+        "base": "#484828",
+        "accent": "#3a3a20",
+        "deep": "#2f2f1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 23,
+        "votes": 826,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14516-the-suburbs",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14516-the-suburbs",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aaf913d1975652139b21/1:1/w_600,c_limit/78bcb854.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-024",
+      "title": "Fetch the Bolt Cutters",
+      "artist": "Fiona Apple",
+      "year": 2020,
+      "genre": "Rock",
+      "label": "Epic",
+      "coverUrl": "/covers/pitchfork-024.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 24,
+        "votes": 826,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/fiona-apple-fetch-the-bolt-cutters",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/fiona-apple-fetch-the-bolt-cutters",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5e98fdb0e30e2f000804d7d6/1:1/w_600,c_limit/FIONAAPPLECOVER.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-025",
+      "title": "Currents",
+      "artist": "Tame Impala",
+      "year": 2015,
+      "genre": "Rock",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-025.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 25,
+        "votes": 826,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20578-currents",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20578-currents",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5d794c1c53e80c0008f439c4/1:1/w_600,c_limit/Tame-Impala-Currents.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-026",
+      "title": "Homogenic",
+      "artist": "Björk",
+      "year": 1997,
+      "genre": "Electronic",
+      "label": "Elektra",
+      "coverUrl": "/covers/pitchfork-026.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 26,
+        "votes": 803,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22835-homogenic",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22835-homogenic",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a2c55e6ef959693204c4/1:1/w_600,c_limit/ea107cdc.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-027",
+      "title": "For Emma, Forever Ago",
+      "artist": "Bon Iver",
+      "year": 2007,
+      "genre": "Rock",
+      "label": "self-released",
+      "coverUrl": "/covers/pitchfork-027.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 27,
+        "votes": 755,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10709-for-emma-forever-ago",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10709-for-emma-forever-ago",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/66855471d5f7ceb4649bc40d/1:1/w_600,c_limit/Bon-Iver-For-Emma-Forever-Ago.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-028",
+      "title": "Blackstar",
+      "artist": "David Bowie",
+      "year": 2016,
+      "genre": "Rock",
+      "label": "Columbia",
+      "coverUrl": "/covers/pitchfork-028.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 28,
+        "votes": 755,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21332-blackstar",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21332-blackstar",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6781345a304fa8482c16f048/1:1/w_600,c_limit/David-Bowie-Blackstar.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-029",
+      "title": "Discovery",
+      "artist": "Daft Punk",
+      "year": 2001,
+      "genre": "Electronic",
+      "label": "Virgin",
+      "coverUrl": "/covers/pitchfork-029.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 29,
+        "votes": 751,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/2134-discovery",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/2134-discovery",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a87b5e6ef95969321208/1:1/w_600,c_limit/d23a880a.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-030",
+      "title": "Punisher",
+      "artist": "Phoebe Bridgers",
+      "year": 2020,
+      "genre": "Folk/Country",
+      "label": "Dead Oceans",
+      "coverUrl": "/covers/pitchfork-030.webp",
+      "palette": {
+        "base": "#081828",
+        "accent": "#061320",
+        "deep": "#05101a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 30,
+        "votes": 666,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/phoebe-bridgers-punisher",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/phoebe-bridgers-punisher",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5e8f1c49ecfafc0008428b37/1:1/w_600,c_limit/Phoebe-Bridgers-Punisher.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-031",
+      "title": "Teen Dream",
+      "artist": "Beach House",
+      "year": 2010,
+      "genre": "Rock",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-031.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 31,
+        "votes": 664,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13872-teen-dream",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13872-teen-dream",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a80313d1975652139561/1:1/w_600,c_limit/20945b0e.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-032",
+      "title": "Since I Left You",
+      "artist": "The Avalanches",
+      "year": 2001,
+      "genre": "Electronic",
+      "label": "Sire",
+      "coverUrl": "/covers/pitchfork-032.webp",
+      "palette": {
+        "base": "#384858",
+        "accent": "#2d3a46",
+        "deep": "#242f39",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 32,
+        "votes": 657,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/385-since-i-left-you",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/385-since-i-left-you",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a15d9d034d5c69bf2944/1:1/w_600,c_limit/cfca747e.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-033",
+      "title": "Bon Iver",
+      "artist": "Bon Iver",
+      "year": 2011,
+      "genre": "Rock",
+      "label": "Jagjaguwar",
+      "coverUrl": "/covers/pitchfork-033.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 33,
+        "votes": 650,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/15551-bon-iver/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/15551-bon-iver/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929afb313d197565213a317/1:1/w_600,c_limit/d44901b5.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-034",
+      "title": "Boxer",
+      "artist": "The National",
+      "year": 2007,
+      "genre": "Rock",
+      "label": "Beggars Banquet",
+      "coverUrl": "/covers/pitchfork-034.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 34,
+        "votes": 627,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10242-boxer",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10242-boxer",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b09aea9e61561daa6654/1:1/w_600,c_limit/7a4f09b9.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-035",
+      "title": "The Soft Bulletin",
+      "artist": "The Flaming Lips",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "Warner Records",
+      "coverUrl": "/covers/pitchfork-035.webp",
+      "palette": {
+        "base": "#f8c828",
+        "accent": "#c6a020",
+        "deep": "#a1821a",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 35,
+        "votes": 625,
+        "metadataUrl": "https://music.apple.com/us/album/the-soft-bulletin/1247942375?uo=4",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/da/cc/ca/dacccae4-4f00-f451-6051-46d04a7d5099/093624911791.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/the-soft-bulletin/1247942375?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-036",
+      "title": "Lemonade",
+      "artist": "Beyoncé",
+      "year": 2016,
+      "genre": "Pop/R&B",
+      "label": "Parkwood Entertainment",
+      "coverUrl": "/covers/pitchfork-036.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 36,
+        "votes": 614,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21867-lemonade",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21867-lemonade",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/660adf17d0f7c8d60c0201b9/1:1/w_600,c_limit/Beyonce-Lemonade.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-037",
+      "title": "This Is Happening",
+      "artist": "LCD Soundsystem",
+      "year": 2010,
+      "genre": "Electronic",
+      "label": "Virgin",
+      "coverUrl": "/covers/pitchfork-037.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 37,
+        "votes": 604,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14257-this-is-happening",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14257-this-is-happening",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a9caea9e61561daa5acd/1:1/w_600,c_limit/0024dd9d.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-038",
+      "title": "Aquemini",
+      "artist": "OutKast",
+      "year": 1998,
+      "genre": "Rap",
+      "label": "Arista",
+      "coverUrl": "/covers/pitchfork-038.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 38,
+        "votes": 569,
+        "metadataUrl": "https://music.apple.com/us/album/aquemini/1536669507?uo=4",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0e/48/dd/0e48dd9a-07c9-46de-a838-b4ddb4e508a7/886448814191.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/aquemini/1536669507?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-039",
+      "title": "Fleet Foxes",
+      "artist": "Fleet Foxes",
+      "year": 2008,
+      "genre": "Folk/Country",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-039.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 39,
+        "votes": 567,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/11587-fleet-foxes",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/11587-fleet-foxes",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6478c3dba8d1e1af072de3a9/1:1/w_600,c_limit/Fleet-Foxes.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-040",
+      "title": "Either/Or",
+      "artist": "Elliott Smith",
+      "year": 1997,
+      "genre": "Rock",
+      "label": "Kill Rock Stars",
+      "coverUrl": "/covers/pitchfork-040.webp",
+      "palette": {
+        "base": "#284848",
+        "accent": "#203a3a",
+        "deep": "#1a2f2f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 40,
+        "votes": 566,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22947-eitheror-expanded-edition/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22947-eitheror-expanded-edition/",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/ea/28/ffea28a4-988a-f02e-7e1a-8566db3cab02/mzi.uoqucyoy.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/either-or/313302066?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-041",
+      "title": "Vespertine",
+      "artist": "Björk",
+      "year": 2001,
+      "genre": "Electronic",
+      "label": "Elektra",
+      "coverUrl": "/covers/pitchfork-041.webp",
+      "palette": {
+        "base": "#b8b8b8",
+        "accent": "#939393",
+        "deep": "#787878",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 41,
+        "votes": 565,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/727-vespertine",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/727-vespertine",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a2c2b1335d7bf169857c/1:1/w_600,c_limit/71b5be0f.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-042",
+      "title": "DAMN.",
+      "artist": "Kendrick Lamar",
+      "year": 2017,
+      "genre": "Rap",
+      "label": "Top Dawg Entertainment",
+      "coverUrl": "/covers/pitchfork-042.webp",
+      "palette": {
+        "base": "#d8d8e8",
+        "accent": "#adadba",
+        "deep": "#8c8c97",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 42,
+        "votes": 561,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/23147-damn",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/23147-damn",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c3e8eb335119a49ed80f/1:1/w_600,c_limit/31d2b6fd.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-043",
+      "title": "Bloom",
+      "artist": "Beach House",
+      "year": 2012,
+      "genre": "Rock",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-043.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 43,
+        "votes": 560,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16604-beach-house-bloom/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16604-beach-house-bloom/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b536b1335d7bf169a88a/1:1/w_600,c_limit/f251d544.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-044",
+      "title": "Ys",
+      "artist": "Joanna Newsom",
+      "year": 2006,
+      "genre": "Folk/Country",
+      "label": "Drag City",
+      "coverUrl": "/covers/pitchfork-044.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 44,
+        "votes": 559,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/9616-ys",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/9616-ys",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ae07b1335d7bf1699ce2/1:1/w_600,c_limit/b361695a.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-045",
+      "title": "Stankonia",
+      "artist": "OutKast",
+      "year": 2000,
+      "genre": "Rap",
+      "label": "La Face",
+      "coverUrl": "/covers/pitchfork-045.webp",
+      "palette": {
+        "base": "#f8e8e8",
+        "accent": "#c6baba",
+        "deep": "#a19797",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 45,
+        "votes": 557,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/outkast-stankonia",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/outkast-stankonia",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5a7e076f1bcb940ab644b768/1:1/w_600,c_limit/stankonia.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-046",
+      "title": "Back to Black",
+      "artist": "Amy Winehouse",
+      "year": 2007,
+      "genre": "Pop/R&B",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-046.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 46,
+        "votes": 550,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10032-back-to-black",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10032-back-to-black",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/cf/3f/09/cf3f0994-980d-d8ed-088d-ae89af256b73/15UMGIM24224.rgb.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/back-to-black/1440856219?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-047",
+      "title": "Untrue",
+      "artist": "Burial",
+      "year": 2007,
+      "genre": "Electronic",
+      "label": "Hyperdub",
+      "coverUrl": "/covers/pitchfork-047.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 47,
+        "votes": 544,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10877-untrue",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10877-untrue",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b3569d034d5c69bf4ccc/1:1/w_600,c_limit/a7366144.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-048",
+      "title": "Late Registration",
+      "artist": "Kanye West",
+      "year": 2005,
+      "genre": "Rap",
+      "label": "Def Jam",
+      "coverUrl": "/covers/pitchfork-048.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 48,
+        "votes": 536,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8768-late-registration",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8768-late-registration",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aa8db1335d7bf16996b1/1:1/w_600,c_limit/fab12909.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-049",
+      "title": "The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do",
+      "artist": "Fiona Apple",
+      "year": 2012,
+      "genre": "Rock",
+      "label": "Epic",
+      "coverUrl": "/covers/pitchfork-049.webp",
+      "palette": {
+        "base": "#e8d8b8",
+        "accent": "#baad93",
+        "deep": "#978c78",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 49,
+        "votes": 532,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16732-the-idler-wheel-is-wiser-than-the-driver-of-the-screw-and-whipping-cords-will-serve-you-more-than-ropes-will-ever-do",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16732-the-idler-wheel-is-wiser-than-the-driver-of-the-screw-and-whipping-cords-will-serve-you-more-than-ropes-will-ever-do",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b5c913d197565213ad0d/1:1/w_600,c_limit/762bfaa8.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-050",
+      "title": "The Miseducation of Lauryn Hill",
+      "artist": "Lauryn Hill",
+      "year": 1998,
+      "genre": "Pop/R&B",
+      "label": "Ruffhouse",
+      "coverUrl": "/covers/pitchfork-050.webp",
+      "palette": {
+        "base": "#c87848",
+        "accent": "#a0603a",
+        "deep": "#824e2f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 50,
+        "votes": 521,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/64b7fd9871e86f1e192e8e38/1:1/w_600,c_limit/Lauryn-Hill.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-051",
+      "title": "The College Dropout",
+      "artist": "Kanye West",
+      "year": 2004,
+      "genre": "Rap",
+      "label": "Roc-A-Fella",
+      "coverUrl": "/covers/pitchfork-051.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 51,
+        "votes": 520,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8767-the-college-dropout",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8767-the-college-dropout",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aa8c5e6ef959693215e8/1:1/w_600,c_limit/7b1099ec.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-052",
+      "title": "IGOR",
+      "artist": "Tyler, the Creator",
+      "year": 2019,
+      "genre": "Rap",
+      "label": "Columbia",
+      "coverUrl": "/covers/pitchfork-052.webp",
+      "palette": {
+        "base": "#f8b8c8",
+        "accent": "#c693a0",
+        "deep": "#a17882",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 52,
+        "votes": 505,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/tyler-the-creator-igor",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/tyler-the-creator-igor",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6454f9ce60430f8f9be0fb09/1:1/w_600,c_limit/Tyler-the-Creator-Igor.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-053",
+      "title": "If You're Feeling Sinister",
+      "artist": "Belle and Sebastian",
+      "year": 1996,
+      "genre": "Rock",
+      "label": "Jeepster",
+      "coverUrl": "/covers/pitchfork-053.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 53,
+        "votes": 500,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/belle-and-sebastian-if-youre-feeling-sinister/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/belle-and-sebastian-if-youre-feeling-sinister/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/69713b7954053ca8cc1f34dc/1:1/w_600,c_limit/Belle%20&%20Sebastian%20If%20You're%20Feeling%20SInister.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-054",
+      "title": "Lost in the Dream",
+      "artist": "The War on Drugs",
+      "year": 2014,
+      "genre": "Rock",
+      "label": "Secretly Canadian",
+      "coverUrl": "/covers/pitchfork-054.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 54,
+        "votes": 499,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/19094-the-war-on-drugs-lost-in-the-dream",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/19094-the-war-on-drugs-lost-in-the-dream",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a63fb1335d7bf1698dad/1:1/w_600,c_limit/9419e472.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-055",
+      "title": "Ágætis byrjun",
+      "artist": "Sigur Rós",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "Krunk",
+      "coverUrl": "/covers/pitchfork-055.webp",
+      "palette": {
+        "base": "#081848",
+        "accent": "#06133a",
+        "deep": "#05102f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 55,
+        "votes": 496,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/sigur-ros-agaetis-byrjun",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/sigur-ros-agaetis-byrjun",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5d166b753046210009996e49/1:1/w_600,c_limit/SigurRos_A%CC%81g%C3%A6tisByrjun.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-056",
+      "title": "E•MO•TION",
+      "artist": "Carly Rae Jepsen",
+      "year": 2015,
+      "genre": "Pop/R&B",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-056.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 56,
+        "votes": 495,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20898-emotion",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20898-emotion",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aec29d034d5c69bf45d9/1:1/w_600,c_limit/1f4d0473.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-057",
+      "title": "High Violet",
+      "artist": "The National",
+      "year": 2010,
+      "genre": "Rock",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-057.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 57,
+        "votes": 495,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14203-high-violet",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14203-high-violet",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a997ea9e61561daa5a75/1:1/w_600,c_limit/b66c3cda.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-058",
+      "title": "Halcyon Digest",
+      "artist": "Deerhunter",
+      "year": 2010,
+      "genre": "Rock",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-058.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 58,
+        "votes": 491,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14681-halcyon-digest",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14681-halcyon-digest",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c8/93/80/c8938060-b785-3f40-5cc5-6464265f10d6/652637303865.png/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/halcyon-digest/1544226562?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-059",
+      "title": "Lift Your Skinny Fists like Antennas to Heaven",
+      "artist": "Godspeed You! Black Emperor",
+      "year": 2000,
+      "genre": "Rock",
+      "label": "Kranky",
+      "coverUrl": "/covers/pitchfork-059.webp",
+      "palette": {
+        "base": "#986858",
+        "accent": "#7a5346",
+        "deep": "#634439",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 59,
+        "votes": 491,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/3489-lift-your-skinny-fists-like-antennas-to-heaven",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/3489-lift-your-skinny-fists-like-antennas-to-heaven",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bf4ec0084474cd0c2ffd/1:1/w_600,c_limit/e661e567.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-060",
+      "title": "Lonerism",
+      "artist": "Tame Impala",
+      "year": 2012,
+      "genre": "Rock",
+      "label": "Modular",
+      "coverUrl": "/covers/pitchfork-060.webp",
+      "palette": {
+        "base": "#f8d898",
+        "accent": "#c6ad7a",
+        "deep": "#a18c63",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 60,
+        "votes": 480,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/17131-lonerism",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/17131-lonerism",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bfc913d197565213b939/1:1/w_600,c_limit/140bf2a7.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-061",
+      "title": "The Lonesome Crowded West",
+      "artist": "Modest Mouse",
+      "year": 1997,
+      "genre": "Rock",
+      "label": "Matador",
+      "coverUrl": "/covers/pitchfork-061.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 61,
+        "votes": 478,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/19884-modest-mouse-this-is-a-long-drive-for-someone-with-nothing-to-think-aboutthe-lonesome-crowded-west/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/19884-modest-mouse-this-is-a-long-drive-for-someone-with-nothing-to-think-aboutthe-lonesome-crowded-west/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aa78b1335d7bf1699689/1:1/w_600,c_limit/daac23f2.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-062",
+      "title": "Golden Hour",
+      "artist": "Kacey Musgraves",
+      "year": 2018,
+      "genre": "Folk/Country",
+      "label": "MCA Nashville",
+      "coverUrl": "/covers/pitchfork-062.webp",
+      "palette": {
+        "base": "#0878a8",
+        "accent": "#066086",
+        "deep": "#054e6d",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 62,
+        "votes": 471,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/kacey-musgraves-golden-hour",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/kacey-musgraves-golden-hour",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/641deb27aef545723eec5e31/1:1/w_600,c_limit/Kacey-Musgraves-Golden-Hour.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-063",
+      "title": "The Moon & Antarctica",
+      "artist": "Modest Mouse",
+      "year": 2000,
+      "genre": "Rock",
+      "label": "Epic",
+      "coverUrl": "/covers/pitchfork-063.webp",
+      "palette": {
+        "base": "#584848",
+        "accent": "#463a3a",
+        "deep": "#392f2f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 63,
+        "votes": 466,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/5358-the-moon-antarctica",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/5358-the-moon-antarctica",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c373ea9e61561daa7f08/1:1/w_600,c_limit/789479e8.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-064",
+      "title": "Endtroducing...",
+      "artist": "DJ Shadow",
+      "year": 1996,
+      "genre": "Electronic",
+      "label": "Mo'Wax",
+      "coverUrl": "/covers/pitchfork-064.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 64,
+        "votes": 464,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/2377-endtroducing-deluxe-edition/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/2377-endtroducing-deluxe-edition/",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/14/6d/0d146d5c-44c5-22e2-c596-2242180f4774/5400863103361_cover.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/endtroducing/1660485817?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-065",
+      "title": "Random Access Memories",
+      "artist": "Daft Punk",
+      "year": 2013,
+      "genre": "Electronic",
+      "label": "Columbia",
+      "coverUrl": "/covers/pitchfork-065.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 65,
+        "votes": 458,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18028-daft-punk-random-access-memories",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18028-daft-punk-random-access-memories",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/63f641d801dbe796fab80055/1:1/w_600,c_limit/Daft-Punk-Random-Access-Memories.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-066",
+      "title": "22, A Million",
+      "artist": "Bon Iver",
+      "year": 2016,
+      "genre": "Rock",
+      "label": "Jagjaguwar",
+      "coverUrl": "/covers/pitchfork-066.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 66,
+        "votes": 457,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22420-22-a-million",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22420-22-a-million",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bdbbea9e61561daa777d/1:1/w_600,c_limit/985e010a.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-067",
+      "title": "Music Has the Right to Children",
+      "artist": "Boards of Canada",
+      "year": 1998,
+      "genre": "Electronic",
+      "label": "Warp",
+      "coverUrl": "/covers/pitchfork-067.webp",
+      "palette": {
+        "base": "#88d8d8",
+        "accent": "#6dadad",
+        "deep": "#588c8c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 67,
+        "votes": 448,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/838-music-has-the-right-to-children",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/838-music-has-the-right-to-children",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5a8dcb6db366e0276e71e3bb/1:1/w_600,c_limit/Boards-of-Canada-Music.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-068",
+      "title": "folklore",
+      "artist": "Taylor Swift",
+      "year": 2020,
+      "genre": "Pop/R&B",
+      "label": "Republic",
+      "coverUrl": "/covers/pitchfork-068.webp",
+      "palette": {
+        "base": "#888888",
+        "accent": "#6d6d6d",
+        "deep": "#585858",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 68,
+        "votes": 447,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/taylor-swift-folklore",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/taylor-swift-folklore",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5f1e2abad421092dd8f6c7ca/1:1/w_600,c_limit/Taylor_Swift_folklore.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-069",
+      "title": "Titanic Rising",
+      "artist": "Weyes Blood",
+      "year": 2019,
+      "genre": "Rock",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-069.webp",
+      "palette": {
+        "base": "#180808",
+        "accent": "#130606",
+        "deep": "#100505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 69,
+        "votes": 446,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/weyes-blood-titanic-rising",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/weyes-blood-titanic-rising",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5c7eafd9b8753a13dd400085/1:1/w_600,c_limit/WeyesBlood_TitanicRising.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-070",
+      "title": "Mezzanine",
+      "artist": "Massive Attack",
+      "year": 1998,
+      "genre": "Electronic",
+      "label": "Virgin",
+      "coverUrl": "/covers/pitchfork-070.webp",
+      "palette": {
+        "base": "#281818",
+        "accent": "#201313",
+        "deep": "#1a1010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 70,
+        "votes": 442,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22703-mezzanine",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22703-mezzanine",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/64307cf2714ede0d1b04d3ec/1:1/w_600,c_limit/Massive-Attack-Mezzanine.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-071",
+      "title": "A Seat at the Table",
+      "artist": "Solange",
+      "year": 2016,
+      "genre": "Pop/R&B",
+      "label": "Saint",
+      "coverUrl": "/covers/pitchfork-071.webp",
+      "palette": {
+        "base": "#083858",
+        "accent": "#062d46",
+        "deep": "#052439",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 71,
+        "votes": 439,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22482-a-seat-at-the-table",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22482-a-seat-at-the-table",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929be4b5e6ef95969323215/1:1/w_600,c_limit/f4b40c2b.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-072",
+      "title": "Vampire Weekend",
+      "artist": "Vampire Weekend",
+      "year": 2008,
+      "genre": "Rock",
+      "label": "XL",
+      "coverUrl": "/covers/pitchfork-072.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 72,
+        "votes": 430,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/11058-vampire-weekend",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/11058-vampire-weekend",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/657dd1dc0db4eb62ec4d5162/1:1/w_600,c_limit/Vampire-Weekend.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-073",
+      "title": "CTRL",
+      "artist": "SZA",
+      "year": 2017,
+      "genre": "Pop/R&B",
+      "label": "Top Dawg Entertainment",
+      "coverUrl": "/covers/pitchfork-073.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 73,
+        "votes": 421,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/sza-ctrl",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/sza-ctrl",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/593ed23cf6f585756595affa/1:1/w_600,c_limit/b24dfb11.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-074",
+      "title": "Pinkerton",
+      "artist": "Weezer",
+      "year": 1996,
+      "genre": "Rock",
+      "label": "Geffen",
+      "coverUrl": "/covers/pitchfork-074.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 74,
+        "votes": 418,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14817-weezer-pinkerton-deluxe-edition-death-to-false-metal/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14817-weezer-pinkerton-deluxe-edition-death-to-false-metal/",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1f/a1/6d/1fa16d48-6522-9b8f-396c-1a84e92946d0/16UMGIM52973.rgb.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/pinkerton/1440898333?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-075",
+      "title": "Helplessness Blues",
+      "artist": "Fleet Foxes",
+      "year": 2011,
+      "genre": "Folk/Country",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-075.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 75,
+        "votes": 415,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/15363-helplessness-blues",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/15363-helplessness-blues",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aecfb1335d7bf1699e38/1:1/w_600,c_limit/0cb1ffa3.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-076",
+      "title": "The Life of Pablo",
+      "artist": "Kanye West",
+      "year": 2016,
+      "genre": "Rap",
+      "label": "G.O.O.D. Music",
+      "coverUrl": "/covers/pitchfork-076.webp",
+      "palette": {
+        "base": "#f88858",
+        "accent": "#c66d46",
+        "deep": "#a15839",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 76,
+        "votes": 413,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21542-the-life-of-pablo",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21542-the-life-of-pablo",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/65cd1c31c57e150876097abb/1:1/w_600,c_limit/Kanye-West-The-Life-of-Pablo.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-077",
+      "title": "MAGDALENE",
+      "artist": "FKA twigs",
+      "year": 2019,
+      "genre": "Electronic",
+      "label": "Young Turks",
+      "coverUrl": "/covers/pitchfork-077.webp",
+      "palette": {
+        "base": "#b8a888",
+        "accent": "#93866d",
+        "deep": "#786d58",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 77,
+        "votes": 407,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/fka-twigs-magdalene",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/fka-twigs-magdalene",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5dbb1aaeb4386a000828699d/1:1/w_600,c_limit/twigs.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-078",
+      "title": "xx",
+      "artist": "The xx",
+      "year": 2009,
+      "genre": "Electronic",
+      "label": "Young Turks",
+      "coverUrl": "/covers/pitchfork-078.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 78,
+        "votes": 407,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13400-xx",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13400-xx",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/44/8e/28448e14-19be-438b-bc9b-8c1d3f68f578/609008295069.png/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/xx/1850810462?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-079",
+      "title": "Whatever People Say I Am, That's What I'm Not",
+      "artist": "Arctic Monkeys",
+      "year": 2006,
+      "genre": "Rock",
+      "label": "Domino",
+      "coverUrl": "/covers/pitchfork-079.webp",
+      "palette": {
+        "base": "#182828",
+        "accent": "#132020",
+        "deep": "#101a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 79,
+        "votes": 405,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/497-whatever-people-say-i-am-thats-what-im-not",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/497-whatever-people-say-i-am-thats-what-im-not",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a1d8ea9e61561daa48c7/1:1/w_600,c_limit/fac45880.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-080",
+      "title": "Kaputt",
+      "artist": "Destroyer",
+      "year": 2011,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-080.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 80,
+        "votes": 405,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/15034-kaputt",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/15034-kaputt",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ad4c9d034d5c69bf4344/1:1/w_600,c_limit/cdf989af.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-081",
+      "title": "A Moon Shaped Pool",
+      "artist": "Radiohead",
+      "year": 2016,
+      "genre": "Rock",
+      "label": "XL",
+      "coverUrl": "/covers/pitchfork-081.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 81,
+        "votes": 405,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21907-a-moon-shaped-pool",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21907-a-moon-shaped-pool",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b5b913d197565213ace4/1:1/w_600,c_limit/e3c43867.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-082",
+      "title": "Donuts",
+      "artist": "J Dilla",
+      "year": 2006,
+      "genre": "Rap",
+      "label": "Stones Throw",
+      "coverUrl": "/covers/pitchfork-082.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 82,
+        "votes": 403,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/4365-donuts",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/4365-donuts",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bb56c0084474cd0c2826/1:1/w_600,c_limit/8df46677.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-083",
+      "title": "Elephant",
+      "artist": "The White Stripes",
+      "year": 2003,
+      "genre": "Rock",
+      "label": "V2",
+      "coverUrl": "/covers/pitchfork-083.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 83,
+        "votes": 403,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8652-elephant",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8652-elephant",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aa195e6ef9596932151a/1:1/w_600,c_limit/fb7c898c.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-084",
+      "title": "Have One on Me",
+      "artist": "Joanna Newsom",
+      "year": 2010,
+      "genre": "Folk/Country",
+      "label": "Drag City",
+      "coverUrl": "/covers/pitchfork-084.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 84,
+        "votes": 400,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13960-have-one-on-me",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13960-have-one-on-me",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a869c0084474cd0c0e0c/1:1/w_600,c_limit/e63def14.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-085",
+      "title": "Art Angels",
+      "artist": "Grimes",
+      "year": 2015,
+      "genre": "Pop/R&B",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-085.webp",
+      "palette": {
+        "base": "#f83828",
+        "accent": "#c62d20",
+        "deep": "#a1241a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 85,
+        "votes": 399,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21264-art-angels",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21264-art-angels",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b220c0084474cd0c1f04/1:1/w_600,c_limit/59ef246f.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-086",
+      "title": "Voodoo",
+      "artist": "D'Angelo",
+      "year": 2000,
+      "genre": "Pop/R&B",
+      "label": "Light in the Attic",
+      "coverUrl": "/covers/pitchfork-086.webp",
+      "palette": {
+        "base": "#081818",
+        "accent": "#061313",
+        "deep": "#051010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 86,
+        "votes": 398,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/17407-voodoo",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/17407-voodoo",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c117ea9e61561daa7d16/1:1/w_600,c_limit/8f50f1bb.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-087",
+      "title": "OIL OF EVERY PEARL's UN-INSIDES",
+      "artist": "SOPHIE",
+      "year": 2018,
+      "genre": "Electronic",
+      "label": "Transgressive",
+      "coverUrl": "/covers/pitchfork-087.webp",
+      "palette": {
+        "base": "#987888",
+        "accent": "#7a606d",
+        "deep": "#634e58",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 87,
+        "votes": 391,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/sophie-oil-of-every-pearls-un-insides/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/sophie-oil-of-every-pearls-un-insides/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5b218bdf9e77c15c59ad791c/1:1/w_600,c_limit/SOPHIE_OIL%20OF%20EVERY%20PEARL's%20UN-INSIDES.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-088",
+      "title": "You Forgot It in People",
+      "artist": "Broken Social Scene",
+      "year": 2002,
+      "genre": "Rock",
+      "label": "Arts & Crafts",
+      "coverUrl": "/covers/pitchfork-088.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 88,
+        "votes": 390,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/952-you-forgot-it-in-people",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/952-you-forgot-it-in-people",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a3ac9d034d5c69bf2ea3/1:1/w_600,c_limit/44da3695.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-089",
+      "title": "Person Pitch",
+      "artist": "Panda Bear",
+      "year": 2007,
+      "genre": "Electronic",
+      "label": "Paw Tracks",
+      "coverUrl": "/covers/pitchfork-089.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 89,
+        "votes": 389,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10025-person-pitch",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10025-person-pitch",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929afa9ea9e61561daa64b8/1:1/w_600,c_limit/e2dd97fd.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-090",
+      "title": "I Love You, Honeybear",
+      "artist": "Father John Misty",
+      "year": 2015,
+      "genre": "Rock",
+      "label": "Bella Union",
+      "coverUrl": "/covers/pitchfork-090.webp",
+      "palette": {
+        "base": "#f8b8b8",
+        "accent": "#c69393",
+        "deep": "#a17878",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 90,
+        "votes": 382,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20131-i-love-you-honeybear",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20131-i-love-you-honeybear",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929abe85e6ef95969321827/1:1/w_600,c_limit/8a2cb994.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-091",
+      "title": "Third",
+      "artist": "Portishead",
+      "year": 2008,
+      "genre": "Electronic",
+      "label": "Island",
+      "coverUrl": "/covers/pitchfork-091.webp",
+      "palette": {
+        "base": "#086868",
+        "accent": "#065353",
+        "deep": "#054444",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 91,
+        "votes": 381,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/11438-third/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/11438-third/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b5d69d034d5c69bf50b9/1:1/w_600,c_limit/aeec45fc.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-092",
+      "title": "In Colour",
+      "artist": "Jamie xx",
+      "year": 2015,
+      "genre": "Electronic",
+      "label": "Young Turks",
+      "coverUrl": "/covers/pitchfork-092.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 92,
+        "votes": 380,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20458-in-colour",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20458-in-colour",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6602df151e5338cc9e3389d9/1:1/w_600,c_limit/Jamie-xx-In-Colour.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-093",
+      "title": "Body Talk",
+      "artist": "Robyn",
+      "year": 2010,
+      "genre": "Pop/R&B",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-093.webp",
+      "palette": {
+        "base": "#d8d8d8",
+        "accent": "#adadad",
+        "deep": "#8c8c8c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 93,
+        "votes": 380,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14917-body-talk",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14917-body-talk",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ac6f9d034d5c69bf41b8/1:1/w_600,c_limit/1ecd7353.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-094",
+      "title": "The Money Store",
+      "artist": "Death Grips",
+      "year": 2012,
+      "genre": "Experimental",
+      "label": "Epic",
+      "coverUrl": "/covers/pitchfork-094.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 94,
+        "votes": 372,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16512-death-grips-the-money-store",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16512-death-grips-the-money-store",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b4adb1335d7bf169a7a8/1:1/w_600,c_limit/566c99ce.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-095",
+      "title": "Amnesiac",
+      "artist": "Radiohead",
+      "year": 2001,
+      "genre": "Rock",
+      "label": "Capitol",
+      "coverUrl": "/covers/pitchfork-095.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 95,
+        "votes": 370,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/6659-amnesiac",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/6659-amnesiac",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a1ee13d197565213874d/1:1/w_600,c_limit/e75d5920.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-096",
+      "title": "The Glow, Pt. 2",
+      "artist": "The Microphones",
+      "year": 2001,
+      "genre": "Experimental",
+      "label": "K",
+      "coverUrl": "/covers/pitchfork-096.webp",
+      "palette": {
+        "base": "#889888",
+        "accent": "#6d7a6d",
+        "deep": "#586358",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 96,
+        "votes": 361,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/5269-the-glow-pt-2",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/5269-the-glow-pt-2",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c45f13d197565213bf3d/1:1/w_600,c_limit/fda3e8c5.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-097",
+      "title": "Songs for the Deaf",
+      "artist": "Queens of the Stone Age",
+      "year": 2002,
+      "genre": "Rock",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-097.webp",
+      "palette": {
+        "base": "#c82848",
+        "accent": "#a0203a",
+        "deep": "#821a2f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 97,
+        "votes": 350,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/6606-songs-for-the-deaf",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/6606-songs-for-the-deaf",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a1bb13d19756521386d5/1:1/w_600,c_limit/33c86983.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-098",
+      "title": "Flower Boy",
+      "artist": "Tyler, the Creator",
+      "year": 2017,
+      "genre": "Rap",
+      "label": "Columbia",
+      "coverUrl": "/covers/pitchfork-098.webp",
+      "palette": {
+        "base": "#f8a828",
+        "accent": "#c68620",
+        "deep": "#a16d1a",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 98,
+        "votes": 350,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/tyler-the-creator-flower-boy",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/tyler-the-creator-flower-boy",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/59663e05ec814a1a5898c3a3/1:1/w_600,c_limit/tyler-the-creator-flower-boy-cover-1.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-099",
+      "title": "When the Pawn...",
+      "artist": "Fiona Apple",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "Sony",
+      "coverUrl": "/covers/pitchfork-099.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 99,
+        "votes": 348,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/fiona-apple-when-the-pawn",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/fiona-apple-when-the-pawn",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/63f90fe7df295b3bff49ad45/1:1/w_600,c_limit/Fiona-Apple-When-the-Pawn.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-100",
+      "title": "Silent Shout",
+      "artist": "The Knife",
+      "year": 2006,
+      "genre": "Electronic",
+      "label": "Mute",
+      "coverUrl": "/covers/pitchfork-100.webp",
+      "palette": {
+        "base": "#081828",
+        "accent": "#061320",
+        "deep": "#05101a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 100,
+        "votes": 345,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/4590-silent-shout",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/4590-silent-shout",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bc40eb335119a49ecc09/1:1/w_600,c_limit/ac002cfb.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-101",
+      "title": "Beyoncé",
+      "artist": "Beyoncé",
+      "year": 2013,
+      "genre": "Pop/R&B",
+      "label": "Columbia",
+      "coverUrl": "/covers/pitchfork-101.webp",
+      "palette": {
+        "base": "#080818",
+        "accent": "#060613",
+        "deep": "#050510",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 101,
+        "votes": 341,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18821-beyonce-beyonce",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18821-beyonce-beyonce",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6577131d98565f7ba920a219/1:1/w_600,c_limit/Beyonce.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-102",
+      "title": "I Can Hear the Heart Beating as One",
+      "artist": "Yo La Tengo",
+      "year": 1997,
+      "genre": "Rock",
+      "label": "Matador",
+      "coverUrl": "/covers/pitchfork-102.webp",
+      "palette": {
+        "base": "#e83828",
+        "accent": "#ba2d20",
+        "deep": "#97241a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 102,
+        "votes": 341,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/yo-la-tengo-i-can-hear-the-heart-beating-as-one",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/yo-la-tengo-i-can-hear-the-heart-beating-as-one",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/59f3afccb69d1515a4d06ac7/1:1/w_600,c_limit/icanheartheheart.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-103",
+      "title": "White Blood Cells",
+      "artist": "The White Stripes",
+      "year": 2001,
+      "genre": "Rock",
+      "label": "Sympathy for the Record Industry",
+      "coverUrl": "/covers/pitchfork-103.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 103,
+        "votes": 340,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8651-white-blood-cells",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8651-white-blood-cells",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aa18c0084474cd0c1141/1:1/w_600,c_limit/b39a21f4.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-104",
+      "title": "The Blueprint",
+      "artist": "JAY-Z",
+      "year": 2001,
+      "genre": "Rap",
+      "label": "Def Jam",
+      "coverUrl": "/covers/pitchfork-104.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 104,
+        "votes": 335,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/4216-the-blueprint",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/4216-the-blueprint",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b9d5c0084474cd0c26d3/1:1/w_600,c_limit/c77499e7.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-105",
+      "title": "1989",
+      "artist": "Taylor Swift",
+      "year": 2014,
+      "genre": "Pop/R&B",
+      "label": "Big Machine",
+      "coverUrl": "/covers/pitchfork-105.webp",
+      "palette": {
+        "base": "#c8b898",
+        "accent": "#a0937a",
+        "deep": "#827863",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 105,
+        "votes": 330,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/taylor-swift-1989",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/taylor-swift-1989",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6352ca1910018fe2819d1184/1:1/w_600,c_limit/Taylor-Swift-1989.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-106",
+      "title": "Pop 2",
+      "artist": "Charli XCX",
+      "year": 2017,
+      "genre": "Pop/R&B",
+      "label": "Asylum",
+      "coverUrl": "/covers/pitchfork-106.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 106,
+        "votes": 328,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/charli-xcx-pop-2",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/charli-xcx-pop-2",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5a2eba6449e3044f38ff9e5b/1:1/w_600,c_limit/Pop%202.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-107",
+      "title": "Demon Days",
+      "artist": "Gorillaz",
+      "year": 2005,
+      "genre": "Electronic",
+      "label": "Virgin",
+      "coverUrl": "/covers/pitchfork-107.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 107,
+        "votes": 327,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/3526-demon-days",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/3526-demon-days",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1c/0f/81/1c0f818a-e458-dd84-6f1b-ccbdf5fe14d6/825646291045.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/demon-days/850571319?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-108",
+      "title": "69 Love Songs",
+      "artist": "The Magnetic Fields",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-108.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 108,
+        "votes": 326,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/5041-69-love-songs",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/5041-69-love-songs",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c36bea9e61561daa7ef4/1:1/w_600,c_limit/a2ede6ae.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-109",
+      "title": "Odelay",
+      "artist": "Beck",
+      "year": 1996,
+      "genre": "Rock",
+      "label": "Geffen",
+      "coverUrl": "/covers/pitchfork-109.webp",
+      "palette": {
+        "base": "#d8e8f8",
+        "accent": "#adbac6",
+        "deep": "#8c97a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 109,
+        "votes": 323,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/11104-odelay-deluxe-edition/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/11104-odelay-deluxe-edition/",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7f/cd/e2/7fcde2a5-93be-d7ed-a015-6969298b5d96/19UM1IM00477.rgb.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/odelay/1510827144?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-110",
+      "title": "Run the Jewels 2",
+      "artist": "Run the Jewels",
+      "year": 2014,
+      "genre": "Rap",
+      "label": "Mass Appeal",
+      "coverUrl": "/covers/pitchfork-110.webp",
+      "palette": {
+        "base": "#e83818",
+        "accent": "#ba2d13",
+        "deep": "#972410",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 110,
+        "votes": 323,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/19968-run-the-jewels-run-the-jewels-2",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/19968-run-the-jewels-run-the-jewels-2",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ab02c0084474cd0c12c0/1:1/w_600,c_limit/e0491b02.png"
+      }
+    },
+    {
+      "id": "pitchfork-111",
+      "title": "Stories From the City, Stories From the Sea",
+      "artist": "PJ Harvey",
+      "year": 2000,
+      "genre": "Rock",
+      "label": "Island",
+      "coverUrl": "/covers/pitchfork-111.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 111,
+        "votes": 316,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/3756-stories-from-the-city-stories-from-the-sea",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/3756-stories-from-the-city-stories-from-the-sea",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c06ceb335119a49ed3b9/1:1/w_600,c_limit/d87ccf6b.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-112",
+      "title": "Twin Fantasy",
+      "artist": "Car Seat Headrest",
+      "year": 2011,
+      "genre": "Rock",
+      "label": "Matador",
+      "coverUrl": "/covers/pitchfork-112.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 112,
+        "votes": 315,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/car-seat-headrest-twin-fantasy",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/car-seat-headrest-twin-fantasy",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/63f90bb7e4f5dcfbc604fcd0/1:1/w_600,c_limit/Car-Seat-Headrest-Twin-Fantasy.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-113",
+      "title": "Pure Heroine",
+      "artist": "Lorde",
+      "year": 2013,
+      "genre": "Pop/R&B",
+      "label": "Lava",
+      "coverUrl": "/covers/pitchfork-113.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 113,
+        "votes": 313,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18614-lorde-pure-heroine",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18614-lorde-pure-heroine",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6474e3acb9ec4da09fa9d267/1:1/w_600,c_limit/Lorde-Pure-Heroine.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-114",
+      "title": "Yoshimi Battles The Pink Robots",
+      "artist": "The Flaming Lips",
+      "year": 2002,
+      "genre": "Rock",
+      "label": "Warner Bros.",
+      "coverUrl": "/covers/pitchfork-114.webp",
+      "palette": {
+        "base": "#e8d898",
+        "accent": "#baad7a",
+        "deep": "#978c63",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 114,
+        "votes": 308,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/3081-yoshimi-battles-the-pink-robots",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/3081-yoshimi-battles-the-pink-robots",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bdb3ea9e61561daa776c/1:1/w_600,c_limit/33787706.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-115",
+      "title": "Kala",
+      "artist": "M.I.A.",
+      "year": 2007,
+      "genre": "Pop/R&B",
+      "label": "XL",
+      "coverUrl": "/covers/pitchfork-115.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 115,
+        "votes": 303,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10564-kala",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10564-kala",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b20513d197565213a6d9/1:1/w_600,c_limit/84594075.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-116",
+      "title": "Black Messiah",
+      "artist": "D'Angelo / The Vanguard",
+      "year": 2014,
+      "genre": "Pop/R&B",
+      "label": "RCA",
+      "coverUrl": "/covers/pitchfork-116.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 116,
+        "votes": 295,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20078-black-messiah",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20078-black-messiah",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5d8902e20480b10008ffa25e/1:1/w_600,c_limit/DAngelo-Black-Messiah.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-117",
+      "title": "Plastic Beach",
+      "artist": "Gorillaz",
+      "year": 2010,
+      "genre": "Electronic",
+      "label": "Virgin",
+      "coverUrl": "/covers/pitchfork-117.webp",
+      "palette": {
+        "base": "#180808",
+        "accent": "#130606",
+        "deep": "#100505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 117,
+        "votes": 295,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14008-plastic-beach",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14008-plastic-beach",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a89f9d034d5c69bf3ac0/1:1/w_600,c_limit/843000ca.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-118",
+      "title": "American Water",
+      "artist": "Silver Jews",
+      "year": 1998,
+      "genre": "Rock",
+      "label": "Drag City",
+      "coverUrl": "/covers/pitchfork-118.webp",
+      "palette": {
+        "base": "#6898b8",
+        "accent": "#537a93",
+        "deep": "#446378",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 118,
+        "votes": 292,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/silver-jews-american-water",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/silver-jews-american-water",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/597b999e764548658cfd2b9d/1:1/w_600,c_limit/americanwater_silverjews.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-119",
+      "title": "Red",
+      "artist": "Taylor Swift",
+      "year": 2012,
+      "genre": "Pop/R&B",
+      "label": "Big Machine",
+      "coverUrl": "/covers/pitchfork-119.webp",
+      "palette": {
+        "base": "#282838",
+        "accent": "#20202d",
+        "deep": "#1a1a24",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 119,
+        "votes": 292,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/taylor-swift-red",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/taylor-swift-red",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6352cd4063dcacf1f2521078/1:1/w_600,c_limit/Taylor-Swift-Red.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-120",
+      "title": "A Deeper Understanding",
+      "artist": "The War on Drugs",
+      "year": 2017,
+      "genre": "Rock",
+      "label": "Atlantic",
+      "coverUrl": "/covers/pitchfork-120.webp",
+      "palette": {
+        "base": "#181828",
+        "accent": "#131320",
+        "deep": "#10101a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 120,
+        "votes": 291,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/the-war-on-drugs-a-deeper-understanding",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/the-war-on-drugs-a-deeper-understanding",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5952aa95b91767379d2a6f61/1:1/w_600,c_limit/600x600bb-2.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-121",
+      "title": "Born to Die",
+      "artist": "Lana Del Rey",
+      "year": 2012,
+      "genre": "Pop/R&B",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-121.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 121,
+        "votes": 289,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16223-lana-del-rey",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16223-lana-del-rey",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b3309d034d5c69bf4ca7/1:1/w_600,c_limit/76cd0167.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-122",
+      "title": "Veckatimest",
+      "artist": "Grizzly Bear",
+      "year": 2009,
+      "genre": "Rock",
+      "label": "Warp",
+      "coverUrl": "/covers/pitchfork-122.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 122,
+        "votes": 288,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13078-veckatimest",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13078-veckatimest",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a4535e6ef9596932084e/1:1/w_600,c_limit/e8c5fabf.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-123",
+      "title": "Let England Shake",
+      "artist": "PJ Harvey",
+      "year": 2011,
+      "genre": "Rock",
+      "label": "Vagrant",
+      "coverUrl": "/covers/pitchfork-123.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 123,
+        "votes": 287,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/15120-let-england-shake",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/15120-let-england-shake",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929adac5e6ef95969321b03/1:1/w_600,c_limit/b1e8be89.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-124",
+      "title": "Give Up",
+      "artist": "The Postal Service",
+      "year": 2003,
+      "genre": "Electronic",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-124.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 124,
+        "votes": 287,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/17853-the-postal-service-give-up",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/17853-the-postal-service-give-up",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a00813d19756521382ad/1:1/w_600,c_limit/282b86e8.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-125",
+      "title": "Atrocity Exhibition",
+      "artist": "Danny Brown",
+      "year": 2016,
+      "genre": "Rap",
+      "label": "Warp",
+      "coverUrl": "/covers/pitchfork-125.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 125,
+        "votes": 286,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22468-atrocity-exhibition",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22468-atrocity-exhibition",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929be325e6ef959693231f5/1:1/w_600,c_limit/7d68020e.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-126",
+      "title": "Sunbather",
+      "artist": "Deafheaven",
+      "year": 2013,
+      "genre": "Metal",
+      "label": "Deathwish",
+      "coverUrl": "/covers/pitchfork-126.webp",
+      "palette": {
+        "base": "#f87878",
+        "accent": "#c66060",
+        "deep": "#a14e4e",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 126,
+        "votes": 282,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18060-deafheaven-sunbather",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18060-deafheaven-sunbather",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/64809e86e7a8aa8db8026a43/1:1/w_600,c_limit/Deafheaven-Sunbather.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-127",
+      "title": "Graduation",
+      "artist": "Kanye West",
+      "year": 2007,
+      "genre": "Rap",
+      "label": "Def Jam",
+      "coverUrl": "/covers/pitchfork-127.webp",
+      "palette": {
+        "base": "#783888",
+        "accent": "#602d6d",
+        "deep": "#4e2458",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 127,
+        "votes": 282,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10658-graduation",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10658-graduation",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b270ea9e61561daa690f/1:1/w_600,c_limit/b0b4aa4c.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-128",
+      "title": "Visions",
+      "artist": "Grimes",
+      "year": 2012,
+      "genre": "Pop/R&B",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-128.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 128,
+        "votes": 281,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16211-grimes-visions/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16211-grimes-visions/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b32213d197565213a8c0/1:1/w_600,c_limit/42bf6de8.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-129",
+      "title": "m b v",
+      "artist": "My Bloody Valentine",
+      "year": 2013,
+      "genre": "Experimental",
+      "label": "self-released",
+      "coverUrl": "/covers/pitchfork-129.webp",
+      "palette": {
+        "base": "#180898",
+        "accent": "#13067a",
+        "deep": "#100563",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 129,
+        "votes": 281,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/17726-mbv",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/17726-mbv",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/63ed50671fb8fd1f5544fb1b/1:1/w_600,c_limit/My-Bloody-Valentine.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-130",
+      "title": "808s and Heartbreak",
+      "artist": "Kanye West",
+      "year": 2008,
+      "genre": "Rap",
+      "label": "Def Jam / Roc-A-Fella",
+      "coverUrl": "/covers/pitchfork-130.webp",
+      "palette": {
+        "base": "#c8d8d8",
+        "accent": "#a0adad",
+        "deep": "#828c8c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 130,
+        "votes": 280,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/12498-808s-and-heartbreak",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/12498-808s-and-heartbreak",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929be3b5e6ef95969323200/1:1/w_600,c_limit/752c4b7b.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-131",
+      "title": "Strawberry Jam",
+      "artist": "Animal Collective",
+      "year": 2007,
+      "genre": "Experimental",
+      "label": "Domino",
+      "coverUrl": "/covers/pitchfork-131.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 131,
+        "votes": 278,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10650-strawberry-jam",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10650-strawberry-jam",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b2675e6ef959693222b9/1:1/w_600,c_limit/7ed5e809.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-132",
+      "title": "Hurry Up, We're Dreaming",
+      "artist": "M83",
+      "year": 2011,
+      "genre": "Electronic",
+      "label": "Mute",
+      "coverUrl": "/covers/pitchfork-132.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 132,
+        "votes": 278,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/15881-hurry-up-were-dreaming",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/15881-hurry-up-were-dreaming",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b14c9d034d5c69bf49d5/1:1/w_600,c_limit/be990fa7.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-133",
+      "title": "Be the Cowboy",
+      "artist": "Mitski",
+      "year": 2018,
+      "genre": "Rock",
+      "label": "Dead Oceans",
+      "coverUrl": "/covers/pitchfork-133.webp",
+      "palette": {
+        "base": "#d8c8d8",
+        "accent": "#ada0ad",
+        "deep": "#8c828c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 133,
+        "votes": 276,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/mitski-be-the-cowboy",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/mitski-be-the-cowboy",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/645d40634f4e20edab39a90b/1:1/w_600,c_limit/Mitski-Be-the-Cowboy.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-134",
+      "title": "Fever to Tell",
+      "artist": "Yeah Yeah Yeahs",
+      "year": 2003,
+      "genre": "Rock",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-134.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 134,
+        "votes": 275,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8888-fever-to-tell",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8888-fever-to-tell",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ab0f9d034d5c69bf3f5c/1:1/w_600,c_limit/37a18b0f.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-135",
+      "title": "Trouble Will Find Me",
+      "artist": "The National",
+      "year": 2013,
+      "genre": "Rock",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-135.webp",
+      "palette": {
+        "base": "#e8e8e8",
+        "accent": "#bababa",
+        "deep": "#979797",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 135,
+        "votes": 273,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18030-the-national-trouble-will-find-me",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18030-the-national-trouble-will-find-me",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/641dcc9c67f587dc8ca9fb74/1:1/w_600,c_limit/The-National-Trouble-Will-Find-Me.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-136",
+      "title": "Sometimes I Sit and Think, and Sometimes I Just Sit",
+      "artist": "Courtney Barnett",
+      "year": 2015,
+      "genre": "Rock",
+      "label": "Mom+Pop",
+      "coverUrl": "/covers/pitchfork-136.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 136,
+        "votes": 272,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20268-sometimes-i-sit-and-think-and-sometimes-i-just-sit",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20268-sometimes-i-sit-and-think-and-sometimes-i-just-sit",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ac9dea9e61561daa5f71/1:1/w_600,c_limit/43bd497f.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-137",
+      "title": "ANTI",
+      "artist": "Rihanna",
+      "year": 2016,
+      "genre": "Pop/R&B",
+      "label": "Roc Nation",
+      "coverUrl": "/covers/pitchfork-137.webp",
+      "palette": {
+        "base": "#e8e8e8",
+        "accent": "#bababa",
+        "deep": "#979797",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 137,
+        "votes": 268,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21540-anti",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21540-anti",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b396b1335d7bf169a602/1:1/w_600,c_limit/10d96102.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-138",
+      "title": "AM",
+      "artist": "Arctic Monkeys",
+      "year": 2013,
+      "genre": "Rock",
+      "label": "Domino",
+      "coverUrl": "/covers/pitchfork-138.webp",
+      "palette": {
+        "base": "#081818",
+        "accent": "#061313",
+        "deep": "#051010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 138,
+        "votes": 264,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18386-arctic-monkeys-am",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18386-arctic-monkeys-am",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6349c7e5ef7182cf16ec7f1e/1:1/w_600,c_limit/Arctic-Monkeys-AM.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-139",
+      "title": "Silent Alarm",
+      "artist": "Bloc Party",
+      "year": 2005,
+      "genre": "Rock",
+      "label": "V2",
+      "coverUrl": "/covers/pitchfork-139.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 139,
+        "votes": 264,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/1130-silent-alarm",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/1130-silent-alarm",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a466b1335d7bf1698955/1:1/w_600,c_limit/bdbba4e4.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-140",
+      "title": "I'm Wide Awake, It's Morning / Digital Ash in a Digital Urn",
+      "artist": "Bright Eyes",
+      "year": 2005,
+      "genre": "Rock",
+      "label": "Saddle Creek",
+      "coverUrl": "/covers/pitchfork-140.webp",
+      "palette": {
+        "base": "#e8d8c8",
+        "accent": "#baada0",
+        "deep": "#978c82",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 140,
+        "votes": 261,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/11683-im-wide-awake-its-morning-digital-ash-in-a-digital-urn",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/11683-im-wide-awake-its-morning-digital-ash-in-a-digital-urn",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a3a15e6ef959693206b5/1:1/w_600,c_limit/015246e8.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-141",
+      "title": "Teens of Denial",
+      "artist": "Car Seat Headrest",
+      "year": 2016,
+      "genre": "Rock",
+      "label": "Matador",
+      "coverUrl": "/covers/pitchfork-141.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 141,
+        "votes": 260,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21673-teens-of-denial",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21673-teens-of-denial",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b45d9d034d5c69bf4e60/1:1/w_600,c_limit/2365f6ed.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-142",
+      "title": "Perfect From Now On",
+      "artist": "Built to Spill",
+      "year": 1997,
+      "genre": "Rock",
+      "label": "Warner Bros.",
+      "coverUrl": "/covers/pitchfork-142.webp",
+      "palette": {
+        "base": "#484848",
+        "accent": "#3a3a3a",
+        "deep": "#2f2f2f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 142,
+        "votes": 258,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/built-to-spill-perfect-from-now-on",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/built-to-spill-perfect-from-now-on",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5ae39ae1a85afb79a8445e4f/1:1/w_600,c_limit/perfectfromnowon.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-143",
+      "title": "Room on Fire",
+      "artist": "The Strokes",
+      "year": 2003,
+      "genre": "Rock",
+      "label": "RCA",
+      "coverUrl": "/covers/pitchfork-143.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 143,
+        "votes": 253,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/7538-room-on-fire",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/7538-room-on-fire",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a58c13d1975652138f9e/1:1/w_600,c_limit/1d3c4271.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-144",
+      "title": "Strange Mercy",
+      "artist": "St. Vincent",
+      "year": 2011,
+      "genre": "Rock",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-144.webp",
+      "palette": {
+        "base": "#e8d8d8",
+        "accent": "#baadad",
+        "deep": "#978c8c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 144,
+        "votes": 252,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/15813-strange-mercy",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/15813-strange-mercy",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b0e8b1335d7bf169a1c2/1:1/w_600,c_limit/ff09b428.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-145",
+      "title": "Summerteeth",
+      "artist": "Wilco",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "Reprise",
+      "coverUrl": "/covers/pitchfork-145.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 145,
+        "votes": 250,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8677-summer-teeth",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8677-summer-teeth",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aa329d034d5c69bf3dcd/1:1/w_600,c_limit/02628a73.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-146",
+      "title": "The Marshall Mathers LP",
+      "artist": "Eminem",
+      "year": 2000,
+      "genre": "Rap",
+      "label": "Aftermath",
+      "coverUrl": "/covers/pitchfork-146.webp",
+      "palette": {
+        "base": "#484848",
+        "accent": "#3a3a3a",
+        "deep": "#2f2f2f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 146,
+        "votes": 249,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/eminem-the-marshall-mathers-lp",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/eminem-the-marshall-mathers-lp",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5acfc14c2b685709e91edc88/1:1/w_600,c_limit/Marshall%20Mathers%20LP.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-147",
+      "title": "Wolfgang Amadeus Phoenix",
+      "artist": "Phoenix",
+      "year": 2009,
+      "genre": "Rock",
+      "label": "Glassnote",
+      "coverUrl": "/covers/pitchfork-147.webp",
+      "palette": {
+        "base": "#f8b8c8",
+        "accent": "#c693a0",
+        "deep": "#a17882",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 147,
+        "votes": 249,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13052-wolfgang-amadeus-phoenix",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13052-wolfgang-amadeus-phoenix",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/28/8d/ab/288dabdd-f8de-80f6-1aab-40a24cb1b33f/00892038002190_Cover.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/wolfgang-amadeus-phoenix/1771710012?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-148",
+      "title": "Puberty 2",
+      "artist": "Mitski",
+      "year": 2016,
+      "genre": "Rock",
+      "label": "Dead Oceans",
+      "coverUrl": "/covers/pitchfork-148.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 148,
+        "votes": 243,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/21970-puberty-2",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/21970-puberty-2",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b608ea9e61561daa6ed1/1:1/w_600,c_limit/fb8680a3.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-149",
+      "title": "Apologies to the Queen Mary",
+      "artist": "Wolf Parade",
+      "year": 2005,
+      "genre": "Rock",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-149.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 149,
+        "votes": 243,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8794-apologies-to-the-queen-mary",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8794-apologies-to-the-queen-mary",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aaab5e6ef95969321617/1:1/w_600,c_limit/f7d8f057.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-150",
+      "title": "We got it from Here... Thank You 4 Your service",
+      "artist": "A Tribe Called Quest",
+      "year": 2016,
+      "genre": "Rap",
+      "label": "Epic",
+      "coverUrl": "/covers/pitchfork-150.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 150,
+        "votes": 242,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22607-we-got-it-from-here-thank-you-4-your-service",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22607-we-got-it-from-here-thank-you-4-your-service",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bf695e6ef959693233cc/1:1/w_600,c_limit/98b81f8d.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-151",
+      "title": "LP1",
+      "artist": "FKA twigs",
+      "year": 2014,
+      "genre": "Electronic",
+      "label": "Young Turks",
+      "coverUrl": "/covers/pitchfork-151.webp",
+      "palette": {
+        "base": "#48b8d8",
+        "accent": "#3a93ad",
+        "deep": "#2f788c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 151,
+        "votes": 241,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/19590-twigs-lp1/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/19590-twigs-lp1/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a8efc0084474cd0c0f3c/1:1/w_600,c_limit/48a48155.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-152",
+      "title": "Keep it Like a Secret",
+      "artist": "Built to Spill",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "Warner Bros.",
+      "coverUrl": "/covers/pitchfork-152.webp",
+      "palette": {
+        "base": "#98c8c8",
+        "accent": "#7aa0a0",
+        "deep": "#638282",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 152,
+        "votes": 239,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/1014-keep-it-like-a-secret",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/1014-keep-it-like-a-secret",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a3ebea9e61561daa4da9/1:1/w_600,c_limit/5f254a9f.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-153",
+      "title": "Ultraviolence",
+      "artist": "Lana Del Rey",
+      "year": 2014,
+      "genre": "Pop/R&B",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-153.webp",
+      "palette": {
+        "base": "#484848",
+        "accent": "#3a3a3a",
+        "deep": "#2f2f2f",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 153,
+        "votes": 239,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/19449-lana-del-rey-ultraviolence",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/19449-lana-del-rey-ultraviolence",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a82f9d034d5c69bf39a0/1:1/w_600,c_limit/65491a8f.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-154",
+      "title": "The Age of Adz",
+      "artist": "Sufjan Stevens",
+      "year": 2010,
+      "genre": "Folk/Country",
+      "label": "Asthmatic Kitty",
+      "coverUrl": "/covers/pitchfork-154.webp",
+      "palette": {
+        "base": "#d8a898",
+        "accent": "#ad867a",
+        "deep": "#8c6d63",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 154,
+        "votes": 238,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14738-the-age-of-adz",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14738-the-age-of-adz",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929abedea9e61561daa5e47/1:1/w_600,c_limit/28a16854.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-155",
+      "title": "Contra",
+      "artist": "Vampire Weekend",
+      "year": 2010,
+      "genre": "Rock",
+      "label": "XL",
+      "coverUrl": "/covers/pitchfork-155.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 155,
+        "votes": 238,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13807-contra",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13807-contra",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/657dd5555623204dbbcc241b/1:1/w_600,c_limit/Vampire-Weekend-Contra.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-156",
+      "title": "My Woman",
+      "artist": "Angel Olsen",
+      "year": 2016,
+      "genre": "Rock",
+      "label": "Jagjaguwar",
+      "coverUrl": "/covers/pitchfork-156.webp",
+      "palette": {
+        "base": "#281818",
+        "accent": "#201313",
+        "deep": "#1a1010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 156,
+        "votes": 236,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22282-my-woman",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22282-my-woman",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bc97abf31b7dc7155d62/1:1/w_600,c_limit/b536a49e.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-157",
+      "title": "Transatlanticism",
+      "artist": "Death Cab for Cutie",
+      "year": 2003,
+      "genre": "Rock",
+      "label": "Barsuk",
+      "coverUrl": "/covers/pitchfork-157.webp",
+      "palette": {
+        "base": "#f8c878",
+        "accent": "#c6a060",
+        "deep": "#a1824e",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 157,
+        "votes": 235,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18656-death-cab-for-cutie-transatlanticism",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18656-death-cab-for-cutie-transatlanticism",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a402c0084474cd0c03d4/1:1/w_600,c_limit/1885fae5.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-158",
+      "title": "Sea Change",
+      "artist": "Beck",
+      "year": 2002,
+      "genre": "Rock",
+      "label": "DGC",
+      "coverUrl": "/covers/pitchfork-158.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 158,
+        "votes": 232,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/617-sea-change",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/617-sea-change",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a24d13d197565213883a/1:1/w_600,c_limit/7815a71f.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-159",
+      "title": "To Be Kind",
+      "artist": "Swans",
+      "year": 2014,
+      "genre": "Rock",
+      "label": "Mute",
+      "coverUrl": "/covers/pitchfork-159.webp",
+      "palette": {
+        "base": "#d8c878",
+        "accent": "#ada060",
+        "deep": "#8c824e",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 159,
+        "votes": 232,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/19326-swans-to-be-kind",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/19326-swans-to-be-kind",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a776b1335d7bf169906f/1:1/w_600,c_limit/dfa26de1.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-160",
+      "title": "Neon Bible",
+      "artist": "Arcade Fire",
+      "year": 2007,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-160.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 160,
+        "votes": 231,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/9946-neon-bible",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/9946-neon-bible",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929af57c0084474cd0c1a68/1:1/w_600,c_limit/c1116fca.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-161",
+      "title": "Take Care",
+      "artist": "Drake",
+      "year": 2011,
+      "genre": "Rap",
+      "label": "Cash Money",
+      "coverUrl": "/covers/pitchfork-161.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 161,
+        "votes": 229,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16039-take-care",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16039-take-care",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b22f13d197565213a719/1:1/w_600,c_limit/67ce3bba.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-162",
+      "title": "The Monitor",
+      "artist": "Titus Andronicus",
+      "year": 2010,
+      "genre": "Rock",
+      "label": "XL",
+      "coverUrl": "/covers/pitchfork-162.webp",
+      "palette": {
+        "base": "#a8b8b8",
+        "accent": "#869393",
+        "deep": "#6d7878",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 162,
+        "votes": 228,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14010-the-monitor",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14010-the-monitor",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a8a1ea9e61561daa587d/1:1/w_600,c_limit/d22a5fa5.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-163",
+      "title": "U.F.O.F.",
+      "artist": "Big Thief",
+      "year": 2019,
+      "genre": "Rock",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-163.webp",
+      "palette": {
+        "base": "#182828",
+        "accent": "#132020",
+        "deep": "#101a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 163,
+        "votes": 227,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/big-thief-ufof",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/big-thief-ufof",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/645e8bbbcd576a0b9ef7fc00/1:1/w_600,c_limit/UFOF-Album-Cover-2019-Big-Thief.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-164",
+      "title": "Emergency & I",
+      "artist": "The Dismemberment Plan",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "DeSoto",
+      "coverUrl": "/covers/pitchfork-164.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 164,
+        "votes": 227,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/2338-emergency-i",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/2338-emergency-i",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b9a3ea9e61561daa7023/1:1/w_600,c_limit/e9af0617.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-165",
+      "title": "And Then Nothing Turned Itself Inside-Out",
+      "artist": "Yo La Tengo",
+      "year": 2000,
+      "genre": "Rock",
+      "label": "Matador",
+      "coverUrl": "/covers/pitchfork-165.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 165,
+        "votes": 225,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/8870-and-then-nothing-turned-itself-inside-out",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/8870-and-then-nothing-turned-itself-inside-out",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5ad110526930e90a24ed25e2/1:1/w_600,c_limit/Yo%20La%20Tengo-%20And%20Then%20Nothing%20Turned%20Itself%20Inside%20Out%20(2000).jpg"
+      }
+    },
+    {
+      "id": "pitchfork-166",
+      "title": "Feels",
+      "artist": "Animal Collective",
+      "year": 2005,
+      "genre": "Experimental",
+      "label": "FatCat",
+      "coverUrl": "/covers/pitchfork-166.webp",
+      "palette": {
+        "base": "#d8c8a8",
+        "accent": "#ada086",
+        "deep": "#8c826d",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 166,
+        "votes": 222,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/193-feels",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/193-feels",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/68b9a4090a0711ec2032a6b6/1:1/w_600,c_limit/Animal-Collective-Feels.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-167",
+      "title": "Ray of Light",
+      "artist": "Madonna",
+      "year": 1998,
+      "genre": "Pop/R&B",
+      "label": "Warner Bros.",
+      "coverUrl": "/covers/pitchfork-167.webp",
+      "palette": {
+        "base": "#488898",
+        "accent": "#3a6d7a",
+        "deep": "#2f5863",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 167,
+        "votes": 222,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/madonna-ray-of-light",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/madonna-ray-of-light",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5993731bb5493d7110d145a7/1:1/w_600,c_limit/rayoflight_madonna.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-168",
+      "title": "The Richard D. James Album",
+      "artist": "Aphex Twin",
+      "year": 1996,
+      "genre": "Electronic",
+      "label": "Warp",
+      "coverUrl": "/covers/pitchfork-168.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 168,
+        "votes": 221,
+        "metadataUrl": "https://music.apple.com/us/album/richard-d-james-album/281111401?uo=4",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/bc/20/6b/mzi.nhqretkn.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/richard-d-james-album/281111401?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-169",
+      "title": "XO",
+      "artist": "Elliott Smith",
+      "year": 1998,
+      "genre": "Rock",
+      "label": "DreamWorks",
+      "coverUrl": "/covers/pitchfork-169.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 169,
+        "votes": 221,
+        "metadataUrl": "https://www.universalmusic.ca/2019/08/06/elliott-smiths-major-label-masterpieces-xo-and-figure-8-out-now-as-digital-deluxe-editions/",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/bc/e0/e7/bce0e78b-be7d-648c-d910-59ffa456ad37/00600445004825.rgb.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/xo/1440760785?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-170",
+      "title": "The Woods",
+      "artist": "Sleater-Kinney",
+      "year": 2005,
+      "genre": "Rock",
+      "label": "Sub Pop",
+      "coverUrl": "/covers/pitchfork-170.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 170,
+        "votes": 219,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/7240-the-woods",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/7240-the-woods",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a4555e6ef95969320852/1:1/w_600,c_limit/491909e4.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-171",
+      "title": "What's Your Pleasure?",
+      "artist": "Jessie Ware",
+      "year": 2020,
+      "genre": "Pop/R&B",
+      "label": "PMR / Friends Keep Secrets / Interscope",
+      "coverUrl": "/covers/pitchfork-171.webp",
+      "palette": {
+        "base": "#281818",
+        "accent": "#201313",
+        "deep": "#1a1010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 171,
+        "votes": 218,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/jessie-ware-whats-your-pleasure/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/jessie-ware-whats-your-pleasure/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5ef619d08813ffa92664e83d/1:1/w_600,c_limit/What%E2%80%99s%20Your%20Pleasure?_Jessie%20Ware.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-172",
+      "title": "Saint Cloud",
+      "artist": "Waxahatchee",
+      "year": 2020,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-172.webp",
+      "palette": {
+        "base": "#b8c8d8",
+        "accent": "#93a0ad",
+        "deep": "#78828c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 172,
+        "votes": 215,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/waxahatchee-saint-cloud",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/waxahatchee-saint-cloud",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/645e63a4d014feef88cca205/1:1/w_600,c_limit/Waxahatchee-Saint-Cloud.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-173",
+      "title": "White Pony",
+      "artist": "Deftones",
+      "year": 2000,
+      "genre": "Metal",
+      "label": "Maverick",
+      "coverUrl": "/covers/pitchfork-173.webp",
+      "palette": {
+        "base": "#889898",
+        "accent": "#6d7a7a",
+        "deep": "#586363",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 173,
+        "votes": 210,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/deftones-white-pony",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/deftones-white-pony",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/645e71369ef4362f15d1ac2b/1:1/w_600,c_limit/Deftones-White-Pony.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-174",
+      "title": "Skeleton Tree",
+      "artist": "Nick Cave & the Bad Seeds",
+      "year": 2016,
+      "genre": "Rock",
+      "label": "Bad Seed Ltd.",
+      "coverUrl": "/covers/pitchfork-174.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 174,
+        "votes": 210,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22336-skeleton-tree",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22336-skeleton-tree",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6539233709b3de4c3ac8699d/1:1/w_600,c_limit/Nick-Cave-and-the-Bad-Seeds-Skeleton-Tree.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-175",
+      "title": "Depression Cherry",
+      "artist": "Beach House",
+      "year": 2015,
+      "genre": "Rock",
+      "label": "Bella Union",
+      "coverUrl": "/covers/pitchfork-175.webp",
+      "palette": {
+        "base": "#680818",
+        "accent": "#530613",
+        "deep": "#440510",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 175,
+        "votes": 208,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/20691-depression-cherry",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/20691-depression-cherry",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929aed09d034d5c69bf45f4/1:1/w_600,c_limit/9c17ddf5.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-176",
+      "title": "Hail to the Thief",
+      "artist": "Radiohead",
+      "year": 2003,
+      "genre": "Rock",
+      "label": "Capitol",
+      "coverUrl": "/covers/pitchfork-176.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 176,
+        "votes": 207,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13384-hail-to-the-thief-special-collectors-edition/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13384-hail-to-the-thief-special-collectors-edition/",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3c/95/1d/3c951d73-f6c6-12dd-34b4-cc95f63e210c/634904078560.png/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/hail-to-the-thief/1097863576?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-177",
+      "title": "Ga Ga Ga Ga Ga",
+      "artist": "Spoon",
+      "year": 2007,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-177.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 177,
+        "votes": 207,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/10390-ga-ga-ga-ga-ga",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/10390-ga-ga-ga-ga-ga",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b1405e6ef959693220c7/1:1/w_600,c_limit/28a720f8.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-178",
+      "title": "The Fame Monster",
+      "artist": "Lady Gaga",
+      "year": 2009,
+      "genre": "Pop/R&B",
+      "label": "Interscope",
+      "coverUrl": "/covers/pitchfork-178.webp",
+      "palette": {
+        "base": "#585858",
+        "accent": "#464646",
+        "deep": "#393939",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 178,
+        "votes": 205,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13823-the-fame-monster",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13823-the-fame-monster",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e9/1a/4e/e91a4eb9-31e7-89fb-3aad-e8172e534bb6/09UMGIM42295.rgb.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/the-fame-monster/1440814077?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-179",
+      "title": "Alligator",
+      "artist": "The National",
+      "year": 2005,
+      "genre": "Rock",
+      "label": "Beggars Banquet",
+      "coverUrl": "/covers/pitchfork-179.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 179,
+        "votes": 205,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/5719-alligator",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/5719-alligator",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c3aa5e6ef959693238a6/1:1/w_600,c_limit/5ef3ddb6.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-180",
+      "title": "Speakerboxxx/The Love Below",
+      "artist": "OutKast",
+      "year": 2003,
+      "genre": "Rap",
+      "label": "Arista",
+      "coverUrl": "/covers/pitchfork-180.webp",
+      "palette": {
+        "base": "#081818",
+        "accent": "#061313",
+        "deep": "#051010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 180,
+        "votes": 204,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/11796-speakerboxxxthe-love-below",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/11796-speakerboxxxthe-love-below",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/6504fdbe602ecd510704f64c/1:1/w_600,c_limit/Outkast-Speakerboxxx-The-Love-Below.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-181",
+      "title": "Celebration Rock",
+      "artist": "Japandroids",
+      "year": 2012,
+      "genre": "Rock",
+      "label": "Polyvinyl",
+      "coverUrl": "/covers/pitchfork-181.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 181,
+        "votes": 202,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/16564-japandroids-celebration-rock",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/16564-japandroids-celebration-rock",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929b5039d034d5c69bf4f63/1:1/w_600,c_limit/6cc98599.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-182",
+      "title": "Slowdive",
+      "artist": "Slowdive",
+      "year": 2017,
+      "genre": "Rock",
+      "label": "Dead Oceans",
+      "coverUrl": "/covers/pitchfork-182.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 182,
+        "votes": 199,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/23254-slowdive",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/23254-slowdive",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c566ea9e61561daa81cd/1:1/w_600,c_limit/61de16ab.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-183",
+      "title": "Women in Music Pt. III",
+      "artist": "Haim",
+      "year": 2020,
+      "genre": "Rock",
+      "label": "Columbia",
+      "coverUrl": "/covers/pitchfork-183.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 183,
+        "votes": 196,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/haim-women-in-music-pt-iii",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/haim-women-in-music-pt-iii",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5ef251988813ffa92664e509/1:1/w_600,c_limit/Women%20in%20Music%20Pt.%20III_Haim.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-184",
+      "title": "Push the Sky Away",
+      "artist": "Nick Cave & the Bad Seeds",
+      "year": 2013,
+      "genre": "Rock",
+      "label": "Bad Seed Ltd.",
+      "coverUrl": "/covers/pitchfork-184.webp",
+      "palette": {
+        "base": "#d8d8d8",
+        "accent": "#adadad",
+        "deep": "#8c8c8c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 184,
+        "votes": 196,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/17618-push-the-sky-away",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/17618-push-the-sky-away",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c243c0084474cd0c3432/1:1/w_600,c_limit/7ded3427.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-185",
+      "title": "F♯ A♯ ∞",
+      "artist": "Godspeed You! Black Emperor",
+      "year": 1997,
+      "genre": "Rock",
+      "label": "Constellation",
+      "coverUrl": "/covers/pitchfork-185.webp",
+      "palette": {
+        "base": "#180818",
+        "accent": "#130613",
+        "deep": "#100510",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 185,
+        "votes": 195,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/godspeed-you-black-emperor-f-a-infinity/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/godspeed-you-black-emperor-f-a-infinity/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5e4c3426159e01000820c835/1:1/w_600,c_limit/F%E2%99%AF%20A%E2%99%AF%20%E2%88%9E_Godspeed%20You!%20Black%20Emperor.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-186",
+      "title": "Time Out of Mind",
+      "artist": "Bob Dylan",
+      "year": 1997,
+      "genre": "Rock",
+      "label": "Columbia",
+      "coverUrl": "/covers/pitchfork-186.webp",
+      "palette": {
+        "base": "#181818",
+        "accent": "#131313",
+        "deep": "#101010",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 186,
+        "votes": 193,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/bob-dylan-time-out-of-mind",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/bob-dylan-time-out-of-mind",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5ad6530362be0b0b29074a9a/1:1/w_600,c_limit/Bob%20Dylan_time%20out%20of%20mind.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-187",
+      "title": "Some Rap Songs",
+      "artist": "Earl Sweatshirt",
+      "year": 2018,
+      "genre": "Rap",
+      "label": "Tan Cressida",
+      "coverUrl": "/covers/pitchfork-187.webp",
+      "palette": {
+        "base": "#c89888",
+        "accent": "#a07a6d",
+        "deep": "#826358",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 187,
+        "votes": 191,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/earl-sweatshirt-some-rap-songs",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/earl-sweatshirt-some-rap-songs",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/650510a6b07566d3ac5f7ccc/1:1/w_600,c_limit/Earl-Sweatshirt-Some-Rap-Songs.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-188",
+      "title": "The ArchAndroid",
+      "artist": "Janelle Monáe",
+      "year": 2010,
+      "genre": "Pop/R&B",
+      "label": "Bad Boy",
+      "coverUrl": "/covers/pitchfork-188.webp",
+      "palette": {
+        "base": "#080838",
+        "accent": "#06062d",
+        "deep": "#050524",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 188,
+        "votes": 191,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14271-the-archandroid",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14271-the-archandroid",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a9dc5e6ef959693214af/1:1/w_600,c_limit/12531582.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-189",
+      "title": "Return to Cookie Mountain",
+      "artist": "TV on the Radio",
+      "year": 2006,
+      "genre": "Rock",
+      "label": "4AD",
+      "coverUrl": "/covers/pitchfork-189.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 189,
+        "votes": 191,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/9177-return-to-cookie-mountain",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/9177-return-to-cookie-mountain",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ac31ea9e61561daa5eb9/1:1/w_600,c_limit/029923aa.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-190",
+      "title": "Mm..Food?",
+      "artist": "MF DOOM",
+      "year": 2004,
+      "genre": "Rap",
+      "label": "Rhymesayers Entertainment",
+      "coverUrl": "/covers/pitchfork-190.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 190,
+        "votes": 188,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/5255-mmfood",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/5255-mmfood",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c44fc0084474cd0c3670/1:1/w_600,c_limit/4446b004.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-191",
+      "title": "Purple Mountains",
+      "artist": "Purple Mountains",
+      "year": 2019,
+      "genre": "Rock",
+      "label": "Drag City",
+      "coverUrl": "/covers/pitchfork-191.webp",
+      "palette": {
+        "base": "#180818",
+        "accent": "#130613",
+        "deep": "#100510",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 191,
+        "votes": 188,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/purple-mountains-purple-mountains",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/purple-mountains-purple-mountains",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/66843f4bb321f667ccb47f91/1:1/w_600,c_limit/Purple-Mountains.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-192",
+      "title": "Microcastle / Weird Era Cont.",
+      "artist": "Deerhunter",
+      "year": 2008,
+      "genre": "Rock",
+      "label": "Kranky / 4AD",
+      "coverUrl": "/covers/pitchfork-192.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 192,
+        "votes": 186,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/12360-microcastle-weird-era-cont",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/12360-microcastle-weird-era-cont",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929bdeec0084474cd0c2ddc/1:1/w_600,c_limit/12c1d134.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-193",
+      "title": "Moon Safari",
+      "artist": "Air",
+      "year": 1998,
+      "genre": "Electronic",
+      "label": "Astralwerks / Virgin",
+      "coverUrl": "/covers/pitchfork-193.webp",
+      "palette": {
+        "base": "#f8f8f8",
+        "accent": "#c6c6c6",
+        "deep": "#a1a1a1",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 193,
+        "votes": 184,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/11442-moon-safari-10th-anniversary-edition/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/11442-moon-safari-10th-anniversary-edition/",
+        "coverSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d1/f9/26/d1f926e7-e996-7166-3744-0710a82177ac/017046664455.jpg/600x600bb.jpg",
+        "coverReleaseUrl": "https://music.apple.com/us/album/moon-safari/693063670?uo=4"
+      }
+    },
+    {
+      "id": "pitchfork-194",
+      "title": "Reflektor",
+      "artist": "Arcade Fire",
+      "year": 2013,
+      "genre": "Rock",
+      "label": "Merge",
+      "coverUrl": "/covers/pitchfork-194.webp",
+      "palette": {
+        "base": "#080808",
+        "accent": "#060606",
+        "deep": "#050505",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 194,
+        "votes": 184,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/18667-arcade-fire-reflektor",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/18667-arcade-fire-reflektor",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a40e13d1975652138c0f/1:1/w_600,c_limit/79062484.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-195",
+      "title": "I See a Darkness",
+      "artist": "Bonnie \"Prince\" Billy",
+      "year": 1999,
+      "genre": "Folk/Country",
+      "label": "Palace",
+      "coverUrl": "/covers/pitchfork-195.webp",
+      "palette": {
+        "base": "#282828",
+        "accent": "#202020",
+        "deep": "#1a1a1a",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 195,
+        "votes": 184,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/699-i-see-a-darkness",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/699-i-see-a-darkness",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a2a5ea9e61561daa4ac3/1:1/w_600,c_limit/02fdc5e1.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-196",
+      "title": "13",
+      "artist": "Blur",
+      "year": 1999,
+      "genre": "Rock",
+      "label": "Virgin",
+      "coverUrl": "/covers/pitchfork-196.webp",
+      "palette": {
+        "base": "#c85818",
+        "accent": "#a04613",
+        "deep": "#823910",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 196,
+        "votes": 183,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/831-13/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/831-13/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a0d99d034d5c69bf2804/1:1/w_600,c_limit/dd2c4191.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-197",
+      "title": "James Blake",
+      "artist": "James Blake",
+      "year": 2011,
+      "genre": "Pop/R&B",
+      "label": "A&M",
+      "coverUrl": "/covers/pitchfork-197.webp",
+      "palette": {
+        "base": "#d8e8e8",
+        "accent": "#adbaba",
+        "deep": "#8c9797",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 197,
+        "votes": 182,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/15081-james-blake",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/15081-james-blake",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929ad869d034d5c69bf43ac/1:1/w_600,c_limit/f2eff121.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-198",
+      "title": "Cosmogramma",
+      "artist": "Flying Lotus",
+      "year": 2010,
+      "genre": "Electronic",
+      "label": "Warp",
+      "coverUrl": "/covers/pitchfork-198.webp",
+      "palette": {
+        "base": "#a8a898",
+        "accent": "#86867a",
+        "deep": "#6d6d63",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 198,
+        "votes": 181,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/14198-cosmogramma",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/14198-cosmogramma",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a9865e6ef95969321426/1:1/w_600,c_limit/9586ed22.jpg"
+      }
+    },
+    {
+      "id": "pitchfork-199",
+      "title": "Bitte Orca",
+      "artist": "Dirty Projectors",
+      "year": 2009,
+      "genre": "Rock",
+      "label": "Domino",
+      "coverUrl": "/covers/pitchfork-199.webp",
+      "palette": {
+        "base": "#d8d8d8",
+        "accent": "#adadad",
+        "deep": "#8c8c8c",
+        "ink": "#171717"
+      },
+      "source": {
+        "rank": 199,
+        "votes": 175,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/13159-bitte-orca",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/13159-bitte-orca",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929a4b9ea9e61561daa4f93/1:1/w_600,c_limit/cc6b59a3.jpeg"
+      }
+    },
+    {
+      "id": "pitchfork-200",
+      "title": "Mama's Gun",
+      "artist": "Erykah Badu",
+      "year": 2000,
+      "genre": "Pop/R&B",
+      "label": "Motown",
+      "coverUrl": "/covers/pitchfork-200.webp",
+      "palette": {
+        "base": "#686808",
+        "accent": "#535306",
+        "deep": "#444405",
+        "ink": "#ffffff"
+      },
+      "source": {
+        "rank": 200,
+        "votes": 174,
+        "reviewUrl": "https://pitchfork.com/reviews/albums/22045-mamas-gun/",
+        "metadataUrl": "https://pitchfork.com/reviews/albums/22045-mamas-gun/",
+        "coverSourceUrl": "https://media.pitchfork.com/photos/5929c54a5e6ef95969323aa2/1:1/w_600,c_limit/14d33687.jpg"
+      }
+    }
+  ]
+}

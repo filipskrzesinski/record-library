@@ -8,6 +8,7 @@ export function GridCard({ album }: { album: AlbumWithStats }) {
       <Cover
         art={album.art}
         palette={album.palette}
+        src={album.coverUrl}
         className="rounded-[3px] shadow-cover transition-[transform,box-shadow] duration-300 ease-[var(--ease-out-soft)] group-hover:-translate-y-1.5 group-hover:shadow-cover-hover group-focus-visible:-translate-y-1.5 group-focus-visible:shadow-cover-hover"
       />
       <div className="mt-3">
