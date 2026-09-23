@@ -20,7 +20,7 @@ npm run dev
 | `src/data/pitchfork-200.json` | Ranked collection, album metadata, and per-album source URLs |
 | `public/covers/` | 200 optimized WebP album covers |
 | `scripts/import-pitchfork.mjs` | Repeatable source import and artwork download |
-| `src/lib/seed.ts` | Convert the imported collection to app records |
+| `src/lib/seed.ts` | Imported albums and 188 fictional sample listening sessions |
 | `src/lib/seed-migration.ts` | Preserve user changes while replacing untouched demos |
 | `src/lib/legacy-seed.ts` | Old sample data, retained only to recognize untouched demos |
 | `src/lib/art.ts` | Generated sleeve artwork and spine treatments |
@@ -48,14 +48,23 @@ drive the shelf spines; generated sleeves remain the fallback for manually added
 records or failed image loads. Artwork remains the property of its respective
 rights holders; source attribution does not grant an artwork license.
 
-Personal ratings, listening sessions, condition, catalog numbers, pressing,
+Personal ratings, condition, catalog numbers, pressing,
 mastering, speed, weight, format, and pressing country are deliberately unseeded:
 the poll does not establish which physical edition the user owns.
+
+The app includes 188 fictional listening sessions spread across 100 albums:
+50 albums have one listen, 25 have two, 15 have three, seven have four, and three
+have five. Dates span recent months, with varied locations, systems, and notes.
+These are sample app data, not information from Pitchfork or actual user history.
 
 Existing libraries receive the collection once. Only unchanged old demo records
 and their unchanged demo sessions are replaced; edited demos, user records, and
 user sessions survive. After import, deleting or editing albums is persistent,
 including an intentionally empty collection.
+
+A separate one-time migration adds the sample sessions to existing collections,
+preserving existing sessions and skipping deleted albums. Subsequent reloads do
+not restore deleted sample sessions or overwrite edits.
 
 ```bash
 npm run import:albums  # Refresh metadata and local covers; caches source responses in .context/

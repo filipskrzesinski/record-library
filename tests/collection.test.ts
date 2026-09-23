@@ -5,7 +5,7 @@ import { readdir } from 'node:fs/promises'
 import sharp from 'sharp'
 import Dexie from 'dexie'
 import { db, ensureSeed, deleteAlbum, sortAlbums } from '../src/lib/db'
-import { SEED_ALBUMS } from '../src/lib/seed'
+import { SEED_ALBUMS, SEED_LISTENS } from '../src/lib/seed'
 import { SEED_ALBUMS as DEMO_ALBUMS, SEED_LISTENS as DEMO_LISTENS } from '../src/lib/legacy-seed'
 
 afterEach(async () => {
@@ -37,11 +37,52 @@ test('all 200 ranks have complete sourced metadata and decodable local covers', 
   assert.equal(SEED_ALBUMS[187].artist, 'Janelle Monáe')
 })
 
-test('fresh and concurrent initialization imports once without invented listening history', async () => {
+test('sample sessions cover half the collection with varied dates and one to five listens', () => {
+  const counts = new Map<string, number>()
+  const albumIds = new Set(SEED_ALBUMS.map((album) => album.id))
+  const dates = new Set<string>()
+  for (const listen of SEED_LISTENS) {
+    assert.ok(albumIds.has(listen.albumId))
+    assert.ok(listen.location && listen.system && listen.notes)
+    assert.ok(listen.createdAt < Date.now())
+    assert.equal(listen.date, new Date(listen.createdAt).toISOString().slice(0, 10))
+    counts.set(listen.albumId, (counts.get(listen.albumId) ?? 0) + 1)
+    dates.add(listen.date)
+  }
+  assert.equal(counts.size, 100)
+  assert.equal(SEED_LISTENS.length, 188)
+  assert.equal(new Set(SEED_LISTENS.map((listen) => listen.id)).size, 188)
+  assert.ok(dates.size > 60)
+  assert.deepEqual([1, 2, 3, 4, 5].map((count) => [...counts.values()].filter((value) => value === count).length), [50, 25, 15, 7, 3])
+})
+
+test('fresh and concurrent initialization imports albums and sample sessions once', async () => {
   await Promise.all([ensureSeed(), ensureSeed(), ensureSeed()])
   assert.equal(await db.albums.count(), 200)
-  assert.equal(await db.listens.count(), 0)
-  assert.equal(await db.migrations.count(), 1)
+  assert.equal(await db.listens.count(), 188)
+  assert.equal(await db.migrations.count(), 2)
+})
+
+test('existing collections receive sample sessions without overwriting listens or reviving deleted albums', async () => {
+  await db.albums.bulkAdd(SEED_ALBUMS)
+  await db.migrations.add({ id: 'pitchfork-readers-200-v1' })
+  const deletedAlbumId = SEED_LISTENS[0].albumId
+  await deleteAlbum(deletedAlbumId)
+  const existingSample = { ...SEED_LISTENS[1], notes: 'My edited session' }
+  const userListen = { ...existingSample, id: 'my-listen', notes: 'My own session' }
+  await db.listens.bulkAdd([existingSample, userListen])
+  await Promise.all([ensureSeed(), ensureSeed()])
+  assert.equal(await db.albums.count(), 199)
+  assert.equal(await db.listens.where('albumId').equals(deletedAlbumId).count(), 0)
+  assert.deepEqual(await db.listens.get(existingSample.id), existingSample)
+  assert.deepEqual(await db.listens.get(userListen.id), userListen)
+  const expected = SEED_LISTENS.filter((listen) => listen.albumId !== deletedAlbumId).length + 1
+  assert.equal(await db.listens.count(), expected)
+
+  await db.listens.delete(existingSample.id)
+  await ensureSeed()
+  assert.equal(await db.listens.get(existingSample.id), undefined)
+  assert.equal(await db.listens.count(), expected - 1)
 })
 
 test('upgrades a version 1 library and replaces only untouched demo records', async () => {

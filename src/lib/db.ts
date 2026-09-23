@@ -22,21 +22,31 @@ export const db = new LibraryDB()
 
 export async function ensureSeed() {
   const migrationId = 'pitchfork-readers-200-v1'
-  if (await db.migrations.get(migrationId)) return
-  const [{ SEED_ALBUMS }, { untouchedDemoIds }] = await Promise.all([
+  const sessionsMigrationId = 'pitchfork-sample-sessions-v1'
+  if ((await db.migrations.bulkGet([migrationId, sessionsMigrationId])).every(Boolean)) return
+  const [{ SEED_ALBUMS, SEED_LISTENS }, { untouchedDemoIds }] = await Promise.all([
     import('./seed'),
     import('./seed-migration'),
   ])
   await db.transaction('rw', db.albums, db.listens, db.migrations, async () => {
     // Recheck under the write lock: another tab may have finished importing.
-    if (await db.migrations.get(migrationId)) return
-    const [albums, listens] = await Promise.all([db.albums.toArray(), db.listens.toArray()])
-    const demoIds = untouchedDemoIds(albums, listens)
-    await db.listens.where('albumId').anyOf(demoIds).delete()
-    await db.albums.bulkDelete(demoIds)
-    const existing = new Set(albums.map((album) => album.id))
-    await db.albums.bulkAdd(SEED_ALBUMS.filter((album) => !existing.has(album.id)))
-    await db.migrations.add({ id: migrationId })
+    if (!await db.migrations.get(migrationId)) {
+      const [albums, listens] = await Promise.all([db.albums.toArray(), db.listens.toArray()])
+      const demoIds = untouchedDemoIds(albums, listens)
+      await db.listens.where('albumId').anyOf(demoIds).delete()
+      await db.albums.bulkDelete(demoIds)
+      const existing = new Set(albums.map((album) => album.id))
+      await db.albums.bulkAdd(SEED_ALBUMS.filter((album) => !existing.has(album.id)))
+      await db.migrations.add({ id: migrationId })
+    }
+    if (!await db.migrations.get(sessionsMigrationId)) {
+      const albumIds = new Set(await db.albums.toCollection().primaryKeys())
+      const listenIds = new Set(await db.listens.toCollection().primaryKeys())
+      await db.listens.bulkAdd(SEED_LISTENS.filter((listen) =>
+        albumIds.has(listen.albumId) && !listenIds.has(listen.id),
+      ))
+      await db.migrations.add({ id: sessionsMigrationId })
+    }
   })
 }
 
