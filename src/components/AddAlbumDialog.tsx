@@ -130,7 +130,7 @@ export function AddAlbumDialog({
             />
           </Field>
           <div>
-            <span className="label-xs mb-2 block">Rating</span>
+            <span className="font-label text-label uppercase text-ink-faint mb-2 block">Rating</span>
             <div className="flex h-8 items-center">
               <Rating value={rating} onChange={setRating} />
             </div>
@@ -140,7 +140,7 @@ export function AddAlbumDialog({
           </Field>
 
           <div className="col-span-2">
-            <span className="label-xs mb-3 block">Sleeve</span>
+            <span className="font-label text-label uppercase text-ink-faint mb-3 block">Sleeve</span>
             <div className="flex flex-wrap gap-2">
               {ART_STYLES.map((style) => (
                 <button
@@ -150,7 +150,7 @@ export function AddAlbumDialog({
                   onClick={() => setArt(style)}
                   style={coverStyle(style, palette)}
                   className={cn(
-                    'size-9 rounded-[2px] shadow-lift ring-1 ring-inset ring-[rgba(0,0,0,0.14)] transition-transform duration-150 hover:-translate-y-0.5',
+                    'size-9 rounded-sm shadow-lift ring-1 ring-inset ring-sleeve-edge-soft transition-transform duration-150 hover:-translate-y-0.5',
                     art === style && 'outline outline-1 outline-offset-2 outline-ink',
                   )}
                 />
@@ -165,7 +165,7 @@ export function AddAlbumDialog({
                   onClick={() => setPalette(p.palette)}
                   style={{ backgroundImage: `linear-gradient(135deg, ${p.palette.base} 50%, ${p.palette.accent} 50%)` }}
                   className={cn(
-                    'size-5 rounded-full ring-1 ring-inset ring-[rgba(0,0,0,0.16)] transition-transform duration-150 hover:scale-110',
+                    'size-5 rounded-pill ring-1 ring-inset ring-sleeve-edge transition-transform duration-150 hover:scale-110',
                     palette.base === p.palette.base && 'outline outline-1 outline-offset-2 outline-ink',
                   )}
                 />

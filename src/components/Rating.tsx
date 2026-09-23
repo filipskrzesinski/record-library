@@ -23,7 +23,7 @@ export function Rating({
             aria-label={`${n}`}
             onClick={() => onChange?.(n === value ? 0 : n)}
             className={cn(
-              'h-[4px] w-[20px] rounded-full transition-colors duration-150',
+              'h-[4px] w-[20px] rounded-pill transition-colors duration-150',
               filled ? 'bg-ink' : 'bg-ink/12',
               editable && 'cursor-pointer',
               editable && !filled && 'hover:bg-ink/45',

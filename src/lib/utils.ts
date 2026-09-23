@@ -1,5 +1,15 @@
 import { clsx, type ClassValue } from 'clsx'
-import { twMerge } from 'tailwind-merge'
+import { extendTailwindMerge } from 'tailwind-merge'
+
+// Tell the merger these are sizes, not colors, so text-body and text-ink coexist.
+export const textStyles = [
+  'body', 'body-relaxed', 'small', 'caption', 'metadata', 'label', 'glyph',
+  'heading', 'dialog', 'record', 'record-sm', 'display', 'display-md', 'display-sm', 'empty',
+]
+
+const twMerge = extendTailwindMerge({
+  extend: { theme: { text: textStyles, radius: ['pill'] } },
+})
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))

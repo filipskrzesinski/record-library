@@ -49,12 +49,12 @@ export function Editable({
   }
 
   const shared = cn(
-    '-mx-1 w-[calc(100%+8px)] rounded-[2px] bg-transparent px-1 text-left outline-none focus-visible:outline-none',
+    '-mx-1 w-[calc(100%+8px)] rounded-sm bg-transparent px-1 text-left outline-none focus-visible:outline-none',
     className,
   )
 
   if (editing) {
-    const box = cn(shared, 'bg-ink/4 shadow-[inset_0_-1px_0_0_var(--color-ink)]')
+    const box = cn(shared, 'bg-ink/4 shadow-edit')
     return multiline ? (
       <textarea
         ref={areaRef}
@@ -67,7 +67,7 @@ export function Editable({
           if (e.key === 'Escape') cancel()
           if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) commit()
         }}
-        className={cn(box, 'block resize-none overflow-hidden py-0.5 leading-[1.7]')}
+        className={cn(box, 'block resize-none overflow-hidden py-0.5 font-body-relaxed text-body-relaxed')}
       />
     ) : (
       <input
@@ -93,7 +93,7 @@ export function Editable({
         shared,
         'block cursor-text transition-colors duration-150 hover:bg-ink/5',
         multiline
-          ? 'whitespace-pre-wrap py-0.5 leading-[1.7]'
+          ? 'whitespace-pre-wrap py-0.5 font-body-relaxed text-body-relaxed'
           : wrap
             ? 'whitespace-normal'
             : 'h-[1.7em] truncate',

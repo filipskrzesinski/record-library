@@ -12,18 +12,18 @@ function spineHeight(format?: string) {
 
 export function SpineRow({ album }: { album: AlbumWithStats }) {
   return (
-    <Link to={`/album/${album.id}`} className="record-spine block overflow-visible rounded-[2px] shadow-spine">
+    <Link to={`/album/${album.id}`} className="record-spine block overflow-visible rounded-sm shadow-spine">
       <div
         style={{ ...spineStyle(album.palette), height: spineHeight(album.format) }}
-        className="flex items-center gap-4 overflow-hidden rounded-[2px] px-4 ring-1 ring-inset ring-[rgba(0,0,0,0.16)]"
+        className="flex items-center gap-4 overflow-hidden rounded-sm px-4 ring-1 ring-inset ring-sleeve-edge"
       >
         <div className="flex min-w-0 flex-1 items-baseline gap-3.5">
-          <span className="truncate font-serif text-[15px] font-light tracking-[-0.01em]">
+          <span className="truncate font-record-sm text-record-sm">
             {album.title}
           </span>
-          <span className="truncate text-[11px] opacity-70">{album.artist}</span>
+          <span className="truncate font-caption text-caption opacity-70">{album.artist}</span>
         </div>
-        <div className="flex shrink-0 items-baseline gap-5 text-[10px] uppercase tracking-[0.09em]">
+        <div className="flex shrink-0 items-baseline gap-5 font-label text-label uppercase">
           <span className="hidden max-w-[220px] truncate opacity-45 lg:block">
             {[album.label, album.catalog].filter(Boolean).join(' · ')}
           </span>

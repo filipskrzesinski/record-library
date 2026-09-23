@@ -21,8 +21,8 @@ import type { Album, Listen } from '@/lib/types'
 function Row({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="grid grid-cols-[86px_minmax(0,1fr)] items-baseline gap-5 border-t border-line py-2.5 sm:grid-cols-[104px_minmax(0,1fr)]">
-      <dt className="label-xs">{label}</dt>
-      <dd className="min-w-0 text-[12.5px]">{children}</dd>
+      <dt className="font-label text-label uppercase text-ink-faint">{label}</dt>
+      <dd className="min-w-0 font-body text-body">{children}</dd>
     </div>
   )
 }
@@ -50,7 +50,7 @@ export function AlbumDetail() {
       <>
         <TopBar />
         <div className="flex flex-col items-center gap-5 py-40">
-          <span className="font-serif text-[40px] font-light text-ink-faint">—</span>
+          <span className="font-empty text-empty text-ink-faint">—</span>
           <Button variant="outline" onClick={() => navigate('/')}>
             Collection
           </Button>
@@ -75,7 +75,7 @@ export function AlbumDetail() {
         left={
           <Link
             to="/"
-            className="text-[11px] text-ink-faint transition-colors duration-150 hover:text-ink"
+            className="font-caption text-caption text-ink-faint transition-colors duration-150 hover:text-ink"
           >
             ← Collection
           </Link>
@@ -99,17 +99,17 @@ export function AlbumDetail() {
           value={album.title}
           onSave={(value) => value && updateAlbum(album.id, { title: value })}
           wrap
-          className="display max-w-[16ch] text-[clamp(34px,6.5vw,72px)]"
+          className="max-w-[16ch] font-display-sm text-display-sm sm:font-display-md sm:text-display-md lg:font-display lg:text-display"
         />
         <div className="mt-4 flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1">
-          <div className="min-w-0 max-w-[36ch] flex-1 text-[13px] text-ink-muted">
+          <div className="min-w-0 max-w-[36ch] flex-1 font-body text-body text-ink-muted">
             <Editable
               value={album.artist}
               onSave={(value) => value && updateAlbum(album.id, { artist: value })}
               wrap
             />
           </div>
-          <div className="label-xs">
+          <div className="font-label text-label uppercase text-ink-faint">
             {[album.year, album.label, album.catalog].filter(Boolean).join(' · ')}
           </div>
         </div>
@@ -123,7 +123,7 @@ export function AlbumDetail() {
             src={album.coverUrl}
             alt={`${album.title} by ${album.artist} album cover`}
             loading="eager"
-            className="rounded-[3px] shadow-cover"
+            className="rounded-md shadow-cover"
           />
           <div className="mt-6 flex items-center justify-between gap-4">
             <Rating
@@ -204,14 +204,14 @@ export function AlbumDetail() {
 
       <section className="mt-16 px-6 pb-32 sm:px-10 xl:px-16">
         <div className="flex items-center justify-between gap-6 border-b border-ink/25 pb-2.5">
-          <h2 className="label-xs">Sessions · {listens.length}</h2>
+          <h2 className="font-label text-label uppercase text-ink-faint">Sessions · {listens.length}</h2>
           <Button variant="outline" size="sm" onClick={() => setAdding(true)}>
             Add
           </Button>
         </div>
 
         {listens.length === 0 ? (
-          <p className="border-t border-line py-4 text-[13px] text-ink-faint">—</p>
+          <p className="border-t border-line py-4 font-body text-body text-ink-faint">—</p>
         ) : (
           <ul>
             {listens.map((listen) => (
@@ -237,21 +237,21 @@ function SessionRow({ listen }: { listen: Listen }) {
     updateListen(listen.id, { [key]: value || undefined })
 
   return (
-    <li className="group relative grid grid-cols-1 items-start gap-x-8 gap-y-2 border-t border-line py-3.5 transition-colors duration-150 hover:bg-ink/[0.02] md:grid-cols-[132px_minmax(0,1fr)_minmax(0,300px)]">
-      <div className="text-[11px] text-ink-muted">
+    <li className="group relative grid grid-cols-1 items-start gap-x-8 gap-y-2 border-t border-line py-3.5 transition-colors duration-150 hover:bg-ink/2 md:grid-cols-[132px_minmax(0,1fr)_minmax(0,300px)]">
+      <div className="font-caption text-caption text-ink-muted">
         <Editable
           type="date"
           value={listen.date}
           onSave={(value) => value && updateListen(listen.id, { date: value })}
         />
-        <div className="label-xs mt-0.5">{ago(listen.date)}</div>
+        <div className="font-label text-label uppercase text-ink-faint mt-0.5">{ago(listen.date)}</div>
       </div>
 
-      <div className="min-w-0 text-[13px]">
+      <div className="min-w-0 font-body text-body">
         <Editable value={listen.notes} onSave={save('notes')} placeholder="Notes" multiline />
       </div>
 
-      <div className="min-w-0 text-[11px] text-ink-faint md:text-right">
+      <div className="min-w-0 font-caption text-caption text-ink-faint md:text-right">
         <Editable
           value={listen.location}
           onSave={save('location')}

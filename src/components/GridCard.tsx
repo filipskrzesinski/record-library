@@ -37,7 +37,7 @@ export function GridCard({ album }: { album: AlbumWithStats }) {
   return (
     <Link
       to={`/album/${album.id}`}
-      className="record-card block rounded-[3px]"
+      className="record-card block rounded-md"
       onPointerEnter={followPointer}
       onPointerMove={followPointer}
       onPointerLeave={resetTilt}
@@ -48,14 +48,14 @@ export function GridCard({ album }: { album: AlbumWithStats }) {
           art={album.art}
           palette={album.palette}
           src={album.coverUrl}
-          className="record-card-art rounded-[3px] shadow-cover"
+          className="record-card-art rounded-md shadow-cover"
         />
       </div>
       <div className="mt-3">
-        <div className="truncate font-serif text-[20px] font-light leading-[24px] tracking-[-0.01em] text-ink">
+        <div className="truncate font-record text-record text-ink">
           {album.title}
         </div>
-        <div className="mt-1 truncate text-[11px] leading-[15px] text-ink-muted">
+        <div className="mt-1 truncate font-metadata text-metadata text-ink-muted">
           {album.artist}
           {album.year ? ` · ${album.year}` : ''}
         </div>

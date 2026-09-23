@@ -27,6 +27,35 @@ npm run dev
 | `src/routes/Library.tsx` | Grid and list views, sorting |
 | `src/routes/AlbumDetail.tsx` | Metadata, inline editing, sessions |
 | `src/components/ui/` | Button, input, field, dialog, select |
+| `src/theme.css` | Shared Tailwind typography, hex colors, radii, and effects |
+
+## Theme
+
+Edit `src/theme.css` for visual tokens; `src/index.css` contains base styles and interactions.
+Every text role pairs `--text-{role}` with an explicit `--font-{role}`, with pixel sizes,
+line heights, and letter spacing. Use both utilities; keep color separate:
+
+```tsx
+<p className="font-body text-body text-ink-muted">Record details</p>
+<h1 className="font-heading text-heading text-ink-strong">Collection</h1>
+```
+
+- Inter: `body`, `body-relaxed`, `small`, `caption`, `metadata`, `label`, `glyph`.
+- Jura: `heading`, `dialog`. Newsreader: `record`, `record-sm`, `display`,
+  `display-md`, `display-sm`, `empty`.
+- Album detail titles use fixed pixel steps: `display-sm` → `sm:display-md` →
+  `lg:display` (apply both font and text utilities at each breakpoint).
+- Use `uppercase` with `label`; use `font-medium` for button emphasis.
+- Radii: `rounded-xs` indicators, `rounded-sm` spines/inline editors,
+  `rounded-md` covers/controls, `rounded-lg` popovers, `rounded-xl` dialogs,
+  `rounded-pill` ratings/swatches.
+- UI colors are hex (eight-digit hex for transparent tokens); Tailwind opacity
+  modifiers such as `bg-ink/6` derive from them. Album palettes in `src/lib/art.ts`
+  and the record data are content colors, not UI tokens.
+
+Avoid ad-hoc text sizes, tracking, or radii. Register any new text role in
+`src/lib/utils.ts` so class merging distinguishes it from a text color.
+`tests/theme.test.ts` checks the token format and migration boundaries.
 
 ## Collection sources
 

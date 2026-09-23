@@ -18,7 +18,7 @@ export function TopBar({
           {left ?? (
             <Link
               to="/"
-              className="text-[11px] transition-colors duration-150 hover:text-ink-muted"
+              className="font-caption text-caption transition-colors duration-150 hover:text-ink-muted"
             >
               Record Library
             </Link>
@@ -44,12 +44,12 @@ export function ToggleItem({
     <button
       type="button"
       onClick={onClick}
-      className={`flex items-center gap-2 text-[11px] transition-colors duration-150 ${
+      className={`flex items-center gap-2 font-caption text-caption transition-colors duration-150 ${
         active ? 'text-ink' : 'text-ink-faint hover:text-ink-muted'
       }`}
     >
       <span
-        className={`inline-block size-[9px] rounded-[1px] border transition-colors duration-150 ${
+        className={`inline-block size-[9px] rounded-xs border transition-colors duration-150 ${
           active ? 'border-ink bg-ink' : 'border-ink-faint'
         }`}
       />

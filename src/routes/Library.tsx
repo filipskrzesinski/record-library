@@ -45,7 +45,7 @@ export function Library() {
               size="sm"
               aria-label={desc ? 'Descending' : 'Ascending'}
               onClick={() => setDesc(!desc)}
-              className="w-7 px-0 text-[11px]"
+              className="w-7 px-0"
             >
               {desc ? '↓' : '↑'}
             </Button>
@@ -57,8 +57,8 @@ export function Library() {
       />
 
       <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 px-6 pb-6 pt-12 sm:px-10 xl:px-16">
-        <h1 className="heading text-[40px] leading-[40px]">Collection</h1>
-        <div className="text-[11px] tabular-nums text-ink-muted">
+        <h1 className="font-heading text-heading text-ink-strong">Collection</h1>
+        <div className="font-caption text-caption tabular-nums text-ink-muted">
           {albums ? `${albums.length} records · ${plays} plays` : ' '}
         </div>
       </div>
@@ -66,7 +66,7 @@ export function Library() {
       <main className="px-6 pb-32 pt-6 sm:px-10 xl:px-16">
         {albums && albums.length === 0 && (
           <div className="flex flex-col items-center gap-5 py-32">
-            <span className="font-serif text-[40px] font-light text-ink-faint">—</span>
+            <span className="font-empty text-empty text-ink-faint">—</span>
             <Button variant="outline" onClick={() => setAdding(true)}>
               Add a record
             </Button>

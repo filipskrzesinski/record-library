@@ -1,0 +1,163 @@
+/* Tailwind v4: the UI's shared visual vocabulary. Album palettes remain record data. */
+@theme {
+  --color-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+
+  /* Neutral gray surfaces under warm ink. Nothing is pure white or pure black. */
+  --color-paper: #ededed;
+  --color-paper-high: #f4f4f4;
+  --color-raised: #f9f9f9;
+  --color-well: #e4e4e4;
+  --color-line: #d8d8d8;
+  --color-line-soft: #e2e2e2;
+  --color-ink-strong: #171717;
+  --color-ink: #322e29;
+  --color-ink-muted: #676159;
+  --color-ink-faint: #9d968c;
+  --color-danger: #a8402f;
+
+  --color-overlay: #2e282042;
+  --color-selection: #322e291f;
+  --color-focus: #322e2973;
+  --color-scrollbar: #322e2924;
+  --color-scrollbar-hover: #322e293d;
+  --color-sleeve-edge: #00000029;
+  --color-sleeve-edge-soft: #00000024;
+
+  /* Pair text-{role} with font-{role}; every role has explicit pixel metrics. */
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-body: 13px;
+  --text-body--line-height: 20px;
+  --text-body--letter-spacing: -0.08px;
+  --text-body--font-weight: 400;
+
+  --font-body-relaxed: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-body-relaxed: 13px;
+  --text-body-relaxed--line-height: 22px;
+  --text-body-relaxed--letter-spacing: -0.08px;
+  --text-body-relaxed--font-weight: 400;
+
+  --font-small: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-small: 12px;
+  --text-small--line-height: 19px;
+  --text-small--letter-spacing: -0.08px;
+  --text-small--font-weight: 400;
+
+  --font-caption: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-caption: 11px;
+  --text-caption--line-height: 17px;
+  --text-caption--letter-spacing: -0.08px;
+  --text-caption--font-weight: 400;
+
+  --font-metadata: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-metadata: 11px;
+  --text-metadata--line-height: 15px;
+  --text-metadata--letter-spacing: -0.08px;
+  --text-metadata--font-weight: 400;
+
+  --font-label: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-label: 10px;
+  --text-label--line-height: 12px;
+  --text-label--letter-spacing: 1px;
+  --text-label--font-weight: 400;
+
+  --font-glyph: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-glyph: 9px;
+  --text-glyph--line-height: 9px;
+  --text-glyph--letter-spacing: -0.08px;
+  --text-glyph--font-weight: 400;
+
+  --font-heading: "Jura", ui-sans-serif, system-ui, sans-serif;
+  --text-heading: 40px;
+  --text-heading--line-height: 40px;
+  --text-heading--letter-spacing: 0px;
+  --text-heading--font-weight: 500;
+
+  --font-dialog: "Jura", ui-sans-serif, system-ui, sans-serif;
+  --text-dialog: 24px;
+  --text-dialog--line-height: 24px;
+  --text-dialog--letter-spacing: 0px;
+  --text-dialog--font-weight: 500;
+
+  --font-record: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-record: 20px;
+  --text-record--line-height: 24px;
+  --text-record--letter-spacing: -0.2px;
+  --text-record--font-weight: 300;
+
+  --font-record-sm: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-record-sm: 15px;
+  --text-record-sm--line-height: 23.25px;
+  --text-record-sm--letter-spacing: -0.15px;
+  --text-record-sm--font-weight: 300;
+
+  --font-display: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-display: 72px;
+  --text-display--line-height: 75.6px;
+  --text-display--letter-spacing: -1.08px;
+  --text-display--font-weight: 300;
+
+  --font-display-md: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-display-md: 52px;
+  --text-display-md--line-height: 54.6px;
+  --text-display-md--letter-spacing: -0.78px;
+  --text-display-md--font-weight: 300;
+
+  --font-display-sm: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-display-sm: 34px;
+  --text-display-sm--line-height: 35.7px;
+  --text-display-sm--letter-spacing: -0.51px;
+  --text-display-sm--font-weight: 300;
+
+  --font-empty: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-empty: 40px;
+  --text-empty--line-height: 62px;
+  --text-empty--letter-spacing: -0.08px;
+  --text-empty--font-weight: 300;
+
+  /* Indicators, spines, controls/covers, popovers, dialogs, pills. */
+  --radius-xs: 1px;
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-xl: 5px;
+  --radius-pill: 9999px;
+
+  --shadow-lift:
+    0 1px 1px #2e28200a,
+    0 3px 8px -3px #2e282017;
+  --shadow-float:
+    0 1px 2px #2e28200d,
+    0 10px 22px -10px #2e282029,
+    0 28px 56px -28px #2e282038;
+  --shadow-cover:
+    0 2px 4px #2a241c17,
+    0 14px 26px -12px #2a241c42,
+    0 38px 66px -38px #2a241c57;
+  --shadow-cover-hover:
+    0 4px 8px #2a241c1a,
+    0 22px 40px -14px #2a241c4c,
+    0 60px 90px -50px #2a241c66;
+  --shadow-spine:
+    0 1px 1px #2a241c12,
+    0 6px 14px -8px #2a241c3d;
+  --shadow-dialog:
+    0 2px 6px #2a241c0f,
+    0 22px 56px -20px #2a241c47,
+    0 60px 110px -60px #2a241c66;
+
+  --shadow-edit: inset 0 -1px 0 0 var(--color-ink);
+  --shadow-sleeve-texture: inset 0 0 0 1px #0000001f, inset 0 0 50px #0000001f;
+  --background-image-sleeve-sheen: linear-gradient(118deg, #ffffff21 0%, #ffffff00 36%, #0000000f 100%);
+
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.25, 1);
+
+  --animate-overlay-in: overlay-in 0.2s var(--ease-out-soft);
+  --animate-overlay-out: overlay-out 0.15s ease-in;
+  --animate-dialog-in: dialog-in 0.24s var(--ease-out-soft);
+  --animate-dialog-out: dialog-out 0.15s ease-in;
+  --animate-pop-in: pop-in 0.14s var(--ease-out-soft);
+  --animate-rise: rise 0.4s var(--ease-out-soft) both;
+  --animate-card-fade-in: card-fade-in 0.3s var(--ease-out-soft) backwards;
+}
