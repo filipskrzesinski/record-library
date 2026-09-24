@@ -99,7 +99,11 @@
   }
 
   .history-entry:hover .history-thumb {
-    box-shadow: var(--shadow-cover);
+    box-shadow: var(--shadow-cover-hover);
+  }
+
+  .history-entry:hover .history-thumb > img {
+    transform: translate(var(--shift-x, 0px), var(--shift-y, 0px)) scale(1.06);
   }
 
   .history:has(.history-entry:hover) .history-row:not(:has(.history-entry:hover)) > * {
@@ -108,11 +112,16 @@
 }
 
 .history-row > * {
-  transition: opacity 240ms ease, background-color 150ms ease;
+  transition: opacity 240ms ease;
 }
 
 .history-thumb {
   transition: box-shadow 240ms var(--ease-out-soft);
+}
+
+/* Scaled slightly on hover so the shifted artwork never reveals the sleeve edge. */
+.history-thumb > img {
+  transition: transform 320ms var(--ease-out-soft);
 }
 
 /* Shelf (cover flow). The scroller only supplies position; the sticky stage draws.

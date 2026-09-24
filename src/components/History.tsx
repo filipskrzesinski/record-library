@@ -1,21 +1,22 @@
+import { useEffect, useRef, type PointerEvent } from 'react'
 import { Link } from 'react-router-dom'
 import type { Session } from '@/lib/db'
-import { ago } from '@/lib/format'
+import { ago, plural } from '@/lib/format'
 import { Cover } from './Cover'
 
-const dayFormat = new Intl.DateTimeFormat('en', { weekday: 'short', month: 'short', day: 'numeric' })
-const dayYearFormat = new Intl.DateTimeFormat('en', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })
+const weekdayFormat = new Intl.DateTimeFormat('en', { weekday: 'long' })
+const monthFormat = new Intl.DateTimeFormat('en', { month: 'long' })
 
 /** Listen dates are calendar days; read them at local noon so no timezone shifts the day. */
 function day(date: string) {
   return new Date(`${date}T12:00:00`)
 }
 
-/** "Tue, Sep 22 · yesterday"; the year only appears once it isn't this year. */
-function dayLabel(date: string) {
-  const when = day(date)
-  const format = when.getFullYear() === new Date().getFullYear() ? dayFormat : dayYearFormat
-  return `${format.format(when)} · ${ago(date)}`
+/** "Today", "Yesterday", then "3d ago", "2w ago"… */
+function relative(date: string) {
+  const age = ago(date)
+  if (age === 'today' || age === 'yesterday') return age[0].toUpperCase() + age.slice(1)
+  return `${age} ago`
 }
 
 /** Sessions arrive newest first, so same-day listens are already adjacent. */
@@ -34,79 +35,121 @@ function deck(system?: string) {
   return system?.split('→')[0].trim()
 }
 
-/** A centred timeline, newest first, with sessions alternating either side of the line. */
+/** A stack of days, newest first: a large date on the left, that day's records laid out beside it. */
 export function History({ sessions, batch = Infinity }: { sessions: Session[]; batch?: number }) {
   let index = 0
 
   return (
-    <div className="history relative mx-auto max-w-5xl">
-      <div
-        aria-hidden
-        className="absolute bottom-1 top-10 left-3.5 w-px -translate-x-1/2 bg-line md:left-1/2"
-      />
-
+    <div className="history">
       {groupByDay(sessions).map((group) => (
-        <section key={group.date} className="relative">
-          <h2 className="relative flex pb-4 pt-8 md:justify-center">
-            <time
-              dateTime={group.date}
-              className="bg-paper-high py-1 font-label text-label uppercase text-ink-faint md:px-3"
-            >
-              {dayLabel(group.date)}
-            </time>
-          </h2>
+        <section
+          key={group.date}
+          className="flex w-full flex-col items-start gap-6 border-t border-line py-10 md:flex-row md:gap-16 md:py-16"
+        >
+          <DayHeading date={group.date} count={group.sessions.length} />
 
-          <ol>
+          <ol className="flex w-full min-w-0 grow basis-0 flex-col items-start gap-8 md:w-auto md:flex-row md:flex-wrap md:gap-x-10 md:gap-y-12">
             {group.sessions.map((session) => {
               const i = index++
-              return <Entry key={session.id} session={session} left={i % 2 === 0} delay={Math.min(i % batch, 12) * 24} />
+              return <Entry key={session.id} session={session} delay={Math.min(i % batch, 12) * 24} />
             })}
           </ol>
         </section>
       ))}
-
-      <div aria-hidden className="relative flex pt-6 md:justify-center">
-        <span className="ml-2.5 size-2 rounded-pill bg-line md:ml-0" />
-      </div>
     </div>
   )
 }
 
-function Entry({ session, left, delay }: { session: Session; left: boolean; delay: number }) {
-  const { album } = session
-  const where = [session.location, deck(session.system)].filter(Boolean).join(' · ')
+function DayHeading({ date, count }: { date: string; count: number }) {
+  const when = day(date)
+  const month = monthFormat.format(when)
+  const year = when.getFullYear()
 
   return (
-    <li
-      className="history-row group grid animate-rise grid-cols-[28px_minmax(0,1fr)] items-center gap-x-4 py-2 md:grid-cols-[minmax(0,1fr)_64px_minmax(0,1fr)] md:gap-x-0"
-      style={{ animationDelay: `${delay}ms` }}
-    >
-      <span
-        aria-hidden
-        className="col-start-1 row-start-1 size-2 justify-self-center rounded-pill bg-ink-faint/70 ring-4 ring-paper-high transition-colors duration-150 group-hover:bg-ink md:col-start-2"
-      />
+    <h2 className="flex w-full flex-none flex-col items-start gap-3 md:w-64">
+      <time dateTime={date} className="flex flex-col flex-nowrap items-start gap-3">
+        <span className="font-date text-date leading-16 text-ink tabular-nums md:text-[128px] md:leading-[6.625rem]">
+          {when.getDate()}
+        </span>
+        <span className="flex flex-col items-start gap-1 pt-3 font-label text-label uppercase">
+          <span className="text-ink">{weekdayFormat.format(when)}</span>
+          <span className="text-ink-faint">
+            {year === new Date().getFullYear() ? month : `${month} ${year}`}
+          </span>
+        </span>
+      </time>
+      <span className="flex items-center gap-2 pl-1 font-caption text-caption text-ink-faint">
+        <span>{relative(date)}</span>
+        <span aria-hidden>·</span>
+        <span>{plural(count, 'record')}</span>
+      </span>
+    </h2>
+  )
+}
 
+function Entry({ session, delay }: { session: Session; delay: number }) {
+  const { album } = session
+  const where = [session.location, deck(session.system)].filter(Boolean).join(' · ')
+  const frame = useRef<number | null>(null)
+
+  useEffect(() => () => {
+    if (frame.current !== null) cancelAnimationFrame(frame.current)
+  }, [])
+
+  /** Nudge the artwork toward the cursor; the sleeve itself stays put and clips it. */
+  function followPointer(event: PointerEvent<HTMLAnchorElement>) {
+    if (event.pointerType === 'touch' || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return
+
+    const link = event.currentTarget
+    const thumb = link.querySelector('.history-thumb')
+    if (!thumb) return
+    const bounds = thumb.getBoundingClientRect()
+    const x = Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width) * 2 - 1))
+    const y = Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height) * 2 - 1))
+
+    if (frame.current !== null) cancelAnimationFrame(frame.current)
+    frame.current = requestAnimationFrame(() => {
+      link.style.setProperty('--shift-x', `${x * 6}px`)
+      link.style.setProperty('--shift-y', `${y * 6}px`)
+      frame.current = null
+    })
+  }
+
+  function resetShift(event: PointerEvent<HTMLAnchorElement>) {
+    if (frame.current !== null) cancelAnimationFrame(frame.current)
+    frame.current = null
+    event.currentTarget.style.removeProperty('--shift-x')
+    event.currentTarget.style.removeProperty('--shift-y')
+  }
+
+  return (
+    <li className="history-row w-full animate-rise md:w-56" style={{ animationDelay: `${delay}ms` }}>
       <Link
         to={`/album/${album.id}`}
-        className={`history-entry col-start-2 row-start-1 flex min-w-0 max-w-[min(100%,28rem)] items-center gap-4 rounded-lg p-2 transition-colors duration-150 hover:bg-ink/3 ${
-          left
-            ? 'md:col-start-1 pr-6 md:flex-row-reverse md:pl-6 md:pr-2 md:justify-self-end md:text-right'
-            : 'pr-6 md:col-start-3 md:justify-self-start'
-        }`}
+        className="history-entry flex w-full flex-col items-start gap-8"
+        onPointerEnter={followPointer}
+        onPointerMove={followPointer}
+        onPointerLeave={resetShift}
+        onPointerCancel={resetShift}
       >
         <Cover
           art={album.art}
           palette={album.palette}
           src={album.coverUrl}
-          className="history-thumb size-24 shrink-0 rounded-md shadow-spine"
+          alt={`${album.title} by ${album.artist}`}
+          className="history-thumb w-full rounded-md shadow-cover"
         />
-        <div className="min-w-0">
-          <div className="truncate font-record-md text-record-md text-ink">{album.title}</div>
-          <div className="truncate font-caption text-caption text-ink-muted">
-            {album.artist}
-            {album.year ? ` · ${album.year}` : ''}
-          </div>
-          {where && <div className="mt-0.5 truncate font-metadata text-metadata text-ink-faint">{where}</div>}
+        <div className="flex w-full flex-col items-start">
+          <span className="w-full font-record-lg text-record-lg text-ink">
+            {album.title}
+          </span>
+          <span className="flex flex-col items-start gap-1">
+            <span className="font-small text-small text-ink-muted">
+              {album.artist}
+              {album.year ? ` · ${album.year}` : ''}
+            </span>
+            {where && <span className="font-metadata text-metadata text-ink-faint">{where}</span>}
+          </span>
         </div>
       </Link>
     </li>
