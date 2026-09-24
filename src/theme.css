@@ -80,6 +80,12 @@
   --text-dialog--letter-spacing: 0px;
   --text-dialog--font-weight: 500;
 
+  --font-record-lg: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-record-lg: 28px;
+  --text-record-lg--line-height: 32px;
+  --text-record-lg--letter-spacing: -0.28px;
+  --text-record-lg--font-weight: 300;
+
   --font-record: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
   --text-record: 20px;
   --text-record--line-height: 24px;
@@ -115,6 +121,13 @@
   --text-display-sm--line-height: 35.7px;
   --text-display-sm--letter-spacing: -0.51px;
   --text-display-sm--font-weight: 300;
+
+  /* The day numeral heading each History row. */
+  --font-date: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-date: 96px;
+  --text-date--line-height: 84px;
+  --text-date--letter-spacing: -2.88px;
+  --text-date--font-weight: 300;
 
   --font-empty: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
   --text-empty: 40px;
