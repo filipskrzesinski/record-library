@@ -166,6 +166,15 @@
   overflow: hidden;
   perspective: calc(var(--cover) * 3);
   perspective-origin: 50% calc(var(--shelf-top) + var(--cover) / 2);
+  /* Sleeves dissolve into the paper toward both edges. Masked here, not on
+     .shelf-floor, because a mask would flatten the floor's preserve-3d. */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 28%,
+    black 72%,
+    transparent
+  );
 }
 
 .shelf-floor {
@@ -191,6 +200,10 @@
     translateZ(calc(var(--near) * var(--cover) * -0.6))
     rotateY(calc(var(--side) * -64deg));
   opacity: clamp(0, calc(13 - var(--dist)), 1);
+  box-shadow:
+    0 4px 10px #2a241c24,
+    0 24px 48px -16px #2a241c59,
+    0 56px 96px -40px #2a241c73;
   -webkit-tap-highlight-color: transparent;
 }
 
