@@ -57,7 +57,7 @@ export type SortKey = 'rank' | 'added' | 'released' | 'artist' | 'title' | 'list
 export type ViewMode = 'grid' | 'list' | 'shelf'
 
 export const SORTS: { key: SortKey; label: string }[] = [
-  { key: 'rank', label: 'Pitchfork rank' },
+  { key: 'rank', label: 'Rank' },
   { key: 'added', label: 'Date added' },
   { key: 'released', label: 'Release date' },
   { key: 'artist', label: 'Artist' },

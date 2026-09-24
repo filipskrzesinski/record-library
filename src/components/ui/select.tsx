@@ -19,12 +19,11 @@ export function Select<T extends string>({
       <SelectPrimitive.Trigger
         aria-label={ariaLabel}
         className={cn(
-          'inline-flex h-8 items-center gap-2 rounded-md bg-raised px-3 font-caption text-caption text-ink shadow-lift ring-1 ring-line outline-none transition-colors hover:bg-paper-high hover:ring-ink-faint/70 data-[state=open]:ring-ink-faint',
+          'inline-flex h-8 items-center gap-2 rounded-md px-2.5 font-caption text-caption text-ink-muted outline-none transition-colors hover:bg-ink/6 hover:text-ink data-[state=open]:bg-ink/6 data-[state=open]:text-ink',
           className,
         )}
       >
         <SelectPrimitive.Value />
-        <SelectPrimitive.Icon className="font-glyph text-glyph text-ink-faint">▾</SelectPrimitive.Icon>
       </SelectPrimitive.Trigger>
       <SelectPrimitive.Portal>
         <SelectPrimitive.Content

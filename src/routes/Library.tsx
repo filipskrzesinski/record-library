@@ -3,7 +3,7 @@ import { AddAlbumDialog } from '@/components/AddAlbumDialog'
 import { GridCard } from '@/components/GridCard'
 import { Shelf } from '@/components/Shelf'
 import { SpineRow } from '@/components/SpineRow'
-import { ToggleItem, TopBar } from '@/components/TopBar'
+import { GridIcon, ListIcon, ShelfIcon, ToggleItem, TopBar } from '@/components/TopBar'
 import { Button } from '@/components/ui/button'
 import { Select } from '@/components/ui/select'
 import { useLibrary } from '@/lib/db'
@@ -13,7 +13,7 @@ import { SORTS, type SortKey, type ViewMode } from '@/lib/types'
 export function Library() {
   const [sort, setSort] = usePersisted<SortKey>('sort', 'rank')
   const [desc, setDesc] = usePersisted('desc', false)
-  const [view, setView] = usePersisted<ViewMode>('view', 'grid')
+  const [view, setView] = usePersisted<ViewMode>('view', 'shelf')
   const [adding, setAdding] = useState(false)
   const albums = useLibrary(sort, desc)
 
@@ -24,44 +24,46 @@ export function Library() {
       <TopBar
         center={
           <>
-            <ToggleItem active={view === 'grid'} onClick={() => setView('grid')}>
-              Grid
+            <ToggleItem label="Grid" active={view === 'grid'} onClick={() => setView('grid')}>
+              <GridIcon />
             </ToggleItem>
-            <ToggleItem active={view === 'list'} onClick={() => setView('list')}>
-              List
+            <ToggleItem label="List" active={view === 'list'} onClick={() => setView('list')}>
+              <ListIcon />
             </ToggleItem>
-            <ToggleItem active={view === 'shelf'} onClick={() => setView('shelf')}>
-              Shelf
+            <ToggleItem label="Shelf" active={view === 'shelf'} onClick={() => setView('shelf')}>
+              <ShelfIcon />
             </ToggleItem>
           </>
         }
         right={
           <>
-            <Select
-              aria-label="Sort by"
-              value={sort}
-              onValueChange={setSort}
-              options={SORTS.map((s) => ({ value: s.key, label: s.label }))}
-              className="h-7"
-            />
-            <Button
-              variant="outline"
-              size="sm"
-              aria-label={desc ? 'Descending' : 'Ascending'}
-              onClick={() => setDesc(!desc)}
-              className="w-7 px-0"
-            >
-              {desc ? '↓' : '↑'}
-            </Button>
-            <Button variant="solid" size="sm" onClick={() => setAdding(true)}>
+            <div className="flex items-center">
+              <Button
+                variant="quiet"
+                size="sm"
+                aria-label={desc ? 'Descending' : 'Ascending'}
+                onClick={() => setDesc(!desc)}
+                className="w-7 px-0"
+              >
+                {desc ? '↓' : '↑'}
+              </Button>
+              <Select
+                aria-label="Sort by"
+                value={sort}
+                onValueChange={setSort}
+                options={SORTS.map((s) => ({ value: s.key, label: s.label }))}
+                className="h-7"
+              />
+            </div>
+            <Button variant="quiet" size="sm" className="-mr-2.5" onClick={() => setAdding(true)}>
               Add
             </Button>
           </>
         }
       />
 
-      <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 px-6 pb-6 pt-12 sm:px-10 xl:px-16">
-        <h1 className="font-heading text-heading text-ink-strong">Collection</h1>
+      <div className="flex flex-col items-center px-6 pb-6 pt-12 sm:px-10 xl:px-16">
+        <h1 className="sr-only">Collection</h1>
         <div className="font-caption text-caption tabular-nums text-ink-muted">
           {albums ? `${albums.length} records · ${plays} plays` : ' '}
         </div>

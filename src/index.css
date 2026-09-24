@@ -49,22 +49,6 @@
     opacity: 0.35;
     cursor: pointer;
   }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-scrollbar);
-    border: 3px solid transparent;
-    background-clip: content-box;
-    border-radius: var(--radius-pill);
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-scrollbar-hover);
-    border: 3px solid transparent;
-    background-clip: content-box;
-  }
 }
 
 /* Keep the hit area and labels stationary while the sleeve tilts in place. */
