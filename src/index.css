@@ -97,6 +97,22 @@
   .record-list:has(.record-spine:hover) .record-spine:not(:hover) {
     opacity: 0.6;
   }
+
+  .history-entry:hover .history-thumb {
+    box-shadow: var(--shadow-cover);
+  }
+
+  .history:has(.history-entry:hover) .history-row:not(:has(.history-entry:hover)) > * {
+    opacity: 0.6;
+  }
+}
+
+.history-row > * {
+  transition: opacity 240ms ease, background-color 150ms ease;
+}
+
+.history-thumb {
+  transition: box-shadow 240ms var(--ease-out-soft);
 }
 
 /* Shelf (cover flow). The scroller only supplies position; the sticky stage draws.

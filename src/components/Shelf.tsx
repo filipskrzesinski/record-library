@@ -173,7 +173,7 @@ export function Shelf({ albums }: { albums: AlbumWithStats[] }) {
             </div>
 
             {current && (
-              <div className="shelf-caption flex flex-col items-center px-6 text-center" aria-live="polite">
+              <div className="shelf-caption z-50 flex flex-col items-center px-6 text-center" aria-live="polite">
                 <div className="max-w-full truncate font-record text-record text-ink">{current.title}</div>
                 <div className="mt-1 max-w-full truncate font-metadata text-metadata text-ink-muted">
                   {current.artist}

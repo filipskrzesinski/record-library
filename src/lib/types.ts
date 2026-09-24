@@ -54,7 +54,7 @@ export interface Listen {
 }
 
 export type SortKey = 'rank' | 'added' | 'released' | 'artist' | 'title' | 'listens' | 'played'
-export type ViewMode = 'grid' | 'list' | 'shelf'
+export type ViewMode = 'grid' | 'list' | 'shelf' | 'history'
 
 export const SORTS: { key: SortKey; label: string }[] = [
   { key: 'rank', label: 'Rank' },

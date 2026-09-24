@@ -1,3 +1,4 @@
+import { isoDate } from './format'
 import type { Album, Listen } from './types'
 import collection from '../data/pitchfork-200.json'
 
@@ -32,23 +33,63 @@ const SESSION_NOTES = [
   'Weekend listening with the windows open.',
 ]
 
+/** The top of the listening history, most recent first. */
+const RECENT_TITLES = [
+  'Kid A',
+  'Mezzanine',
+  'In Colour',
+  'Yankee Hotel Foxtrot',
+  'To Pimp a Butterfly',
+  'Merriweather Post Pavilion',
+]
+
+const GROUPS = 100
+
+/** Days before import for each session of group i; session 0 is the group's most recent. */
+function daysAgo(i: number, session: number) {
+  return 1 + ((i * 17) % 90) + session * (9 + (i % 22))
+}
+
 // Coprime strides scatter the selected albums and repeat counts across the ranking.
-export const SEED_LISTENS: Listen[] = Array.from({ length: 100 }, (_, i) => {
-  const album = SEED_ALBUMS[(i * 73) % SEED_ALBUMS.length]
+const picks = Array.from({ length: GROUPS }, (_, i) => SEED_ALBUMS[(i * 73) % SEED_ALBUMS.length].id)
+
+// Swap whole albums between groups so the most recent sessions play RECENT_TITLES in order,
+// keeping every date and each album's share of listens.
+const newestFirst = Array.from({ length: GROUPS }, (_, i) => i).sort((a, b) => daysAgo(a, 0) - daysAgo(b, 0) || a - b)
+RECENT_TITLES.forEach((title, slot) => {
+  const target = SEED_ALBUMS.find((album) => album.title === title)?.id
+  const current = picks[newestFirst[slot]]
+  if (!target || target === current) return
+  for (let i = 0; i < GROUPS; i++) {
+    if (picks[i] === current) picks[i] = target
+    else if (picks[i] === target) picks[i] = current
+  }
+})
+
+export const SEED_LISTENS: Listen[] = picks.flatMap((albumId, i) => {
   const bucket = (i * 37) % 100
   const count = bucket < 50 ? 1 : bucket < 75 ? 2 : bucket < 90 ? 3 : bucket < 97 ? 4 : 5
   return Array.from({ length: count }, (_, session) => {
-    const daysAgo = 1 + ((i * 17) % 90) + session * (9 + (i % 22))
-    const createdAt = importedAt - daysAgo * 86_400_000
+    // Minutes apart so same-day sessions keep a stable order.
+    const createdAt = importedAt - daysAgo(i, session) * 86_400_000 - i * 60_000
     const setting = SETTINGS[(i + session) % SETTINGS.length]
     const noteIndex = (i * 7 + session * 5) % SESSION_NOTES.length
     return {
-      id: `sample-${album.id}-${session + 1}`,
-      albumId: album.id,
-      date: new Date(createdAt).toISOString().slice(0, 10),
+      id: `sample-${albumId}-${session + 1}`,
+      albumId,
+      date: isoDate(createdAt),
       ...setting,
       notes: SESSION_NOTES[noteIndex],
       createdAt,
     }
   })
-}).flat()
+})
+
+/** A generated sample session the user hasn't edited, safe to regenerate. */
+export function isUntouchedSample(listen: Listen) {
+  return (
+    listen.id.startsWith('sample-') &&
+    SESSION_NOTES.includes(listen.notes ?? '') &&
+    SETTINGS.some((setting) => setting.location === listen.location && setting.system === listen.system)
+  )
+}

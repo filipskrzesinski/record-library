@@ -22,9 +22,10 @@ export const db = new LibraryDB()
 
 export async function ensureSeed() {
   const migrationId = 'pitchfork-readers-200-v1'
-  const sessionsMigrationId = 'pitchfork-sample-sessions-v1'
+  // v3 pins the most recent sample sessions to hand-picked records, dated in local time.
+  const sessionsMigrationId = 'pitchfork-sample-sessions-v3'
   if ((await db.migrations.bulkGet([migrationId, sessionsMigrationId])).every(Boolean)) return
-  const [{ SEED_ALBUMS, SEED_LISTENS }, { untouchedDemoIds }] = await Promise.all([
+  const [{ SEED_ALBUMS, SEED_LISTENS, isUntouchedSample }, { untouchedDemoIds }] = await Promise.all([
     import('./seed'),
     import('./seed-migration'),
   ])
@@ -40,6 +41,9 @@ export async function ensureSeed() {
       await db.migrations.add({ id: migrationId })
     }
     if (!await db.migrations.get(sessionsMigrationId)) {
+      // Regenerate earlier sample sessions; any the user has edited stay as they are.
+      const stale = (await db.listens.toArray()).filter(isUntouchedSample).map((listen) => listen.id)
+      await db.listens.bulkDelete(stale)
       const albumIds = new Set(await db.albums.toCollection().primaryKeys())
       const listenIds = new Set(await db.listens.toCollection().primaryKeys())
       await db.listens.bulkAdd(SEED_LISTENS.filter((listen) =>
@@ -157,6 +161,26 @@ export function useLibrary(sort: SortKey, desc: boolean) {
     },
     [sort, desc],
   )
+}
+
+export interface Session extends Listen {
+  album: Album
+}
+
+/** Every listen joined to its album, newest first. */
+export function useHistory() {
+  return useLiveQuery(async () => {
+    const [albums, listens] = await Promise.all([db.albums.toArray(), db.listens.toArray()])
+    const byId = new Map(albums.map((album) => [album.id, album]))
+    const sessions: Session[] = []
+    for (const listen of listens) {
+      const album = byId.get(listen.albumId)
+      if (album) sessions.push({ ...listen, album })
+    }
+    return sessions.sort((a, b) =>
+      a.date < b.date ? 1 : a.date > b.date ? -1 : b.createdAt - a.createdAt,
+    )
+  })
 }
 
 /** Wrapped so that `undefined` means loading and `{ album: undefined }` means missing. */

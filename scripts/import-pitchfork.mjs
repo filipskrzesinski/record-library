@@ -46,6 +46,9 @@ if (sourceAlbums.length !== 200 || sourceAlbums.some((a, i) => a.Rank !== i + 1)
   throw new Error('Expected exactly 200 consecutive rankings')
 }
 
+// Left out of the library entirely: no metadata, no cover, no sample sessions.
+const excludedArtists = new Set(['Taylor Swift'])
+
 const reviewOverrides = {
   53: 'https://pitchfork.com/reviews/albums/belle-and-sebastian-if-youre-feeling-sinister/',
 }
@@ -111,6 +114,7 @@ let next = 0
 async function worker() {
   while (next < sourceAlbums.length) {
     const row = sourceAlbums[next++]
+    if (excludedArtists.has(row.Artist)) continue
     try {
       const rank = String(row.Rank).padStart(3, '0')
       const reviewUrl = reviewOverrides[row.Rank] ?? (row.URL === '#' ? undefined : row.URL.replace('www.pitchfork.com', 'pitchfork.com'))
@@ -174,6 +178,6 @@ await writeFile('src/data/pitchfork-200.json', JSON.stringify({
   sourceUrl,
   bundleUrl,
   retrievedAt: new Date().toISOString().slice(0, 10),
-  albums,
+  albums: albums.filter(Boolean),
 }, null, 2) + '\n')
-console.log('Saved all 200 albums and local covers.')
+console.log(`Saved ${albums.filter(Boolean).length} albums and local covers.`)

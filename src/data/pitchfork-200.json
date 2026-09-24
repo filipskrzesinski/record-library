@@ -1485,28 +1485,6 @@
       }
     },
     {
-      "id": "pitchfork-068",
-      "title": "folklore",
-      "artist": "Taylor Swift",
-      "year": 2020,
-      "genre": "Pop/R&B",
-      "label": "Republic",
-      "coverUrl": "/covers/pitchfork-068.webp",
-      "palette": {
-        "base": "#888888",
-        "accent": "#6d6d6d",
-        "deep": "#585858",
-        "ink": "#ffffff"
-      },
-      "source": {
-        "rank": 68,
-        "votes": 447,
-        "reviewUrl": "https://pitchfork.com/reviews/albums/taylor-swift-folklore",
-        "metadataUrl": "https://pitchfork.com/reviews/albums/taylor-swift-folklore",
-        "coverSourceUrl": "https://media.pitchfork.com/photos/5f1e2abad421092dd8f6c7ca/1:1/w_600,c_limit/Taylor_Swift_folklore.jpeg"
-      }
-    },
-    {
       "id": "pitchfork-069",
       "title": "Titanic Rising",
       "artist": "Weyes Blood",
@@ -2301,28 +2279,6 @@
       }
     },
     {
-      "id": "pitchfork-105",
-      "title": "1989",
-      "artist": "Taylor Swift",
-      "year": 2014,
-      "genre": "Pop/R&B",
-      "label": "Big Machine",
-      "coverUrl": "/covers/pitchfork-105.webp",
-      "palette": {
-        "base": "#c8b898",
-        "accent": "#a0937a",
-        "deep": "#827863",
-        "ink": "#171717"
-      },
-      "source": {
-        "rank": 105,
-        "votes": 330,
-        "reviewUrl": "https://pitchfork.com/reviews/albums/taylor-swift-1989",
-        "metadataUrl": "https://pitchfork.com/reviews/albums/taylor-swift-1989",
-        "coverSourceUrl": "https://media.pitchfork.com/photos/6352ca1910018fe2819d1184/1:1/w_600,c_limit/Taylor-Swift-1989.jpg"
-      }
-    },
-    {
       "id": "pitchfork-106",
       "title": "Pop 2",
       "artist": "Charli XCX",
@@ -2608,28 +2564,6 @@
         "reviewUrl": "https://pitchfork.com/reviews/albums/silver-jews-american-water",
         "metadataUrl": "https://pitchfork.com/reviews/albums/silver-jews-american-water",
         "coverSourceUrl": "https://media.pitchfork.com/photos/597b999e764548658cfd2b9d/1:1/w_600,c_limit/americanwater_silverjews.jpg"
-      }
-    },
-    {
-      "id": "pitchfork-119",
-      "title": "Red",
-      "artist": "Taylor Swift",
-      "year": 2012,
-      "genre": "Pop/R&B",
-      "label": "Big Machine",
-      "coverUrl": "/covers/pitchfork-119.webp",
-      "palette": {
-        "base": "#282838",
-        "accent": "#20202d",
-        "deep": "#1a1a24",
-        "ink": "#ffffff"
-      },
-      "source": {
-        "rank": 119,
-        "votes": 292,
-        "reviewUrl": "https://pitchfork.com/reviews/albums/taylor-swift-red",
-        "metadataUrl": "https://pitchfork.com/reviews/albums/taylor-swift-red",
-        "coverSourceUrl": "https://media.pitchfork.com/photos/6352cd4063dcacf1f2521078/1:1/w_600,c_limit/Taylor-Swift-Red.jpg"
       }
     },
     {

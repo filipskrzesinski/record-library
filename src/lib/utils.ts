@@ -4,7 +4,7 @@ import { extendTailwindMerge } from 'tailwind-merge'
 // Tell the merger these are sizes, not colors, so text-body and text-ink coexist.
 export const textStyles = [
   'body', 'body-relaxed', 'small', 'caption', 'metadata', 'label', 'glyph',
-  'heading', 'dialog', 'record', 'record-sm', 'display', 'display-md', 'display-sm', 'empty',
+  'heading', 'dialog', 'record', 'record-md', 'record-sm', 'display', 'display-md', 'display-sm', 'empty',
 ]
 
 const twMerge = extendTailwindMerge({

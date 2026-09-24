@@ -86,6 +86,12 @@
   --text-record--letter-spacing: -0.2px;
   --text-record--font-weight: 300;
 
+  --font-record-md: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --text-record-md: 18px;
+  --text-record-md--line-height: 23px;
+  --text-record-md--letter-spacing: -0.18px;
+  --text-record-md--font-weight: 300;
+
   --font-record-sm: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
   --text-record-sm: 15px;
   --text-record-sm--line-height: 23.25px;

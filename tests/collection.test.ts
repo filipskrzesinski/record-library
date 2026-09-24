@@ -5,6 +5,7 @@ import { readdir } from 'node:fs/promises'
 import sharp from 'sharp'
 import Dexie from 'dexie'
 import { db, ensureSeed, deleteAlbum, sortAlbums } from '../src/lib/db'
+import { isoDate } from '../src/lib/format'
 import { SEED_ALBUMS, SEED_LISTENS } from '../src/lib/seed'
 import { SEED_ALBUMS as DEMO_ALBUMS, SEED_LISTENS as DEMO_LISTENS } from '../src/lib/legacy-seed'
 
@@ -12,12 +13,15 @@ afterEach(async () => {
   await db.delete({ disableAutoOpen: false })
 })
 
-test('all 200 ranks have complete sourced metadata and decodable local covers', async () => {
-  assert.equal(SEED_ALBUMS.length, 200)
-  assert.equal(new Set(SEED_ALBUMS.map((album) => album.id)).size, 200)
-  assert.equal((await readdir('public/covers')).filter((name) => name.endsWith('.webp')).length, 200)
+test('every seeded rank has complete sourced metadata and a decodable local cover', async () => {
+  // The 2021 list has 200 ranks; Taylor Swift's three albums are left out.
+  assert.equal(SEED_ALBUMS.length, 197)
+  assert.equal(new Set(SEED_ALBUMS.map((album) => album.id)).size, 197)
+  assert.equal((await readdir('public/covers')).filter((name) => name.endsWith('.webp')).length, 197)
+  assert.ok(!SEED_ALBUMS.some((album) => album.artist === 'Taylor Swift'))
   for (const [i, album] of SEED_ALBUMS.entries()) {
-    assert.equal(album.source?.rank, i + 1)
+    assert.ok(album.source && album.source.rank > (SEED_ALBUMS[i - 1]?.source?.rank ?? 0))
+    assert.equal(album.id, `pitchfork-${String(album.source.rank).padStart(3, '0')}`)
     assert.ok(album.title && album.artist && album.year && album.genre && album.label)
     assert.ok(album.source.votes > 0)
     assert.ok(!/[Ã�]/.test(album.artist))
@@ -33,8 +37,8 @@ test('all 200 ranks have complete sourced metadata and decodable local covers', 
     assert.equal(album.pressing, undefined)
   }
   assert.equal(SEED_ALBUMS[0].title, 'Kid A')
-  assert.equal(SEED_ALBUMS[199].title, "Mama's Gun")
-  assert.equal(SEED_ALBUMS[187].artist, 'Janelle Monáe')
+  assert.equal(SEED_ALBUMS.at(-1)!.title, "Mama's Gun")
+  assert.equal(SEED_ALBUMS.find((album) => album.source?.rank === 188)!.artist, 'Janelle Monáe')
 })
 
 test('sample sessions cover half the collection with varied dates and one to five listens', () => {
@@ -45,7 +49,7 @@ test('sample sessions cover half the collection with varied dates and one to fiv
     assert.ok(albumIds.has(listen.albumId))
     assert.ok(listen.location && listen.system && listen.notes)
     assert.ok(listen.createdAt < Date.now())
-    assert.equal(listen.date, new Date(listen.createdAt).toISOString().slice(0, 10))
+    assert.equal(listen.date, isoDate(listen.createdAt))
     counts.set(listen.albumId, (counts.get(listen.albumId) ?? 0) + 1)
     dates.add(listen.date)
   }
@@ -54,11 +58,29 @@ test('sample sessions cover half the collection with varied dates and one to fiv
   assert.equal(new Set(SEED_LISTENS.map((listen) => listen.id)).size, 188)
   assert.ok(dates.size > 60)
   assert.deepEqual([1, 2, 3, 4, 5].map((count) => [...counts.values()].filter((value) => value === count).length), [50, 25, 15, 7, 3])
+
+  const title = new Map(SEED_ALBUMS.map((album) => [album.id, album.title]))
+  const newest = [...SEED_LISTENS].sort((a, b) => b.createdAt - a.createdAt).slice(0, 6)
+  assert.deepEqual(newest.map((listen) => title.get(listen.albumId)), [
+    'Kid A', 'Mezzanine', 'In Colour', 'Yankee Hotel Foxtrot', 'To Pimp a Butterfly', 'Merriweather Post Pavilion',
+  ])
+})
+
+test('regenerates untouched sample sessions from an earlier seed and keeps edited ones', async () => {
+  await db.albums.bulkAdd(SEED_ALBUMS)
+  await db.migrations.bulkAdd([{ id: 'pitchfork-readers-200-v1' }, { id: 'pitchfork-sample-sessions-v1' }])
+  const oldSample = { ...SEED_LISTENS[0], id: 'sample-pitchfork-003-9', albumId: 'pitchfork-003' }
+  const editedSample = { ...oldSample, id: 'sample-pitchfork-004-9', albumId: 'pitchfork-004', notes: 'Mine' }
+  await db.listens.bulkAdd([oldSample, editedSample])
+  await ensureSeed()
+  assert.equal(await db.listens.get(oldSample.id), undefined)
+  assert.deepEqual(await db.listens.get(editedSample.id), editedSample)
+  assert.equal(await db.listens.count(), SEED_LISTENS.length + 1)
 })
 
 test('fresh and concurrent initialization imports albums and sample sessions once', async () => {
   await Promise.all([ensureSeed(), ensureSeed(), ensureSeed()])
-  assert.equal(await db.albums.count(), 200)
+  assert.equal(await db.albums.count(), 197)
   assert.equal(await db.listens.count(), 188)
   assert.equal(await db.migrations.count(), 2)
 })
@@ -72,7 +94,7 @@ test('existing collections receive sample sessions without overwriting listens o
   const userListen = { ...existingSample, id: 'my-listen', notes: 'My own session' }
   await db.listens.bulkAdd([existingSample, userListen])
   await Promise.all([ensureSeed(), ensureSeed()])
-  assert.equal(await db.albums.count(), 199)
+  assert.equal(await db.albums.count(), 196)
   assert.equal(await db.listens.where('albumId').equals(deletedAlbumId).count(), 0)
   assert.deepEqual(await db.listens.get(existingSample.id), existingSample)
   assert.deepEqual(await db.listens.get(userListen.id), userListen)
@@ -106,7 +128,7 @@ test('upgrades a version 1 library and replaces only untouched demo records', as
   await db.listens.update(redated.id, { date: '2026-01-02' })
   await ensureSeed()
 
-  assert.equal(await db.albums.count(), 206)
+  assert.equal(await db.albums.count(), 203)
   assert.deepEqual(await db.albums.get('my-record'), userAlbum)
   assert.equal((await db.albums.get('kind-of-blue'))?.notes, 'My own notes')
   assert.deepEqual(await db.listens.get('my-listen'), userListen)
@@ -122,7 +144,7 @@ test('reload preserves imported album edits and does not resurrect deleted recor
   await db.albums.update('pitchfork-001', { notes: 'My notes', rating: 4 })
   await deleteAlbum('pitchfork-002')
   await ensureSeed()
-  assert.equal(await db.albums.count(), 199)
+  assert.equal(await db.albums.count(), 196)
   assert.equal((await db.albums.get('pitchfork-001'))?.notes, 'My notes')
   assert.equal((await db.albums.get('pitchfork-001'))?.rating, 4)
   assert.equal(await db.albums.get('pitchfork-002'), undefined)
@@ -132,7 +154,7 @@ test('reload preserves imported album edits and does not resurrect deleted recor
 })
 
 test('ranking sorts in both directions and leaves unranked user albums at the end', () => {
-  const albums = [SEED_ALBUMS[199], { ...DEMO_ALBUMS[0] }, SEED_ALBUMS[0]].map((album) => ({ ...album, listens: 0 }))
+  const albums = [SEED_ALBUMS.at(-1)!, { ...DEMO_ALBUMS[0] }, SEED_ALBUMS[0]].map((album) => ({ ...album, listens: 0 }))
   assert.deepEqual(sortAlbums(albums, 'rank', false).map((album) => album.id), ['pitchfork-001', 'pitchfork-200', 'kind-of-blue'])
   assert.deepEqual(sortAlbums(albums, 'rank', true).map((album) => album.id), ['pitchfork-200', 'pitchfork-001', 'kind-of-blue'])
 })

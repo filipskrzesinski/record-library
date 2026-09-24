@@ -82,6 +82,18 @@ export function ListIcon() {
   )
 }
 
+/** A centre line with entries alternating either side, like the history timeline. */
+export function HistoryIcon() {
+  return (
+    <svg {...iconProps}>
+      <rect x="7.25" y="1.5" width="1.5" height="13" rx="0.75" />
+      <rect x="1.5" y="3" width="4.5" height="2.5" rx="0.75" />
+      <rect x="10" y="6.75" width="4.5" height="2.5" rx="0.75" />
+      <rect x="1.5" y="10.5" width="4.5" height="2.5" rx="0.75" />
+    </svg>
+  )
+}
+
 /** A front-facing cover flanked by two sleeves angled away, like the shelf itself. */
 export function ShelfIcon() {
   return (
