@@ -239,6 +239,90 @@
   pointer-events: none;
 }
 
+/* Landing: the whole collection stood upright, drifting past. Spines are painted from
+   each record's palette, so the band is the only full-collection visual that costs
+   nothing to load. Decorative — the page never asks you to click a moving sleeve. */
+.shelf-band {
+  position: relative;
+  height: clamp(168px, 24vw, 248px);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+/* The shelf the spines stand on. */
+.shelf-band::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: var(--color-line);
+}
+
+.shelf-band-track {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  width: max-content;
+  height: 100%;
+  animation: shelf-drift 420s linear infinite;
+}
+
+/* Hold the drift so the titles can be read. */
+.shelf-band:hover .shelf-band-track {
+  animation-play-state: paused;
+}
+
+.shelf-band-spine {
+  display: flex;
+  flex: none;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  box-shadow: var(--shadow-spine);
+}
+
+.shelf-band-spine > span {
+  writing-mode: vertical-rl;
+  max-height: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+
+@keyframes shelf-drift {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Landing: sleeves angled away from a front-facing one, at the Shelf view's angles. */
+.landing-fan {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  perspective: 900px;
+}
+
+.landing-fan-item {
+  --side: clamp(-1, var(--d), 1);
+  --near: min(max(var(--d), -1 * var(--d)), 1);
+
+  position: absolute;
+  height: 66%;
+  aspect-ratio: 1;
+  transform:
+    translateX(calc(var(--side) * 72%))
+    translateZ(calc(var(--near) * -56px))
+    rotateY(calc(var(--side) * -64deg));
+  box-shadow: var(--shadow-cover);
+}
+
+.landing-fan-item > * {
+  height: 100%;
+}
+
 @keyframes overlay-in {
   from {
     opacity: 0;

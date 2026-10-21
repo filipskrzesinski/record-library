@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto'
 import assert from 'node:assert/strict'
 import { afterEach, test } from 'node:test'
-import { readdir } from 'node:fs/promises'
+import { readFile, readdir } from 'node:fs/promises'
 import sharp from 'sharp'
 import Dexie from 'dexie'
 import { db, ensureSeed, deleteAlbum, sortAlbums } from '../src/lib/db'
@@ -39,6 +39,15 @@ test('every seeded rank has complete sourced metadata and a decodable local cove
   assert.equal(SEED_ALBUMS[0].title, 'Kid A')
   assert.equal(SEED_ALBUMS.at(-1)!.title, "Mama's Gun")
   assert.equal(SEED_ALBUMS.find((album) => album.source?.rank === 188)!.artist, 'Janelle Monáe')
+})
+
+test('the landing page illustrates itself with records that are in the collection', async () => {
+  // Landing.tsx picks sleeves by id; a renumbered import would otherwise fall back silently.
+  const source = await readFile('src/routes/Landing.tsx', 'utf8')
+  const ids = [...source.matchAll(/pitchfork-\d{3}/g)].map((match) => match[0])
+  const known = new Set(SEED_ALBUMS.map((album) => album.id))
+  assert.ok(ids.length >= 10)
+  for (const id of ids) assert.ok(known.has(id), id)
 })
 
 test('sample sessions cover half the collection with varied dates and one to five listens', () => {

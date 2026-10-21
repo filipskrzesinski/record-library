@@ -3,6 +3,10 @@
 A personal record collection: browse a grid of sleeves or a shelf of spines, keep the
 technical detail on each pressing, and log every listening session.
 
+`/` is the landing page; the collection itself lives at `/library`, with each record at
+`/album/:id`. The landing page reads only the bundled collection, so it renders before
+the database has been opened.
+
 - **Vite + React + TypeScript**, Tailwind 4, a few heavily customised shadcn/Radix primitives
 - **Dexie (IndexedDB)** as the client database — no server, no accounts
 - Seeded with all 200 entries from Pitchfork's 2021 readers' poll, with local cover art
@@ -24,6 +28,7 @@ npm run dev
 | `src/lib/seed-migration.ts` | Preserve user changes while replacing untouched demos |
 | `src/lib/legacy-seed.ts` | Old sample data, retained only to recognize untouched demos |
 | `src/lib/art.ts` | Generated sleeve artwork and spine treatments |
+| `src/routes/Landing.tsx` | Landing page at `/`, built from the bundled collection |
 | `src/routes/Library.tsx` | Grid and list views, sorting |
 | `src/routes/AlbumDetail.tsx` | Metadata, inline editing, sessions |
 | `src/components/ui/` | Button, input, field, dialog, select |
