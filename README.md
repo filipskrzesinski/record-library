@@ -3,6 +3,10 @@
 A personal record collection: browse a grid of sleeves or a shelf of spines, keep the
 technical detail on each pressing, and log every listening session.
 
+`/` is the landing page, `/library` is the collection itself, and `/album/:id` is one
+record. Seeding runs as soon as the app mounts, but only the library routes wait for it,
+so the landing page paints immediately.
+
 - **Vite + React + TypeScript**, Tailwind 4, a few heavily customised shadcn/Radix primitives
 - **Dexie (IndexedDB)** as the client database — no server, no accounts
 - Seeded with all 200 entries from Pitchfork's 2021 readers' poll, with local cover art
@@ -24,14 +28,18 @@ npm run dev
 | `src/lib/seed-migration.ts` | Preserve user changes while replacing untouched demos |
 | `src/lib/legacy-seed.ts` | Old sample data, retained only to recognize untouched demos |
 | `src/lib/art.ts` | Generated sleeve artwork and spine treatments |
+| `src/routes/Landing.tsx` | Landing page: hero, the four views, pressing and listening detail |
 | `src/routes/Library.tsx` | Grid and list views, sorting |
 | `src/routes/AlbumDetail.tsx` | Metadata, inline editing, sessions |
+| `src/components/landing/` | Hero fan, view miniatures, scroll reveal, and the records they use |
 | `src/components/ui/` | Button, input, field, dialog, select |
 | `src/theme.css` | Shared Tailwind typography, hex colors, radii, and effects |
+| `src/landing.css` | Landing-only treatments: the hero fan, miniatures, and wordmark |
 
 ## Theme
 
-Edit `src/theme.css` for visual tokens; `src/index.css` contains base styles and interactions.
+Edit `src/theme.css` for visual tokens; `src/index.css` contains base styles and
+interactions, and imports `src/landing.css` for the landing page's own treatments.
 Every text role pairs `--text-{role}` with an explicit `--font-{role}`, with pixel sizes,
 line heights, and letter spacing. Use both utilities; keep color separate:
 

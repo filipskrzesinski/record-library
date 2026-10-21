@@ -1,0 +1,148 @@
+/* Landing page treatments. Marketing-only: the hero fan, the view miniatures and
+   the wordmark. Nothing here is used inside the library itself, and every value
+   derives from the tokens in theme.css. */
+
+/* Sections rise into place once as they first reach the viewport. The Reveal
+   component marks itself shown immediately when motion is reduced or when
+   IntersectionObserver is missing, so content never depends on the animation. */
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.6s var(--ease-out-soft),
+    transform 0.6s var(--ease-out-soft);
+}
+
+.reveal[data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero fan. The same vocabulary as the library's shelf — signed distance from the
+   centre drives angle, depth and offset — but fixed in place and spread wider, so
+   the whole run of sleeves reads at a glance instead of one at a time. */
+.landing-fan {
+  --cover: clamp(124px, 14.5vw, 208px);
+  --reflection: calc(var(--cover) * 0.3);
+
+  position: relative;
+  height: calc(var(--cover) + var(--reflection));
+  /* The outermost sleeves are turned past the viewport edge; clip them sideways so
+     they cannot widen the page, while leaving the hover lift room above. */
+  overflow-x: clip;
+  perspective: calc(var(--cover) * 3.2);
+  perspective-origin: 50% calc(var(--cover) / 2);
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.landing-fan-floor {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.landing-sleeve {
+  /* d: signed offset from the centre sleeve; side: d clamped to ±1; near: |d| capped at 1. */
+  --d: var(--i);
+  --dist: max(var(--d), -1 * var(--d));
+  --side: clamp(-1, var(--d), 1);
+  --near: min(var(--dist), 1);
+
+  position: absolute;
+  top: 0;
+  left: calc(50% - var(--cover) / 2);
+  display: block;
+  width: var(--cover);
+  transform:
+    translateX(calc(var(--side) * var(--cover) * 0.6 + (var(--d) - var(--side)) * var(--cover) * 0.34))
+    translateZ(calc(var(--near) * var(--cover) * -0.5))
+    rotateY(calc(var(--side) * -52deg));
+  opacity: clamp(0, calc(3.6 - var(--dist)), 1);
+  box-shadow:
+    0 4px 10px #2a241c24,
+    0 24px 48px -16px #2a241c4d,
+    0 56px 96px -40px #2a241c66;
+  transition:
+    transform 420ms var(--ease-out-soft),
+    opacity 300ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Distant sleeves recede into the paper rather than into black, as on the shelf. */
+.landing-haze {
+  position: absolute;
+  inset: 0 0 auto;
+  aspect-ratio: 1;
+  background: var(--color-paper-high);
+  opacity: calc(var(--near) * 0.12);
+  pointer-events: none;
+}
+
+.landing-reflection {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  height: var(--reflection);
+  overflow: hidden;
+  opacity: 0.18;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  pointer-events: none;
+}
+
+.landing-reflection-art {
+  transform: scaleY(-1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  /* Pointing at one sleeve turns it toward you and settles the rest back. */
+  .landing-sleeve:hover {
+    transform:
+      translateX(calc(var(--side) * var(--cover) * 0.6 + (var(--d) - var(--side)) * var(--cover) * 0.34))
+      translateY(-8px)
+      translateZ(calc(var(--cover) * 0.1))
+      rotateY(calc(var(--side) * -24deg));
+    box-shadow: var(--shadow-cover-hover);
+  }
+
+  .landing-fan:has(.landing-sleeve:hover) .landing-sleeve:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+/* View miniatures. Each one is the real thing in small: the grid's sleeves, the
+   list's spines, the shelf's angle, the history's day numeral. The shelf's two
+   outer sleeves rest turned away and swing further open on hover. */
+.landing-mini-shelf > * {
+  transition: transform 420ms var(--ease-out-soft);
+}
+
+.landing-mini-shelf > :first-child {
+  transform: rotateY(28deg);
+}
+
+.landing-mini-shelf > :last-child {
+  transform: rotateY(-28deg);
+}
+
+.landing-view:hover .landing-mini-shelf > :first-child {
+  transform: rotateY(46deg) translateX(-5px);
+}
+
+.landing-view:hover .landing-mini-shelf > :last-child {
+  transform: rotateY(-46deg) translateX(5px);
+}
+
+/* The wordmark closing the page: one line of Newsreader set to the full width of
+   the viewport and cropped by the page edge, the way a sleeve runs off a shelf. */
+.landing-wordmark {
+  display: block;
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 15.1vw;
+  line-height: 0.82;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+  user-select: none;
+}

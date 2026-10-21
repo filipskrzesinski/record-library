@@ -2,6 +2,8 @@
 
 @import "./theme.css";
 
+@import "./landing.css";
+
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
