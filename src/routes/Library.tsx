@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { AddAlbumDialog } from '@/components/AddAlbumDialog'
 import { GridCard } from '@/components/GridCard'
 import { History } from '@/components/History'
@@ -11,7 +12,7 @@ import { Select } from '@/components/ui/select'
 import { useHistory, useLibrary } from '@/lib/db'
 import { useIncremental } from '@/lib/useIncremental'
 import { usePersisted } from '@/lib/usePersisted'
-import { SORTS, type SortKey, type ViewMode } from '@/lib/types'
+import { SORTS, isViewMode, type SortKey, type ViewMode } from '@/lib/types'
 
 /** Items rendered per batch; more load as you scroll near the end. Shelf renders everything. */
 const BATCH = { grid: 25, list: 50, shelf: Infinity, history: 10 } satisfies Record<ViewMode, number>
@@ -21,6 +22,17 @@ export function Library() {
   const [desc, setDesc] = usePersisted('desc', false)
   const [view, setView] = usePersisted<ViewMode>('view', 'shelf')
   const [adding, setAdding] = useState(false)
+  const [params, setParams] = useSearchParams()
+
+  // The landing page links straight to a view; take it, then tidy the URL so a
+  // later reload reopens whichever view was last chosen here instead.
+  const requested = params.get('view')
+  useEffect(() => {
+    if (!isViewMode(requested)) return
+    setView(requested)
+    setParams({}, { replace: true })
+  }, [requested, setView, setParams])
+
   const albums = useLibrary(sort, desc)
   const sessions = useHistory()
   const [shown, showMore] = useIncremental(BATCH[view], `${view}-${sort}-${desc}`)

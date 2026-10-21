@@ -54,7 +54,14 @@ export interface Listen {
 }
 
 export type SortKey = 'rank' | 'added' | 'released' | 'artist' | 'title' | 'listens' | 'played'
-export type ViewMode = 'grid' | 'list' | 'shelf' | 'history'
+
+export const VIEWS = ['grid', 'list', 'shelf', 'history'] as const
+export type ViewMode = (typeof VIEWS)[number]
+
+/** Guards the `?view=` deep links the landing page hands the library. */
+export function isViewMode(value: string | null): value is ViewMode {
+  return value !== null && (VIEWS as readonly string[]).includes(value)
+}
 
 export const SORTS: { key: SortKey; label: string }[] = [
   { key: 'rank', label: 'Rank' },

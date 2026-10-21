@@ -239,6 +239,80 @@
   pointer-events: none;
 }
 
+/* Landing. A static cover-flow still: one sleeve faces front, the rest angle away.
+   --i is each sleeve's signed offset from the centre, set per item from the page. */
+.cover-fan {
+  --fan: clamp(132px, 24vw, 296px);
+  --fan-reflection: calc(var(--fan) * 0.3);
+  position: relative;
+  height: calc(var(--fan) + var(--fan-reflection));
+  overflow: hidden;
+  perspective: calc(var(--fan) * 3);
+  perspective-origin: 50% calc(var(--fan) / 2);
+  /* Masked here, not on .cover-fan-floor, because a mask would flatten its preserve-3d. */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 19%,
+    black 81%,
+    transparent
+  );
+}
+
+/* The same fan at preview scale, inside a card. */
+.cover-fan-sm {
+  --fan: clamp(84px, 24vw, 146px);
+}
+
+.cover-fan-floor {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.cover-fan-item {
+  /* side: --i clamped to ±1; near: |--i| capped at 1. */
+  --dist: max(var(--i), -1 * var(--i));
+  --side: clamp(-1, var(--i), 1);
+  --near: min(var(--dist), 1);
+
+  position: absolute;
+  top: 0;
+  left: calc(50% - var(--fan) / 2);
+  width: var(--fan);
+  transform:
+    translateX(calc(var(--side) * var(--fan) * 0.68 + (var(--i) - var(--side)) * var(--fan) * 0.17))
+    translateZ(calc(var(--near) * var(--fan) * -0.6))
+    rotateY(calc(var(--side) * -64deg));
+  box-shadow: var(--shadow-cover);
+}
+
+/* Distant sleeves recede into the paper rather than into black. */
+.cover-fan-haze {
+  position: absolute;
+  inset: 0 0 auto;
+  aspect-ratio: 1;
+  background: var(--color-paper-high);
+  opacity: calc(var(--near) * 0.1 + var(--dist) * 0.05);
+  pointer-events: none;
+}
+
+.cover-fan-reflection {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  height: var(--fan-reflection);
+  overflow: hidden;
+  opacity: 0.2;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  pointer-events: none;
+}
+
+.cover-fan-reflection-art {
+  transform: scaleY(-1);
+}
+
 @keyframes overlay-in {
   from {
     opacity: 0;

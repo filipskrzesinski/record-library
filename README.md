@@ -1,7 +1,8 @@
 # Record Library
 
 A personal record collection: browse a grid of sleeves or a shelf of spines, keep the
-technical detail on each pressing, and log every listening session.
+technical detail on each pressing, and log every listening session. A landing page sits
+at `/`; the collection itself lives at `/library`.
 
 - **Vite + React + TypeScript**, Tailwind 4, a few heavily customised shadcn/Radix primitives
 - **Dexie (IndexedDB)** as the client database — no server, no accounts
@@ -24,10 +25,30 @@ npm run dev
 | `src/lib/seed-migration.ts` | Preserve user changes while replacing untouched demos |
 | `src/lib/legacy-seed.ts` | Old sample data, retained only to recognize untouched demos |
 | `src/lib/art.ts` | Generated sleeve artwork and spine treatments |
+| `src/routes/Landing.tsx` | Landing page at `/` |
+| `src/components/landing/` | Nav, footer, cover fan, view previews, icons |
+| `src/lib/showcase.ts` | Sleeves and figures the landing page quotes, held to the collection by `tests/landing.test.ts` |
 | `src/routes/Library.tsx` | Grid and list views, sorting |
 | `src/routes/AlbumDetail.tsx` | Metadata, inline editing, sessions |
 | `src/components/ui/` | Button, input, field, dialog, select |
 | `src/theme.css` | Shared Tailwind typography, hex colors, radii, and effects |
+
+## Routes
+
+| Path | |
+| --- | --- |
+| `/` | Landing page. Renders without opening the database, so it paints before the first seed. |
+| `/library` | The collection. `?view=grid\|list\|shelf\|history` opens a view and is then stripped from the URL, leaving the stored preference to win on later visits. |
+| `/album/:id` | One record. |
+
+Anything else redirects to `/`.
+
+The landing page draws real sleeves but navigates only through its own links: the artwork is
+decorative and hidden from assistive technology, so nothing on it depends on the collection
+having been seeded. It quotes `src/lib/showcase.ts` rather than importing the collection, which
+keeps `pitchfork-200.json` in the lazily loaded seed chunk. Every sleeve and figure in that file
+is checked against the bundled collection by `tests/landing.test.ts`, so the page cannot drift
+from the data or invent a number.
 
 ## Theme
 
@@ -56,6 +77,10 @@ line heights, and letter spacing. Use both utilities; keep color separate:
 Avoid ad-hoc text sizes, tracking, or radii. Register any new text role in
 `src/lib/utils.ts` so class merging distinguishes it from a text color.
 `tests/theme.test.ts` checks the token format and migration boundaries.
+
+The landing page adds no tokens. Its hero is a static cover-flow still — `.cover-fan` in
+`src/index.css`, the same `--i`-driven transform the shelf uses, with `--i` fixed per sleeve
+instead of following a scroll position.
 
 ## Collection sources
 
