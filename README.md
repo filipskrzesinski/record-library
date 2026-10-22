@@ -3,6 +3,9 @@
 A personal record collection: browse a grid of sleeves or a shelf of spines, keep the
 technical detail on each pressing, and log every listening session.
 
+The landing page sits at `/`; the collection itself is at `/library`, and each record at
+`/album/:id`.
+
 - **Vite + React + TypeScript**, Tailwind 4, a few heavily customised shadcn/Radix primitives
 - **Dexie (IndexedDB)** as the client database — no server, no accounts
 - Seeded with all 200 entries from Pitchfork's 2021 readers' poll, with local cover art
@@ -24,6 +27,7 @@ npm run dev
 | `src/lib/seed-migration.ts` | Preserve user changes while replacing untouched demos |
 | `src/lib/legacy-seed.ts` | Old sample data, retained only to recognize untouched demos |
 | `src/lib/art.ts` | Generated sleeve artwork and spine treatments |
+| `src/routes/Landing.tsx` | Landing page at `/`; reads the bundled collection, not the database |
 | `src/routes/Library.tsx` | Grid and list views, sorting |
 | `src/routes/AlbumDetail.tsx` | Metadata, inline editing, sessions |
 | `src/components/ui/` | Button, input, field, dialog, select |
@@ -52,6 +56,11 @@ line heights, and letter spacing. Use both utilities; keep color separate:
 - UI colors are hex (eight-digit hex for transparent tokens); Tailwind opacity
   modifiers such as `bg-ink/6` derive from them. Album palettes in `src/lib/art.ts`
   and the record data are content colors, not UI tokens.
+
+The landing page is set in the same roles: `date` for the oversized corner numerals,
+`display`/`display-md`/`display-sm` for statements, `record`/`record-sm` for links and
+captions, and `label` for the tiny letterspaced caps. Its only colour is the current
+record's own palette — a faint wash over the paper and the printed spine on the sleeve.
 
 Avoid ad-hoc text sizes, tracking, or radii. Register any new text role in
 `src/lib/utils.ts` so class merging distinguishes it from a text color.

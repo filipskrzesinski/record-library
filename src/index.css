@@ -296,3 +296,9 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Landing index strip: sleeves run off the right edge, dissolving into the paper
+   the same way the shelf does, so the row reads as a cut from a longer rack. */
+.landing-strip {
+  mask-image: linear-gradient(to right, black 72%, transparent);
+}

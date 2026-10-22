@@ -51,7 +51,7 @@ export function AlbumDetail() {
         <TopBar />
         <div className="flex flex-col items-center gap-5 py-40">
           <span className="font-empty text-empty text-ink-faint">—</span>
-          <Button variant="outline" onClick={() => navigate('/')}>
+          <Button variant="outline" onClick={() => navigate('/library')}>
             Collection
           </Button>
         </div>
@@ -74,7 +74,7 @@ export function AlbumDetail() {
       <TopBar
         left={
           <Link
-            to="/"
+            to="/library"
             className="font-caption text-caption text-ink-faint transition-colors duration-150 hover:text-ink"
           >
             ← Collection
@@ -86,7 +86,7 @@ export function AlbumDetail() {
             size="sm"
             onClick={() => {
               if (!confirming) return setConfirming(true)
-              deleteAlbum(album.id).then(() => navigate('/'))
+              deleteAlbum(album.id).then(() => navigate('/library'))
             }}
           >
             {confirming ? 'Confirm' : 'Delete'}
