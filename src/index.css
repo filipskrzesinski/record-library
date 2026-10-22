@@ -239,6 +239,124 @@
   pointer-events: none;
 }
 
+/* Landing hero: a frozen cover flow. Same transform as .shelf-item, but --d is a
+   fixed offset per sleeve rather than a scroll position, so nothing moves. */
+.fan {
+  --cover: clamp(176px, 24vw, 320px);
+  position: relative;
+  height: calc(var(--cover) * 1.3);
+  perspective: calc(var(--cover) * 3);
+  perspective-origin: 50% calc(var(--cover) / 2);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 24%,
+    black 76%,
+    transparent
+  );
+}
+
+.fan-floor {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.fan-item {
+  --dist: max(var(--d), -1 * var(--d));
+  --side: clamp(-1, var(--d), 1);
+  --near: min(var(--dist), 1);
+
+  position: absolute;
+  top: 0;
+  left: calc(50% - var(--cover) / 2);
+  width: var(--cover);
+  transform:
+    translateX(calc(var(--side) * var(--cover) * 0.68 + (var(--d) - var(--side)) * var(--cover) * 0.17))
+    translateZ(calc(var(--near) * var(--cover) * -0.6))
+    rotateY(calc(var(--side) * -64deg));
+  box-shadow:
+    0 4px 10px #2a241c24,
+    0 24px 48px -16px #2a241c59,
+    0 56px 96px -40px #2a241c73;
+}
+
+.fan-haze {
+  position: absolute;
+  inset: 0 0 auto;
+  aspect-ratio: 1;
+  background: var(--color-paper-high);
+  opacity: calc(var(--near) * 0.1 + min(var(--dist), 8) * 0.05);
+}
+
+.fan-reflection {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  height: calc(var(--cover) * 0.3);
+  overflow: hidden;
+  opacity: 0.2;
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.fan-reflection-art {
+  transform: scaleY(-1);
+}
+
+/* Two bands of sleeves drifting past each other. Each row holds its covers twice,
+   so translating by half its width loops seamlessly. */
+.wall {
+  --wall-gap: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--wall-gap);
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 18%,
+    black 82%,
+    transparent
+  );
+}
+
+.wall-row {
+  display: flex;
+  width: max-content;
+  gap: var(--wall-gap);
+  animation: wall-drift 120s linear infinite;
+  /* Start mid-cycle so both ends of the band are cut through a sleeve, never
+     flush against the first one. */
+  animation-delay: -37s;
+}
+
+.wall-row-reverse {
+  animation-direction: reverse;
+  animation-delay: -11s;
+}
+
+.wall-sleeve {
+  width: clamp(92px, 10vw, 136px);
+  box-shadow: var(--shadow-spine);
+}
+
+@keyframes wall-drift {
+  to {
+    /* Half the row is the duplicate; the extra half-gap lands the translation
+       exactly on the original's first sleeve. */
+    transform: translateX(calc(-50% - var(--wall-gap) / 2));
+  }
+}
+
+/* The global reduced-motion rule would leave this infinite animation flickering. */
+@media (prefers-reduced-motion: reduce) {
+  .wall-row {
+    animation: none !important;
+  }
+}
+
 @keyframes overlay-in {
   from {
     opacity: 0;

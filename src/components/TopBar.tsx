@@ -17,7 +17,7 @@ export function TopBar({
         <div className="flex items-center justify-self-start">
           {left ?? (
             <Link
-              to="/"
+              to="/library"
               className="font-caption text-caption transition-colors duration-150 hover:text-ink-muted"
             >
               Record Library

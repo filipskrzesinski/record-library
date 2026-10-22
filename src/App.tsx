@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Outlet, Route, Routes, useLocation } from 'react-router-dom'
 import { ensureSeed } from '@/lib/db'
 import { AlbumDetail } from '@/routes/AlbumDetail'
+import { Landing } from '@/routes/Landing'
 import { Library } from '@/routes/Library'
 
 function ScrollToTop() {
@@ -12,7 +13,8 @@ function ScrollToTop() {
   return null
 }
 
-export default function App() {
+/** The collection routes wait for the database; the landing page does not. */
+function Collection() {
   const [ready, setReady] = useState(false)
   const [failed, setFailed] = useState(false)
 
@@ -32,13 +34,20 @@ export default function App() {
 
   if (!ready) return null
 
+  return <Outlet />
+}
+
+export default function App() {
   return (
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Library />} />
-        <Route path="/album/:id" element={<AlbumDetail />} />
-        <Route path="*" element={<Library />} />
+        <Route path="/" element={<Landing />} />
+        <Route element={<Collection />}>
+          <Route path="/library" element={<Library />} />
+          <Route path="/album/:id" element={<AlbumDetail />} />
+        </Route>
+        <Route path="*" element={<Landing />} />
       </Routes>
     </>
   )
