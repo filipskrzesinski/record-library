@@ -171,6 +171,8 @@
   --background-image-sleeve-sheen: linear-gradient(118deg, #ffffff21 0%, #ffffff00 36%, #0000000f 100%);
 
   --ease-out-soft: cubic-bezier(0.2, 0.8, 0.25, 1);
+  /* Weighted at both ends, for turning something over rather than easing it in. */
+  --ease-flip: cubic-bezier(0.77, 0, 0.175, 1);
 
   --animate-overlay-in: overlay-in 0.2s var(--ease-out-soft);
   --animate-overlay-out: overlay-out 0.15s ease-in;

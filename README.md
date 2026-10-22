@@ -23,9 +23,11 @@ npm run dev
 | `src/lib/seed.ts` | Imported albums and 188 fictional sample listening sessions |
 | `src/lib/seed-migration.ts` | Preserve user changes while replacing untouched demos |
 | `src/lib/legacy-seed.ts` | Old sample data, retained only to recognize untouched demos |
-| `src/lib/art.ts` | Generated sleeve artwork and spine treatments |
+| `src/lib/art.ts` | Generated sleeve artwork, spine treatments, and pressings |
 | `src/routes/Library.tsx` | Grid and list views, sorting |
 | `src/routes/AlbumDetail.tsx` | Metadata, inline editing, sessions |
+| `src/components/RecordFlip.tsx` | Turning the sleeve over to the record |
+| `src/components/LiquidRecord.tsx` | The pressing, drawn from the sleeve's own colors |
 | `src/components/ui/` | Button, input, field, dialog, select |
 | `src/theme.css` | Shared Tailwind typography, hex colors, radii, and effects |
 
@@ -52,6 +54,11 @@ line heights, and letter spacing. Use both utilities; keep color separate:
 - UI colors are hex (eight-digit hex for transparent tokens); Tailwind opacity
   modifiers such as `bg-ink/6` derive from them. Album palettes in `src/lib/art.ts`
   and the record data are content colors, not UI tokens.
+
+- Motion uses `--ease-out-soft` for things settling into place and `--ease-flip`
+  for something turning over. An animation that repeats forever must switch
+  itself off under `prefers-reduced-motion`: the blanket rule in `src/index.css`
+  only shortens durations, which restarts a loop rather than stopping it.
 
 Avoid ad-hoc text sizes, tracking, or radii. Register any new text role in
 `src/lib/utils.ts` so class merging distinguishes it from a text color.

@@ -2,9 +2,9 @@ import { useEffect, useState, type ReactNode } from 'react'
 import { PITCHFORK_SOURCE_URL } from '@/lib/sources'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { AddListenDialog } from '@/components/AddListenDialog'
-import { Cover } from '@/components/Cover'
 import { Editable } from '@/components/Editable'
 import { Rating } from '@/components/Rating'
+import { RecordFlip } from '@/components/RecordFlip'
 import { TopBar } from '@/components/TopBar'
 import { Button } from '@/components/ui/button'
 import {
@@ -34,6 +34,9 @@ export function AlbumDetail() {
   const listens = useListens(id)
   const [adding, setAdding] = useState(false)
   const [confirming, setConfirming] = useState(false)
+  // Held by album rather than as a flag, so walking to the next record always
+  // starts on its sleeve.
+  const [turned, setTurned] = useState<string>()
 
   useEffect(() => {
     if (!confirming) return
@@ -68,6 +71,8 @@ export function AlbumDetail() {
   }
 
   const lastPlayed = listens[0]?.date
+  const flipped = turned === album.id
+  const flip = () => setTurned(flipped ? undefined : album.id)
 
   return (
     <>
@@ -117,19 +122,15 @@ export function AlbumDetail() {
 
       <div className="grid gap-10 px-6 pt-10 sm:px-10 xl:px-16 lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)] lg:gap-16">
         <div className="animate-rise self-start lg:sticky lg:top-20">
-          <Cover
-            art={album.art}
-            palette={album.palette}
-            src={album.coverUrl}
-            alt={`${album.title} by ${album.artist} album cover`}
-            loading="eager"
-            className="rounded-md shadow-cover"
-          />
+          <RecordFlip album={album} flipped={flipped} onToggle={flip} />
           <div className="mt-6 flex items-center justify-between gap-4">
             <Rating
               value={album.rating}
               onChange={(rating) => updateAlbum(album.id, { rating: rating || undefined })}
             />
+            <Button variant="quiet" size="sm" aria-pressed={flipped} onClick={flip}>
+              {flipped ? 'Sleeve' : 'Record'}
+            </Button>
           </div>
         </div>
 

@@ -87,3 +87,98 @@ export function spineStyle(p: Palette): CSSProperties {
     color: p.ink,
   }
 }
+
+/** A pressing, drawn from the colors sampled off the sleeve. */
+export interface RecordStyle {
+  /** Lacquer body of the disc. */
+  disc: string
+  /** Lit outer edge. */
+  rim: string
+  /** Groove catching the light, and the one in shadow beside it. */
+  grooveLight: string
+  grooveDark: string
+  /** Specular sweep across the lacquer. */
+  sheen: string
+  /** Paper label at the centre, and the type printed on it. */
+  label: string
+  labelInk: string
+  /** Printed back of the sleeve, behind the record. */
+  sleeveLight: string
+  sleeveDeep: string
+}
+
+const LACQUER = '#000000'
+const LIGHT = '#ffffff'
+
+/**
+ * The pressing that belongs to a sleeve.
+ *
+ * Covers are sampled down to a single dominant hue (see paletteFrom in
+ * scripts/import-pitchfork.mjs: accent and deep are only that hue at 0.8 and
+ * 0.65), so the disc is built by darkening and lightening `deep` rather than by
+ * looking for further colors that are not in the palette. Darkening everything
+ * from one end keeps the tones ordered — sleeveLight, sleeveDeep, then disc —
+ * for sleeves of any lightness, so a near-black cover still presses a disc that
+ * reads against its own sleeve instead of disappearing into it.
+ */
+export function recordStyle(p: Palette): RecordStyle {
+  const disc = mix(p.deep, LACQUER, 0.45)
+  // One decision drives both the label and the type on it, so a cover that
+  // falls on the wrong side of it can never print ink on its own color.
+  const printed = contrast(p.base, disc) > 2
+  return {
+    disc,
+    rim: mix(disc, LIGHT, 0.3),
+    // Grooves are lit relative to the disc, never to the palette, so a sleeve
+    // whose base, accent and deep sit within a few levels of each other still
+    // presses legible grooves.
+    grooveLight: mix(mix(disc, LIGHT, 0.36), p.accent, 0.2),
+    grooveDark: mix(disc, LACQUER, 0.45),
+    sheen: mix(p.accent, LIGHT, 0.55),
+    // A label printed in the cover's own color, unless that color would sink
+    // into the lacquer; then it is printed in the ink. The threshold is set
+    // where it is so that a cover barely clearing it still reads: see the
+    // pressing test in tests/collection.test.ts.
+    label: printed ? p.base : p.ink,
+    labelInk: printed ? p.ink : disc,
+    sleeveLight: mix(p.deep, LIGHT, 0.18),
+    sleeveDeep: mix(p.deep, LACQUER, 0.2),
+  }
+}
+
+/** The printed back of the sleeve the record is pulled from. */
+export function sleeveBackStyle(p: Palette): CSSProperties {
+  const { sleeveLight, sleeveDeep } = recordStyle(p)
+  return { backgroundImage: `linear-gradient(168deg, ${sleeveLight} 0%, ${sleeveDeep} 100%)` }
+}
+
+function channels(color: string) {
+  const value = color.replace('#', '')
+  const full = value.length === 3 ? value.replace(/./g, (c) => c + c) : value
+  return [0, 2, 4].map((i) => Number.parseInt(full.slice(i, i + 2), 16))
+}
+
+function hex(values: number[]) {
+  const clamp = (v: number) => Math.round(Math.min(255, Math.max(0, v)))
+  return `#${values.map((v) => clamp(v).toString(16).padStart(2, '0')).join('')}`
+}
+
+/** Mix in sRGB: 0 keeps `from`, 1 returns `to`. */
+function mix(from: string, to: string, amount: number) {
+  const [a, b] = [channels(from), channels(to)]
+  return hex(a.map((value, i) => value + (b[i] - value) * amount))
+}
+
+/** Relative luminance, as the import script measures a cover. */
+function luminance(color: string) {
+  const [r, g, b] = channels(color).map((value) => {
+    const channel = value / 255
+    return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4
+  })
+  return r * 0.2126 + g * 0.7152 + b * 0.0722
+}
+
+function contrast(a: string, b: string) {
+  const [x, y] = [luminance(a), luminance(b)]
+  return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05)
+}

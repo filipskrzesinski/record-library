@@ -124,6 +124,73 @@
   transition: transform 320ms var(--ease-out-soft);
 }
 
+/* Album detail: the sleeve turns in place to show the pressing inside it. The
+   faces are two sides of one card, so only the wrapper rotates. */
+.record-flip {
+  display: block;
+  width: 100%;
+  perspective: 1600px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.record-flip-inner {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+  transition: transform 560ms var(--ease-flip);
+}
+
+.record-flip[data-flipped='true'] .record-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.record-flip-face {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-cover);
+  backface-visibility: hidden;
+  transition: box-shadow 240ms var(--ease-out-soft);
+}
+
+.record-flip-back {
+  transform: rotateY(180deg);
+}
+
+/* Focus is shown the way hover is, since the page draws no outlines. */
+.record-flip:focus-visible .record-flip-face {
+  box-shadow: var(--shadow-cover-hover);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .record-flip:hover .record-flip-face {
+    box-shadow: var(--shadow-cover-hover);
+  }
+}
+
+/* The record sits inside the sleeve, raised off its printed back. */
+.liquid-record-disc {
+  position: absolute;
+  inset: 5.5%;
+  filter: drop-shadow(0 10px 16px #00000057);
+}
+
+.liquid-record-label {
+  transform-origin: 150px 150px;
+  animation: record-spin var(--spin, 14s) linear infinite;
+}
+
+.liquid-record[data-spinning='false'] .liquid-record-label {
+  animation-play-state: paused;
+}
+
+@keyframes record-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Shelf (cover flow). The scroller only supplies position; the sticky stage draws.
    --pos is the fractional record index at the centre, set from JS on scroll. */
 .shelf {
@@ -294,5 +361,10 @@
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+
+  /* The clamp above would restart this one endlessly rather than stop it. */
+  .liquid-record-label {
+    animation: none !important;
   }
 }

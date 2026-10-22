@@ -4,6 +4,7 @@ import { afterEach, test } from 'node:test'
 import { readdir } from 'node:fs/promises'
 import sharp from 'sharp'
 import Dexie from 'dexie'
+import { recordStyle } from '../src/lib/art'
 import { db, ensureSeed, deleteAlbum, sortAlbums } from '../src/lib/db'
 import { isoDate } from '../src/lib/format'
 import { SEED_ALBUMS, SEED_LISTENS } from '../src/lib/seed'
@@ -39,6 +40,46 @@ test('every seeded rank has complete sourced metadata and a decodable local cove
   assert.equal(SEED_ALBUMS[0].title, 'Kid A')
   assert.equal(SEED_ALBUMS.at(-1)!.title, "Mama's Gun")
   assert.equal(SEED_ALBUMS.find((album) => album.source?.rank === 188)!.artist, 'Janelle Monáe')
+})
+
+/** Relative luminance of a six-digit hex color, as the import script measures a cover. */
+function luminance(color: string) {
+  const [r, g, b] = [1, 3, 5].map((i) => {
+    const channel = Number.parseInt(color.slice(i, i + 2), 16) / 255
+    return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4
+  })
+  return r * 0.2126 + g * 0.7152 + b * 0.0722
+}
+
+function contrast(a: string, b: string) {
+  const [x, y] = [luminance(a), luminance(b)]
+  return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05)
+}
+
+test('every sleeve presses a record that reads against it', () => {
+  // Covers are sampled to one dominant hue, so a monochrome sleeve (Kid A is
+  // three shades of near-black) is the case that would press an invisible
+  // record. The pressing is built by darkening and lightening that one hue,
+  // which has to leave these apart for all 197 of them.
+  for (const album of SEED_ALBUMS) {
+    const { disc, rim, grooveLight, label, labelInk, sleeveLight, sleeveDeep } = recordStyle(album.palette)
+    const where = `${album.id} ${album.title}`
+
+    // Tones stay ordered however light or dark the cover was, so the record is
+    // never lighter than the sleeve it is lying on.
+    assert.ok(luminance(disc) <= luminance(sleeveDeep), where)
+    assert.ok(luminance(sleeveDeep) < luminance(sleeveLight), where)
+
+    // Grooves, rim, label and the type printed on it all stay legible.
+    for (const [part, color, against] of [
+      ['groove', grooveLight, disc],
+      ['rim', rim, disc],
+      ['label', label, disc],
+      ['label type', labelInk, label],
+    ] as const) {
+      assert.ok(contrast(color, against) > 2, `${part} on ${where}: ${contrast(color, against).toFixed(2)}`)
+    }
+  }
 })
 
 test('sample sessions cover half the collection with varied dates and one to five listens', () => {
